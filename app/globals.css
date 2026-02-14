@@ -1,26 +1,516 @@
 @import "tailwindcss";
 
+/* ========================================
+   CSS Variables - Theme System
+   ======================================== */
+
 :root {
+  /* Light Mode Colors */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0a0a0a;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --border: #e4e4e7;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
+
+  /* Pixel Scene Light */
+  --pixel-sky-top: #87CEEB;
+  --pixel-sky-bottom: #E0F6FF;
+  --pixel-ground: #4ade80;
+  --pixel-ground-dark: #22c55e;
+}
+
+.dark {
+  /* Dark Mode Colors */
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --border: #27272a;
+  --card: #0a0a0a;
+  --card-foreground: #fafafa;
+
+  /* Pixel Scene Dark */
+  --pixel-sky-top: #0a0a1a;
+  --pixel-sky-bottom: #1a1a3a;
+  --pixel-ground: #1a1a2e;
+  --pixel-ground-dark: #0f0f1a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ========================================
+   Base Styles
+   ======================================== */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========================================
+   Grain/Noise Effect
+   ======================================== */
+
+.noise::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://www.ui-layouts.com/noise.gif");
+  background-repeat: repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+
+.font-elegant {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-style: italic;
+}
+
+/* ========================================
+   Scrollbar Styling
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* ========================================
+   Selection
+   ======================================== */
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* ========================================
+   Pixel Art Animations
+   ======================================== */
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes twinkle-delayed {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes sun-rays {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.animate-twinkle-delayed {
+  animation: twinkle-delayed 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-sun-rays {
+  animation: sun-rays 4s ease-in-out infinite;
+}
+
+/* Staggered animations for stars */
+.star-1 { animation-delay: 0s; }
+.star-2 { animation-delay: 0.3s; }
+.star-3 { animation-delay: 0.6s; }
+.star-4 { animation-delay: 0.9s; }
+.star-5 { animation-delay: 1.2s; }
+.star-6 { animation-delay: 1.5s; }
+.star-7 { animation-delay: 1.8s; }
+.star-8 { animation-delay: 2.1s; }
+
+/* Cloud animations */
+.cloud-1 { animation-delay: 0s; }
+.cloud-2 { animation-delay: 2s; }
+.cloud-3 { animation-delay: 4s; }
+
+/* ========================================
+   Gradient Mesh Blob Animations
+   ======================================== */
+
+@keyframes blob-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, -20px) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  75% {
+    transform: translate(10px, -10px) scale(1.02);
+  }
+}
+
+@keyframes blob-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-40px, 20px) scale(0.95);
+  }
+  50% {
+    transform: translate(20px, -30px) scale(1.05);
+  }
+  75% {
+    transform: translate(-10px, 10px) scale(1);
+  }
+}
+
+@keyframes blob-3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(20px, 30px) scale(1.03);
+  }
+  66% {
+    transform: translate(-30px, -20px) scale(0.97);
+  }
+}
+
+@keyframes blob-4 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(-20px, -20px) scale(1.05);
+  }
+  40% {
+    transform: translate(30px, 10px) scale(0.95);
+  }
+  60% {
+    transform: translate(-10px, 30px) scale(1.02);
+  }
+  80% {
+    transform: translate(20px, -10px) scale(0.98);
+  }
+}
+
+.animate-blob-1 {
+  animation: blob-1 20s ease-in-out infinite;
+}
+
+.animate-blob-2 {
+  animation: blob-2 25s ease-in-out infinite;
+}
+
+.animate-blob-3 {
+  animation: blob-3 18s ease-in-out infinite;
+}
+
+.animate-blob-4 {
+  animation: blob-4 22s ease-in-out infinite;
+}
+
+/* ========================================
+   Galaxy Journey Animations
+   ======================================== */
+
+/* Satellite floating movement */
+@keyframes satellite {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(15px, -10px) rotate(2deg);
+  }
+  50% {
+    transform: translate(30px, 5px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(10px, -5px) rotate(1deg);
+  }
+}
+
+.animate-satellite {
+  animation: satellite 12s ease-in-out infinite;
+}
+
+/* Sun pulse effect */
+@keyframes sun-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+  }
+}
+
+.animate-sun-pulse {
+  animation: sun-pulse 4s ease-in-out infinite;
+}
+
+/* Shooting star */
+@keyframes shooting-star {
+  0% {
+    transform: translate(0, 0) rotate(135deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    transform: translate(150px, 150px) rotate(135deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(200px, 200px) rotate(135deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(200px, 200px) rotate(135deg);
+    opacity: 0;
+  }
+}
+
+.animate-shooting-star {
+  animation: shooting-star 15s ease-out infinite;
+}
+
+/* Slow spin for sun rays */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 30s linear infinite;
+}
+
+/* ========================================
+   Rocket Easter Egg Animations
+   ======================================== */
+
+/* Screen shake during launch */
+@keyframes screen-shake {
+  0%, 100% { transform: translateX(0); }
+  10% { transform: translateX(-5px) translateY(2px); }
+  20% { transform: translateX(5px) translateY(-2px); }
+  30% { transform: translateX(-3px) translateY(1px); }
+  40% { transform: translateX(3px) translateY(-1px); }
+  50% { transform: translateX(-2px) translateY(2px); }
+  60% { transform: translateX(2px) translateY(-2px); }
+  70% { transform: translateX(-1px) translateY(1px); }
+  80% { transform: translateX(1px) translateY(-1px); }
+  90% { transform: translateX(0); }
+}
+
+.animate-screen-shake {
+  animation: screen-shake 0.5s ease-in-out;
+}
+
+/* Rocket wobble during flight */
+@keyframes rocket-wobble {
+  0%, 100% { transform: rotate(0deg) translateX(0); }
+  25% { transform: rotate(-2deg) translateX(-3px); }
+  50% { transform: rotate(0deg) translateX(0); }
+  75% { transform: rotate(2deg) translateX(3px); }
+}
+
+.animate-rocket-wobble {
+  animation: rocket-wobble 0.3s ease-in-out infinite;
+}
+
+/* Flame flicker */
+@keyframes flame-flicker {
+  0%, 100% { transform: scaleY(1) scaleX(1); opacity: 1; }
+  25% { transform: scaleY(1.1) scaleX(0.95); opacity: 0.9; }
+  50% { transform: scaleY(0.95) scaleX(1.05); opacity: 1; }
+  75% { transform: scaleY(1.05) scaleX(0.98); opacity: 0.95; }
+}
+
+@keyframes flame-flicker-alt {
+  0%, 100% { transform: scaleY(1) scaleX(1) rotate(0deg); opacity: 0.9; }
+  33% { transform: scaleY(1.15) scaleX(0.9) rotate(-5deg); opacity: 1; }
+  66% { transform: scaleY(0.9) scaleX(1.1) rotate(5deg); opacity: 0.85; }
+}
+
+.animate-flame-flicker {
+  animation: flame-flicker 0.15s ease-in-out infinite;
+}
+
+.animate-flame-flicker-alt {
+  animation: flame-flicker-alt 0.2s ease-in-out infinite;
+}
+
+/* Smoke expansion */
+@keyframes smoke-expand {
+  0% {
+    transform: scale(0.5) translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5) translateY(-20px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.5) translateY(-50px);
+    opacity: 0;
+  }
+}
+
+.animate-smoke-expand {
+  animation: smoke-expand 2s ease-out forwards;
+}
+
+/* Particle fall */
+@keyframes particle-fall {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.animate-particle-fall {
+  animation: particle-fall 1s ease-out forwards;
+}
+
+/* Star streak during flight */
+@keyframes star-streak {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100%));
+    opacity: 0;
+  }
+}
+
+.animate-star-streak {
+  animation: star-streak 0.8s linear infinite;
+}
+
+/* Countdown number pop animation */
+@keyframes countdown-pop {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+.animate-countdown-pop {
+  animation: countdown-pop 0.6s ease-out forwards;
 }

@@ -1,0 +1,147 @@
+{
+  "Metadata": {
+    "title": "LALASON Anna\u00ebl \u2014 AI Systems Architect",
+    "description": "I design intelligent systems that structure, automate, and durably transform organizations. Software architecture, applied AI, strategic automation."
+  },
+  "Header": {
+    "cta": "Let's talk"
+  },
+  "Hero": {
+    "role": "AI Systems Architect",
+    "available": "Available for strategic collaborations",
+    "shuffleLabel": "Another perspective",
+    "profileAlt": "Profile picture",
+    "punchlines": {
+      "0": "\ud83c\udfdb\ufe0f High-performing organizations don't rely on individual effort. They rely on well-designed systems. I build those systems \u2014 at the intersection of software architecture and artificial intelligence.",
+      "1": "\ud83d\udd0d Before automating, I understand. Before building, I structure. Every system I design is meant to last, evolve, and free up time where it truly matters.",
+      "2": "\u2699\ufe0f Technology is not the goal. It's the lever. My role: transforming operational complexity into clear, controlled, and autonomous architectures.",
+      "3": "\ud83e\udde0 I don't sell AI. I install mastery. Structured workflows, orchestrated intelligent agents, systems that work while you make decisions.",
+      "4": "\ud83d\udd2d Where others see tasks to automate, I see processes to rethink. The real value isn't in the tool \u2014 it's in the architecture that makes it intelligent.",
+      "5": "\ud83e\udde9 Every organization has invisible friction \u2014 processes that consume time without creating value. I identify them, restructure them, and transform them into autonomous systems.",
+      "6": "\ud83d\udee0\ufe0f Python, TypeScript, LLMs, AI agents \u2014 these are my instruments. But the difference lies in seeing the system as a whole before writing the first line of code.",
+      "7": "\ud83d\udcd0 My approach: understand deeply, structure rigorously, build precisely. No temporary fixes, no patches. Systems designed to endure.",
+      "8": "\ud83c\udf00 Between operational chaos and total mastery, there's an architecture to design. That's precisely where I operate.",
+      "9": "\u2727 A well-built system goes unnoticed. It works, it adapts, it liberates. That's the signature of deeply considered architecture \u2014 and that's exactly what I build."
+    }
+  },
+  "ThingsIveDone": {
+    "title": "Measurable impact",
+    "items": {
+      "0": {
+        "text": "Automation systems generating",
+        "linkText": "+$3,000 ROI",
+        "suffix": "in under 2 months"
+      },
+      "1": {
+        "text": "Up to",
+        "linkText": "40 hours/month reclaimed",
+        "suffix": "through workflow restructuring"
+      },
+      "2": {
+        "text": "Web applications designed and delivered end-to-end \u2014 Next.js, React, structured APIs",
+        "linkText": "",
+        "suffix": ""
+      },
+      "3": {
+        "text": "Internal tools and dashboards architected to fit each business context",
+        "linkText": "",
+        "suffix": ""
+      },
+      "4": {
+        "text": "Entrepreneurs guided from strategic vision to production-ready product",
+        "linkText": "",
+        "suffix": ""
+      }
+    }
+  },
+  "ThingsIveBuild": {
+    "title": "Background",
+    "experiences": {
+      "0": {
+        "role": "Tech Lead & Automation Architect",
+        "company": "Mon Ambassadeur",
+        "period": "Aug 2024 \u2014 Present",
+        "description": "Technical governance, software architecture design, and orchestration of intelligent workflows with n8n, Make, and AI agents."
+      },
+      "1": {
+        "role": "Frontend Developer & UX/UI Designer",
+        "company": "Acc\u00e8sBanque Madagascar",
+        "period": "Jan 2024 \u2014 Feb 2025",
+        "description": "Structuring intuitive interfaces in ReactJS, optimizing user experience, and converting design systems into functional components."
+      },
+      "2": {
+        "role": "Web Developer \u2014 Independent engagement",
+        "company": "SPAT Toamasina",
+        "period": "Jun 2022 \u2014 Dec 2023",
+        "description": "Design and architecture of a leave management system \u2014 ReactJS, Node.js, MySQL."
+      },
+      "3": {
+        "role": "Systems Support & Maintenance",
+        "company": "PANDA COMPANY",
+        "period": "2022",
+        "description": "Incident diagnosis and resolution, user support, technical infrastructure maintenance."
+      }
+    }
+  },
+  "Projects": {
+    "title": "Recent work",
+    "items": {
+      "0": {
+        "name": "T\u00e9lavie",
+        "description": "Unified telemedicine and healthcare facility management platform. A coherent system for patients, practitioners, and administrators."
+      },
+      "1": {
+        "name": "GrowIt",
+        "description": "Multi-agent AI prospecting system: autonomous lead identification, extraction, and qualification with direct CRM injection."
+      },
+      "2": {
+        "name": "Mojo APP",
+        "description": "Intelligent WhatsApp assistant that structures client relations 24/7: conversation management, order taking, and schedule organization."
+      },
+      "3": {
+        "name": "+2,000 Automations",
+        "description": "n8n & Make workflows deployed across e-commerce, healthcare, real estate, and SaaS. Reduced manual operations, accelerated growth."
+      }
+    }
+  },
+  "TechILove": {
+    "title": "Technical stack",
+    "techs": {
+      "0": {
+        "description": "Reference framework for structured web applications"
+      },
+      "1": { "description": "Rigorous typing for reliable, maintainable code" },
+      "2": {
+        "description": "Language of choice for AI and automation"
+      },
+      "3": {
+        "description": "Performant APIs, fast to design and deploy"
+      },
+      "4": { "description": "Building applications that integrate LLMs" },
+      "5": {
+        "description": "Orchestrating collaborative AI agents"
+      },
+      "6": { "description": "Reference platform for ML models" },
+      "7": {
+        "description": "Pillars of automation and AI orchestration"
+      },
+      "8": { "description": "Robust and battle-tested relational database" },
+      "9": { "description": "Structured ORM for efficient data access" }
+    }
+  },
+  "FavPosts": {
+    "title": "Recommended reads"
+  },
+  "Activities": {
+    "title": "What drives me"
+  },
+  "Contact": {
+    "title": "Start a conversation"
+  },
+  "Footer": {
+    "projects": "Work",
+    "findMe": "Find me",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode"
+  }
+}
