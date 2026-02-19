@@ -88,16 +88,12 @@ export function Satellite() {
   );
 }
 
-// Lune pixel art
+// Lune pixel art — subtile, element d'ambiance
 function PixelMoon() {
   return (
-    <div className="relative animate-float">
-      {/* Moon glow */}
-      <div className="absolute -inset-8 bg-yellow-100/10 rounded-full blur-2xl" />
-      <div className="absolute -inset-4 bg-yellow-100/20 rounded-full blur-lg" />
-
+    <div className="relative animate-float-slow">
       {/* Pixel moon - 16x16 style */}
-      <svg width="64" height="64" viewBox="0 0 16 16" className="relative drop-shadow-lg">
+      <svg width="44" height="44" viewBox="0 0 16 16" className="relative">
         {/* Outer edge */}
         <rect x="5" y="0" width="6" height="1" fill="#fef9c3" />
         <rect x="3" y="1" width="2" height="1" fill="#fef9c3" />
@@ -131,29 +127,12 @@ function PixelMoon() {
   );
 }
 
-// Soleil pixel art
+// Soleil pixel art — subtil, element d'ambiance
 function PixelSun() {
   return (
-    <div className="relative animate-sun-pulse">
-      {/* Sun glow */}
-      <div className="absolute -inset-12 bg-yellow-400/10 rounded-full blur-3xl" />
-      <div className="absolute -inset-6 bg-yellow-300/20 rounded-full blur-xl" />
-
-      {/* Sun rays - animated */}
-      <div className="absolute -inset-10 animate-spin-slow">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-4 bg-yellow-400/40 rounded-full" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-4 bg-yellow-400/40 rounded-full" />
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-1 bg-yellow-400/40 rounded-full" />
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-1 bg-yellow-400/40 rounded-full" />
-        {/* Diagonal rays */}
-        <div className="absolute top-1 left-1 w-1 h-3 bg-yellow-400/30 rounded-full rotate-45 origin-bottom" />
-        <div className="absolute top-1 right-1 w-1 h-3 bg-yellow-400/30 rounded-full -rotate-45 origin-bottom" />
-        <div className="absolute bottom-1 left-1 w-1 h-3 bg-yellow-400/30 rounded-full -rotate-45 origin-top" />
-        <div className="absolute bottom-1 right-1 w-1 h-3 bg-yellow-400/30 rounded-full rotate-45 origin-top" />
-      </div>
-
+    <div className="relative animate-float-slow">
       {/* Pixel sun - 16x16 style */}
-      <svg width="64" height="64" viewBox="0 0 16 16" className="relative drop-shadow-lg">
+      <svg width="44" height="44" viewBox="0 0 16 16" className="relative">
         {/* Outer edge */}
         <rect x="5" y="0" width="6" height="1" fill="#fcd34d" />
         <rect x="3" y="1" width="2" height="1" fill="#fcd34d" />

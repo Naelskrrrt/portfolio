@@ -8,23 +8,24 @@ export function Header() {
 
   return (
     <header className="w-full py-4 px-4">
-      <div className="max-w-2xl mx-auto flex items-center justify-between">
+      <div className="max-w-2xl mx-auto flex items-center justify-between gap-3">
         <Link
           href="/"
-          className="text-sm font-medium hover:text-muted-foreground transition-colors"
+          className="text-sm font-medium hover:text-muted-foreground transition-colors truncate min-w-0"
         >
-          Votre Architecte Systèmes & IA
+          <span className="hidden sm:inline">Votre Architecte Syst&egrave;mes & IA</span>
+          <span className="sm:hidden">Architecte IA</span>
         </Link>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 shrink-0">
           <a
             href="https://wa.me/261389570760"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-8 px-3 rounded-md bg-[#25D366] text-white text-xs font-medium flex items-center gap-1.5 hover:bg-[#1ebe57] transition-colors"
+            className="h-8 px-2.5 rounded-md bg-[#25D366] text-white text-xs font-medium flex items-center gap-1.5 hover:bg-[#1ebe57] transition-colors"
           >
             <WhatsAppIcon className="w-3.5 h-3.5" />
-            {t("cta")}
+            <span className="hidden sm:inline">{t("cta")}</span>
           </a>
           <LanguageSwitcher />
           <ThemeToggle />

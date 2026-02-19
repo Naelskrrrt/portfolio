@@ -12,20 +12,25 @@
     "shuffleLabel": "Autre perspective",
     "profileAlt": "Photo de profil",
     "punchlines": {
-      "0": "\ud83c\udfdb\ufe0f Les organisations performantes ne reposent pas sur l'effort individuel. Elles reposent sur des syst\u00e8mes bien con\u00e7us. Je construis ces syst\u00e8mes \u2014 \u00e0 l'intersection de l'architecture logicielle et de l'intelligence artificielle.",
-      "1": "\ud83d\udd0d Avant d'automatiser, je comprends. Avant de construire, je structure. Chaque syst\u00e8me que je con\u00e7ois est pens\u00e9 pour durer, \u00e9voluer et lib\u00e9rer du temps l\u00e0 o\u00f9 il compte vraiment.",
-      "2": "\u2699\ufe0f La technologie n'est pas une fin. C'est un levier. Mon r\u00f4le : transformer la complexit\u00e9 op\u00e9rationnelle en architectures claires, ma\u00eetris\u00e9es et autonomes.",
-      "3": "\ud83e\udde0 Je ne vends pas de l'IA. J'installe de la ma\u00eetrise. Des workflows structur\u00e9s, des agents intelligents orchestr\u00e9s, des syst\u00e8mes qui travaillent pendant que vous d\u00e9cidez.",
-      "4": "\ud83d\udd2d L\u00e0 o\u00f9 d'autres voient des t\u00e2ches \u00e0 automatiser, je vois des processus \u00e0 repenser. La vraie valeur n'est pas dans l'outil, elle est dans l'architecture qui le rend intelligent.",
-      "5": "\ud83e\udde9 Chaque organisation a ses frictions invisibles \u2014 ces processus qui consomment du temps sans cr\u00e9er de valeur. Je les identifie, les restructure et les transforme en syst\u00e8mes autonomes.",
-      "6": "\ud83d\udee0\ufe0f Python, TypeScript, LLMs, agents IA \u2014 ce sont mes instruments. Mais ce qui fait la diff\u00e9rence, c'est la capacit\u00e9 \u00e0 voir le syst\u00e8me dans son ensemble avant d'\u00e9crire la premi\u00e8re ligne de code.",
-      "7": "\ud83d\udcd0 Mon approche : comprendre en profondeur, structurer avec rigueur, construire avec pr\u00e9cision. Pas de solutions temporaires, pas de rustines. Des syst\u00e8mes con\u00e7us pour la dur\u00e9e.",
-      "8": "\ud83c\udf00 Entre le chaos op\u00e9rationnel et la ma\u00eetrise totale, il y a une architecture \u00e0 concevoir. C'est pr\u00e9cis\u00e9ment l\u00e0 que j'interviens.",
-      "9": "\u2727 Un bon syst\u00e8me ne se remarque pas. Il fonctionne, il s'adapte, il lib\u00e8re. C'est la signature d'une architecture pens\u00e9e en profondeur \u2014 et c'est exactement ce que je construis."
+      "0": "Je construis des syst\u00e8mes \u00e0 l'intersection de l'architecture logicielle et de l'intelligence artificielle.",
+      "1": "Avant d'automatiser, je comprends. Avant de construire, je structure.",
+      "2": "La technologie n'est pas une fin. C'est un levier de transformation.",
+      "3": "Je ne vends pas de l'IA. J'installe de la ma\u00eetrise.",
+      "4": "L\u00e0 o\u00f9 d'autres voient des t\u00e2ches, je vois des processus \u00e0 repenser.",
+      "5": "J'identifie les frictions invisibles et les transforme en syst\u00e8mes autonomes.",
+      "6": "Python, TypeScript, LLMs, agents IA \u2014 au service d'une vision syst\u00e8me.",
+      "7": "Comprendre en profondeur. Structurer avec rigueur. Construire avec pr\u00e9cision.",
+      "8": "Entre le chaos op\u00e9rationnel et la ma\u00eetrise, il y a une architecture \u00e0 concevoir.",
+      "9": "Un bon syst\u00e8me ne se remarque pas. Il fonctionne, s'adapte et lib\u00e8re."
     }
   },
   "ThingsIveDone": {
     "title": "Impact mesurable",
+    "metrics": {
+      "0": { "value": "+15", "label": "Clients accompagnés" },
+      "1": { "value": "+25", "label": "Projets réalisés" },
+      "2": { "value": "+2 000", "label": "Templates déployés" }
+    },
     "items": {
       "0": {
         "text": "Syst\u00e8mes d'automatisation g\u00e9n\u00e9rant",
@@ -136,6 +141,31 @@
       },
       "9": {
         "description": "ORM structur\u00e9 pour un acc\u00e8s donn\u00e9es efficace"
+      }
+    }
+  },
+  "Certifications": {
+    "title": "Certifications",
+    "items": {
+      "0": {
+        "name": "AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents",
+        "issuer": "Udemy",
+        "date": "F\u00e9vr. 2026"
+      },
+      "1": {
+        "name": "The Ultimate React Course 2024: React, Next.js, Redux & More",
+        "issuer": "Udemy",
+        "date": "F\u00e9vr. 2025"
+      },
+      "2": {
+        "name": "AI Automation with n8n & LangChain (no-code)",
+        "issuer": "Udemy",
+        "date": "Janv. 2025"
+      },
+      "3": {
+        "name": "Certification Python 3",
+        "issuer": "CodinGame",
+        "date": "Mai 2023"
       }
     }
   },
