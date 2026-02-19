@@ -20,14 +20,14 @@ export function TechILove() {
 
   return (
     <Section title={t("title")}>
-      <ul className="space-y-2">
+      <ul className="space-y-3 sm:space-y-2">
         {technologies.map((tech, index) => (
-          <li key={tech.name} className="flex items-baseline gap-2">
+          <li key={tech.name} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-2">
             <Link
               href={tech.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground underline hover:text-muted-foreground transition-colors font-medium"
+              className="text-foreground underline hover:text-muted-foreground transition-colors font-medium shrink-0"
             >
               {tech.name}
             </Link>

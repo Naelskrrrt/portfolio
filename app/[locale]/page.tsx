@@ -4,6 +4,7 @@ import { ThingsIveDone } from "@/components/ThingsIveDone";
 import { ThingsIveBuild } from "@/components/ThingsIveBuild";
 import { Projects } from "@/components/Projects";
 import { TechILove } from "@/components/TechILove";
+import { Certifications } from "@/components/Certifications";
 import { FavPosts } from "@/components/FavPosts";
 import { Activities } from "@/components/Activities";
 import { Contact } from "@/components/Contact";
@@ -19,6 +20,7 @@ export default function Home() {
       <ThingsIveBuild />
       <Projects />
       <TechILove />
+      <Certifications />
       <FavPosts />
       <Activities />
 

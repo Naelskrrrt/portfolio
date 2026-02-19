@@ -50,16 +50,19 @@ export function GalaxyJourney() {
       {/* Rocket Easter Egg */}
       <Rocket isLaunching={isRocketLaunching} onLaunchComplete={handleLaunchComplete} />
 
-      {/* Celestial Body (Sun/Moon) - appears later in the scroll, positioned at right side */}
+      {/* Celestial Body (Sun/Moon) - subtle during scroll, clearly visible near footer */}
       <div
-        className="absolute right-[8%] transition-all duration-1000 ease-out pointer-events-auto cursor-pointer hover:scale-110"
+        className="absolute right-[6%] transition-all duration-1000 ease-out pointer-events-auto cursor-pointer hover:scale-105"
         style={{
-          top: `${30 + scrollProgress * 25}%`,
-          opacity: scrollProgress > 0.35 ? Math.min((scrollProgress - 0.35) * 2, 0.85) : 0,
-          transform: `scale(${0.7 + scrollProgress * 0.4})`,
+          top: `${55 + scrollProgress * 25}%`,
+          opacity: scrollProgress > 0.5
+            ? scrollProgress > 0.8
+              ? Math.min(0.35 + (scrollProgress - 0.8) * 3.25, 1)
+              : Math.min((scrollProgress - 0.5) * 1.2, 0.35)
+            : 0,
+          transform: `scale(${0.8 + scrollProgress * 0.2})`,
         }}
         onClick={handleCelestialClick}
-        title="Click me! 🚀"
       >
         <CelestialBody />
       </div>
