@@ -55,7 +55,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://lalason.dev";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://lalason.pro";
 
   return {
     metadataBase: new URL(baseUrl),
@@ -132,7 +132,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lalason.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lalason.pro";
 
   const jsonLd = {
     "@context": "https://schema.org",
