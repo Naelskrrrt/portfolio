@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Instrument_Serif } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -36,6 +36,16 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+  ],
+  colorScheme: "dark light",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -51,6 +61,52 @@ export async function generateMetadata({
     metadataBase: new URL(baseUrl),
     title: t("title"),
     description: t("description"),
+    keywords: [
+      "architecte IA",
+      "systèmes intelligents",
+      "automation",
+      "Next.js",
+      "développeur fullstack",
+      "Madagascar",
+      "LALASON Annaël",
+    ],
+    authors: [{ name: "LALASON Annaël", url: baseUrl }],
+    creator: "LALASON Annaël",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        fr: `${baseUrl}/fr`,
+        en: `${baseUrl}/en`,
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      url: `${baseUrl}/${locale}`,
+      siteName: "LALASON Annaël",
+      title: t("title"),
+      description: t("description"),
+      images: [
+        {
+          url: "/favicon/android-chrome-512x512.png",
+          width: 512,
+          height: 512,
+          alt: "LALASON Annaël — Architecte Systèmes & IA",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      site: "@lalasonnael29",
+      creator: "@lalasonnael29",
+      title: t("title"),
+      description: t("description"),
+    },
     icons: {
       icon: [
         { url: "/favicon/favicon.ico", sizes: "48x48" },
@@ -76,11 +132,42 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lalason.dev";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "LALASON Annaël",
+    url: baseUrl,
+    sameAs: [
+      "https://www.github.com/NaelSkrrrt",
+      "https://www.linkedin.com/in/lalasonnael",
+      "https://www.x.com/lalasonnael29",
+    ],
+    jobTitle: "Architecte Systèmes & IA",
+    description:
+      "Architecte des systèmes intelligents — automatisation, IA, stratégie digitale.",
+    knowsAbout: ["Intelligence Artificielle", "Automatisation", "Next.js", "Architecture Systèmes"],
+    nationality: "MG",
+  };
+
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:rounded-md focus:border focus:border-border focus:outline-none"
+        >
+          {locale === "fr" ? "Aller au contenu principal" : "Skip to main content"}
+        </a>
         <NextIntlClientProvider locale={locale}>
           <ThemeProvider
             attribute="class"

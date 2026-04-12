@@ -12,16 +12,16 @@ export function Contact() {
         </h2>
         <div className="flex flex-col gap-3">
           <Link
-            href="mailto:ralalanael@gmail.com"
+            href="mailto:contact@lalason.pro"
             className="text-foreground underline hover:text-muted-foreground transition-colors"
           >
-            ralalanael@gmail.com
+            contact@lalason.pro
           </Link>
           <a
             href="https://wa.me/261389570760"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#25D366] text-white text-sm font-medium hover:bg-[#1ebe57] transition-colors w-fit"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#25D366] text-white text-sm font-medium hover:bg-[#20BA5A] transition-colors w-fit"
           >
             <WhatsAppIcon className="w-4 h-4" />
             WhatsApp

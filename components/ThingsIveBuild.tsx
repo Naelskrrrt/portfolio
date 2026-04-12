@@ -47,7 +47,7 @@ export function ThingsIveBuild() {
                 <span className="text-muted-foreground text-sm sm:hidden">
                   {period}
                 </span>
-                <p className="text-muted-foreground/70 text-sm italic mt-1">
+                <p className="text-muted-foreground text-sm italic mt-1">
                   {description}
                 </p>
               </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { ConstellationBackground } from "./ConstellationBackground";
 
@@ -28,7 +28,11 @@ function getRandomIndex() {
 
 export function Hero() {
   const t = useTranslations("Hero");
-  const [punchlineIndex, setPunchlineIndex] = useState(getRandomIndex);
+  const [punchlineIndex, setPunchlineIndex] = useState(0);
+
+  useEffect(() => {
+    setPunchlineIndex(getRandomIndex());
+  }, []);
 
   const shufflePunchline = () => {
     let newIndex = getRandomIndex();
@@ -52,6 +56,8 @@ export function Hero() {
               src="/photo-profile.png"
               alt={t("profileAlt")}
               fill
+              priority
+              sizes="96px"
               className="object-cover"
             />
           </div>
