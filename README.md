@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LALASON Annaël — Portfolio
 
-## Getting Started
+Portfolio personnel de **LALASON Annaël**, Architecte Systèmes & IA.
 
-First, run the development server:
+> "L'architecte des systèmes intelligents"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+| Couche | Technologie |
+|---|---|
+| Framework | Next.js 16 (App Router, Turbopack) |
+| Langage | TypeScript |
+| Style | Tailwind CSS v4 |
+| i18n | next-intl (fr / en) |
+| Thème | next-themes (dark / light) |
+| Analytics | Vercel Analytics |
+| Fonts | Geist Sans, Geist Mono, Instrument Serif |
+
+## Structure
+
+```
+app/
+  [locale]/
+    layout.tsx       # Layout principal, metadata, JSON-LD, i18n
+    page.tsx         # Page d'accueil
+    opengraph-image  # OG image dynamique
+    twitter-image    # Twitter card image
+  globals.css        # Variables CSS, thème, animations
+  robots.ts          # robots.txt
+  sitemap.ts         # sitemap.xml
+
+components/
+  Header.tsx              # Navigation + bouton WhatsApp + langue + thème
+  Hero.tsx                # Présentation, photo, punchlines aléatoires
+  ThingsIveDone.tsx       # Expériences professionnelles
+  ThingsIveBuild.tsx      # Projets construits
+  Projects.tsx            # Projets sélectionnés
+  TechILove.tsx           # Stack technique
+  Certifications.tsx      # Certifications
+  FavPosts.tsx            # Articles favoris
+  Activities.tsx          # Activités
+  Contact.tsx             # Section contact
+  Footer.tsx              # Footer avec réseaux sociaux
+  GalaxyJourney.tsx       # Animation fond (soleil/lune + satellite au scroll)
+  ConstellationBackground # Canvas constellation animé (Hero)
+  PixelScene.tsx          # Scène pixel art 8-bit (Contact + Footer)
+  Rocket.tsx              # Easter egg fusée
+  ThemeProvider.tsx       # Wrapper next-themes
+  ThemeToggle.tsx         # Bouton toggle thème
+  LanguageSwitcher.tsx    # Sélecteur langue fr/en
+  Section.tsx             # Composant section réutilisable
+
+i18n/
+  routing.ts             # Configuration des locales (fr, en)
+  navigation.ts          # Link/redirect i18n
+
+messages/
+  fr.json               # Traductions françaises
+  en.json               # Traductions anglaises
+
+public/
+  photo-profile.png     # Photo de profil
+  noise.gif             # Texture grain (hébergé localement)
+  favicon/              # Favicons toutes tailles + manifest
+  logos/                # Logos certifications
+  CV Lalason Annael.pdf # CV téléchargeable
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Lancer en local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev       # http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build & production
 
-## Learn More
+```bash
+npm run build
+npm run start     # http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Lighthouse scores (production)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Métrique | Score |
+|---|---|
+| Performance | mesuré au déploiement |
+| Accessibility | 100 |
+| Best Practices | 100 |
+| SEO | 100 |
+| LCP | ~200 ms |
+| CLS | 0.00 |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Déploiement
 
-## Deploy on Vercel
+Hébergé sur [Vercel](https://vercel.com). Chaque push sur `main` déclenche un déploiement de production automatique.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+vercel --prod
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Fonctionnalités notables
+
+- **i18n** — Français et anglais, routing basé sur les locales (`/fr`, `/en`)
+- **Thème** — Dark/light avec transition fluide, persisté en cookie
+- **Galaxy Journey** — Soleil/Lune + satellite qui bougent au scroll
+- **Constellation** — Canvas animé en arrière-plan du Hero (30 FPS cappé)
+- **Pixel Scene** — Scène 8-bit animée sous le footer (jour/nuit selon thème)
+- **Easter egg** — Fusée à lancer en cliquant sur le soleil/lune
+- **JSON-LD** — Schema.org `Person` pour Google Rich Results
+- **Grain** — Texture noise hébergée localement pour l'ambiance visuelle
+- **CV** — Téléchargeable directement depuis le Hero

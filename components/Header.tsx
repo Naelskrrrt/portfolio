@@ -9,20 +9,23 @@ export function Header() {
   return (
     <header className="w-full py-4 px-4">
       <div className="max-w-2xl mx-auto flex items-center justify-between gap-3">
-        <Link
-          href="/"
-          className="text-sm font-medium hover:text-muted-foreground transition-colors truncate min-w-0"
-        >
-          <span className="hidden sm:inline">Votre Architecte Syst&egrave;mes & IA</span>
-          <span className="sm:hidden">Architecte IA</span>
-        </Link>
+        <div className="group flex items-center gap-2.5 px-3.5 py-2 rounded-full border border-border hover:border-green-500/40 bg-background transition-all duration-300 w-fit cursor-default">
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-50" />
+            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500" />
+          </span>
+          <span className="text-[11px] font-medium tracking-wide text-muted-foreground group-hover:text-foreground transition-colors">
+            Disponible
+          </span>
+        </div>
 
         <div className="flex items-center gap-1.5 shrink-0">
           <a
             href="https://wa.me/261389570760"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-8 px-2.5 rounded-md bg-[#25D366] text-white text-xs font-medium flex items-center gap-1.5 hover:bg-[#1ebe57] transition-colors"
+            aria-label={t("cta")}
+            className="h-8 px-2.5 rounded-md bg-[#25D366] text-white text-xs font-medium flex items-center gap-1.5 hover:bg-[#20BA5A] transition-colors"
           >
             <WhatsAppIcon className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">{t("cta")}</span>
