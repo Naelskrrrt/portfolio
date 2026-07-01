@@ -25,7 +25,7 @@ export function PixelSceneBackground({ children }: { children: React.ReactNode }
         className="absolute inset-x-0 top-0 h-32 pointer-events-none z-10"
         style={{
           background: isDark
-            ? "linear-gradient(to bottom, #0a0a0a 0%, #0a0a0a 20%, transparent 100%)"
+            ? "linear-gradient(to bottom, #0a0e1a 0%, #0a0e1a 20%, transparent 100%)"
             : "linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 100%)"
         }}
       />
@@ -78,6 +78,15 @@ function NightScene() {
         <Star x={88} y={30} size={1} className="opacity-50" />
         <Star x={95} y={15} size={1} className="opacity-40" />
       </div>
+
+      {/* Dawn breaking behind the mountains — journey's end, where the sun rises */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-2/3 pointer-events-none animate-dawn-breathe"
+        style={{
+          background:
+            "radial-gradient(ellipse 70% 80% at 72% 105%, rgba(232, 133, 58, 0.22) 0%, rgba(201, 106, 31, 0.08) 45%, transparent 70%)",
+        }}
+      />
 
       {/* Mountains silhouette */}
       <div className="absolute bottom-0 left-0 right-0">

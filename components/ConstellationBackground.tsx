@@ -9,6 +9,8 @@ interface Point {
   vx: number;
   vy: number;
   radius: number;
+  /** Ember star: tinted with the dawn's amber instead of the cold night blue */
+  warm: boolean;
 }
 
 export function ConstellationBackground() {
@@ -41,6 +43,7 @@ export function ConstellationBackground() {
         vx: (Math.random() - 0.5) * 0.3,
         vy: (Math.random() - 0.5) * 0.3,
         radius: Math.random() * 1 + 1, // Subtle points (1 - 2px)
+        warm: Math.random() < 0.2, // ~1 in 5 stars glows amber, announcing the dawn
       });
     }
   }, []);
@@ -136,16 +139,22 @@ export function ConstellationBackground() {
         if (isDark) {
           ctx.beginPath();
           ctx.arc(point.x, point.y, point.radius * 2, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(150, 180, 220, 0.08)";
+          ctx.fillStyle = point.warm
+            ? "rgba(232, 133, 58, 0.12)"
+            : "rgba(150, 180, 220, 0.08)";
           ctx.fill();
         }
 
         // Core point
         ctx.beginPath();
         ctx.arc(point.x, point.y, point.radius, 0, Math.PI * 2);
-        ctx.fillStyle = isDark
-          ? "rgba(200, 210, 230, 0.5)"
-          : "rgba(100, 130, 180, 0.35)";
+        ctx.fillStyle = point.warm
+          ? isDark
+            ? "rgba(240, 165, 100, 0.65)"
+            : "rgba(201, 106, 31, 0.4)"
+          : isDark
+            ? "rgba(200, 210, 230, 0.5)"
+            : "rgba(100, 130, 180, 0.35)";
         ctx.fill();
       }
 
@@ -169,7 +178,7 @@ export function ConstellationBackground() {
         className="absolute inset-0 transition-colors duration-500"
         style={{
           background: isDark
-            ? "linear-gradient(180deg, #0a0a0a 0%, #0a0a0f 100%)"
+            ? "linear-gradient(180deg, #0a0e1a 0%, #0d1220 100%)"
             : "linear-gradient(180deg, #ffffff 0%, #fafbff 100%)",
         }}
       />
@@ -186,10 +195,11 @@ export function ConstellationBackground() {
         className="absolute inset-x-0 bottom-0 h-32 pointer-events-none"
         style={{
           background: isDark
-            ? "linear-gradient(to bottom, transparent 0%, #0a0a0a 100%)"
+            ? "linear-gradient(to bottom, transparent 0%, #0a0e1a 100%)"
             : "linear-gradient(to bottom, transparent 0%, #ffffff 100%)",
         }}
       />
+
     </div>
   );
 }

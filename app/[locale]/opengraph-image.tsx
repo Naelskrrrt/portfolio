@@ -19,7 +19,7 @@ export default async function Image() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        background: "#0a0a0a",
+        background: "#0a0e1a",
         fontFamily: "sans-serif",
       }}
     >
@@ -30,7 +30,7 @@ export default async function Image() {
         height={160}
         style={{
           borderRadius: "50%",
-          border: "3px solid #333",
+          border: "3px solid #e8853a",
           objectFit: "cover",
         }}
       />
@@ -53,7 +53,7 @@ export default async function Image() {
         style={{
           marginTop: 8,
           fontSize: 24,
-          color: "#a1a1aa",
+          color: "#e8853a",
         }}
       >
         Architecte Systèmes & IA

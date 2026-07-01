@@ -5,18 +5,18 @@
    ======================================== */
 
 :root {
-  /* Light Mode Colors */
+  /* Light Mode Colors — Navy + Amber branding */
   --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --primary: #2563eb;
+  --foreground: #0a0e1a;
+  --muted: #f6f2ec;
+  --muted-foreground: #6b7280;
+  --primary: #c96a1f;
   --primary-foreground: #ffffff;
-  --accent: #f4f4f5;
-  --accent-foreground: #18181b;
-  --border: #e4e4e7;
+  --accent: #f6f2ec;
+  --accent-foreground: #1a2234;
+  --border: #e7e2d8;
   --card: #ffffff;
-  --card-foreground: #0a0a0a;
+  --card-foreground: #0a0e1a;
 
   /* Pixel Scene Light */
   --pixel-sky-top: #87CEEB;
@@ -26,24 +26,24 @@
 }
 
 .dark {
-  /* Dark Mode Colors */
-  --background: #0a0a0a;
+  /* Dark Mode Colors — Navy + Amber branding (from portrait) */
+  --background: #0a0e1a;
   --foreground: #fafafa;
-  --muted: #27272a;
-  --muted-foreground: #a1a1aa;
-  --primary: #3b82f6;
-  --primary-foreground: #ffffff;
-  --accent: #27272a;
+  --muted: #1a2234;
+  --muted-foreground: #9aa4b8;
+  --primary: #e8853a;
+  --primary-foreground: #0a0e1a;
+  --accent: #1a2234;
   --accent-foreground: #fafafa;
-  --border: #27272a;
-  --card: #0a0a0a;
+  --border: #232d42;
+  --card: #0d1220;
   --card-foreground: #fafafa;
 
-  /* Pixel Scene Dark */
-  --pixel-sky-top: #0a0a1a;
-  --pixel-sky-bottom: #1a1a3a;
-  --pixel-ground: #1a1a2e;
-  --pixel-ground-dark: #0f0f1a;
+  /* Pixel Scene Dark — deep navy */
+  --pixel-sky-top: #0a0e1a;
+  --pixel-sky-bottom: #16203a;
+  --pixel-ground: #16203a;
+  --pixel-ground-dark: #0d1220;
 }
 
 @theme inline {
@@ -126,6 +126,30 @@ body {
 ::selection {
   background: var(--primary);
   color: var(--primary-foreground);
+}
+
+/* ========================================
+   Dawn Horizon (aube orangée)
+   ======================================== */
+
+@keyframes dawn-breathe {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-dawn-breathe {
+  animation: dawn-breathe 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-dawn-breathe {
+    animation: none;
+    opacity: 1;
+  }
 }
 
 /* ========================================
