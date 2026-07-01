@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { GalaxyJourney } from "@/components/GalaxyJourney";
+import { DawnSideRays } from "@/components/SideRays";
 import { Analytics } from "@vercel/analytics/next";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -38,7 +39,7 @@ export function generateStaticParams() {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0e1a" },
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
   ],
   colorScheme: "dark light",
@@ -101,7 +102,7 @@ export async function generateMetadata({
       ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       site: "@lalasonnael29",
       creator: "@lalasonnael29",
       title: t("title"),
@@ -137,18 +138,24 @@ export default async function LocaleLayout({ children, params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": `${baseUrl}/#person`,
     name: "LALASON Annaël",
     url: baseUrl,
+    image: `${baseUrl}/photo-profile.png`,
     sameAs: [
-      "https://www.github.com/NaelSkrrrt",
+      "https://github.com/NaelSkrrrt",
       "https://www.linkedin.com/in/lalasonnael",
-      "https://www.x.com/lalasonnael29",
+      "https://x.com/lalasonnael29",
     ],
     jobTitle: "Architecte Systèmes & IA",
     description:
       "Architecte des systèmes intelligents — automatisation, IA, stratégie digitale.",
     knowsAbout: ["Intelligence Artificielle", "Automatisation", "Next.js", "Architecture Systèmes"],
     nationality: "MG",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${baseUrl}/${locale}`,
+    },
   };
 
   return (
@@ -176,6 +183,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             disableTransitionOnChange={false}
           >
             <GalaxyJourney />
+            <DawnSideRays />
             <div className="noise relative z-10">{children}</div>
           </ThemeProvider>
         </NextIntlClientProvider>
