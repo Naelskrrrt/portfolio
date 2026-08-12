@@ -6,7 +6,6 @@ import { Projects } from "@/components/Projects";
 import { TechILove } from "@/components/TechILove";
 import { Certifications } from "@/components/Certifications";
 import { FavPosts } from "@/components/FavPosts";
-import { Activities } from "@/components/Activities";
 import { Contact } from "@/components/Contact";
 import { PixelSceneBackground } from "@/components/PixelScene";
 import { Footer } from "@/components/Footer";
@@ -22,7 +21,6 @@ export default function Home() {
       <TechILove />
       <Certifications />
       <FavPosts />
-      <Activities />
 
       {/* 8-bit Pixel Scene as background for Contact + Footer */}
       <PixelSceneBackground>

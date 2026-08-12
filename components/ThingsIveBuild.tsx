@@ -1,15 +1,18 @@
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Section } from "./Section";
 
-const EXPERIENCE_COUNT = 4;
+const EXPERIENCE_COUNT = 5;
 
 const experienceLinks: Record<number, string | null> = {
-  0: null,
-  1: null,
-  2: null,
-  3: null,
+  0: "https://flow-ai.studio",
+  1: "https://www.monambassadeur.com",
+  2: "https://accesbanque.mg",
+  3: "https://www.toamasina-port.com/",
+  4: null,
 };
+
+// Indexes whose site exists but is temporarily down — shows a badge instead of a link
+const maintenanceIndexes = new Set<number>();
 
 export function ThingsIveBuild() {
   const t = useTranslations("ThingsIveBuild");
@@ -34,14 +37,23 @@ export function ThingsIveBuild() {
               <div className="relative flex flex-col gap-1 flex-1 pl-4 border-l border-border">
                 <div className="absolute -left-[5px] top-2 h-[9px] w-[9px] rounded-full bg-muted-foreground/50" />
                 {href ? (
-                  <Link
+                  <a
                     href={href}
-                    className="text-foreground font-medium underline hover:text-muted-foreground transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground font-medium underline underline-offset-2 hover:text-muted-foreground transition-colors w-fit"
                   >
                     {company}
-                  </Link>
+                  </a>
                 ) : (
-                  <span className="text-foreground font-medium">{company}</span>
+                  <span className="flex items-center gap-2 text-foreground font-medium">
+                    {company}
+                    {maintenanceIndexes.has(index) && (
+                      <span className="text-[11px] font-normal text-muted-foreground border border-border rounded-full px-2 py-px">
+                        {t("maintenance")}
+                      </span>
+                    )}
+                  </span>
                 )}
                 <span className="text-muted-foreground text-sm">{role}</span>
                 <span className="text-muted-foreground text-sm sm:hidden">

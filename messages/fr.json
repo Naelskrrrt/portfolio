@@ -27,9 +27,18 @@
   "ThingsIveDone": {
     "title": "Impact mesurable",
     "metrics": {
-      "0": { "value": "+15", "label": "Clients accompagnés" },
-      "1": { "value": "+25", "label": "Projets réalisés" },
-      "2": { "value": "+2 000", "label": "Templates déployés" }
+      "0": {
+        "value": "+15",
+        "label": "Clients accompagn\u00e9s"
+      },
+      "1": {
+        "value": "+25",
+        "label": "Projets r\u00e9alis\u00e9s"
+      },
+      "2": {
+        "value": "+2 000",
+        "label": "Templates d\u00e9ploy\u00e9s"
+      }
     },
     "items": {
       "0": {
@@ -63,49 +72,243 @@
     "title": "Parcours",
     "experiences": {
       "0": {
+        "role": "Fondateur & Architecte IA \u2014 Freelance",
+        "company": "Flow AI Studio",
+        "period": "2024 \u2014 Pr\u00e9sent",
+        "description": "Conception d'agents IA et de syst\u00e8mes d'automatisation sur mesure pour les \u00e9quipes qui veulent scaler sans recruter \u2014 workflows n8n, centralisation de donn\u00e9es, monitoring augment\u00e9 par IA."
+      },
+      "1": {
         "role": "Tech Lead & Architecte Automatisation",
         "company": "Mon Ambassadeur",
         "period": "Ao\u00fbt 2024 \u2014 Pr\u00e9sent",
         "description": "Gouvernance technique, conception d'architectures logicielles et orchestration de workflows intelligents avec n8n, Make et agents IA."
       },
-      "1": {
+      "2": {
         "role": "D\u00e9veloppeur Frontend & Designer UX/UI",
         "company": "Acc\u00e8sBanque Madagascar",
         "period": "Jan 2024 \u2014 F\u00e9v 2025",
         "description": "Structuration d'interfaces intuitives en ReactJS, optimisation de l'exp\u00e9rience utilisateur et conversion de syst\u00e8mes de design en composants fonctionnels."
       },
-      "2": {
+      "3": {
         "role": "D\u00e9veloppeur Web \u2014 Mission ind\u00e9pendante",
         "company": "SPAT Toamasina",
         "period": "Juin 2022 \u2014 D\u00e9c 2023",
         "description": "Conception et architecture d'un syst\u00e8me de gestion des cong\u00e9s \u2014 ReactJS, Node.js, MySQL."
       },
-      "3": {
+      "4": {
         "role": "Support & Maintenance Syst\u00e8mes",
         "company": "PANDA COMPANY",
         "period": "2022",
         "description": "Diagnostic et r\u00e9solution d'incidents, accompagnement utilisateurs, maintenance de l'infrastructure technique."
       }
-    }
+    },
+    "maintenance": "En maintenance"
   },
   "Projects": {
     "title": "R\u00e9alisations r\u00e9centes",
+    "intro": "Des syst\u00e8mes livr\u00e9s en production. Chaque carte affiche le gain mesur\u00e9, pas une promesse.",
+    "filterLabel": "Filtrer les r\u00e9alisations par nature de mission",
+    "countLabel": "{count} r\u00e9alisations affich\u00e9es",
+    "featuredBadge": "Cas mis en avant",
+    "more": "Voir tous les cas clients sur flow-ai.studio",
+    "showAll": "Voir les {count} autres r\u00e9alisations",
+    "showLess": "Afficher moins",
+    "detail": "Voir le d\u00e9tail",
+    "close": "Fermer",
+    "problemTitle": "Le probl\u00e8me",
+    "solutionTitle": "Le syst\u00e8me",
+    "resultsTitle": "R\u00e9sultats",
+    "stackTitle": "Stack",
+    "visit": "Visiter le site",
+    "filters": {
+      "all": "Tous",
+      "agentic": "IA agentique",
+      "automation": "Automatisation",
+      "saas": "SaaS & produit",
+      "data": "Data & int\u00e9gration"
+    },
     "items": {
-      "0": {
+      "minia": {
+        "client": "Dirigeant multi-soci\u00e9t\u00e9s \u2014 holding",
+        "name": "Chief of Staff IA multi-agent (Minia)",
+        "metricLabel": "\u00e9conomis\u00e9es / mois",
+        "description": "Le contexte \u00e9tait \u00e9parpill\u00e9 entre Gmail, CRM, r\u00e9unions et documents, le tout multipli\u00e9 par plusieurs soci\u00e9t\u00e9s. Agent orchestrateur accessible sur Telegram, WhatsApp et Discord, appuy\u00e9 sur des staffs IA sp\u00e9cialis\u00e9s et une m\u00e9moire sourc\u00e9e o\u00f9 chaque fait est rattach\u00e9 \u00e0 sa preuve. Lecture d'abord : toute \u00e9criture externe sensible passe par une validation humaine.",
+        "outcome": "21 automatisations actives \u00b7 6+ agents sp\u00e9cialis\u00e9s",
+        "problem": "Le dirigeant repartait de z\u00e9ro \u00e0 chaque dossier : contexte \u00e9parpill\u00e9 entre Gmail, CRM, r\u00e9unions et documents, relances oubli\u00e9es, d\u00e9cisions prises avec une information incompl\u00e8te. Le tout multipli\u00e9 par plusieurs soci\u00e9t\u00e9s.",
+        "solution": "Agent orchestrateur accessible sur Telegram, WhatsApp et Discord, appuy\u00e9 sur des staffs IA sp\u00e9cialis\u00e9s et une m\u00e9moire sourc\u00e9e et versionn\u00e9e o\u00f9 chaque fait est rattach\u00e9 \u00e0 sa preuve. Connecteurs Gmail, Calendar, Drive, Monday, Sellsy, Fireflies et Pennylane. Lecture d'abord : toute \u00e9criture externe sensible passe par une validation humaine.",
+        "results": {
+          "0": "\u00e9conomis\u00e9es par mois (estimation)",
+          "1": "automatisations actives",
+          "2": "agents sp\u00e9cialis\u00e9s"
+        }
+      },
+      "prospection": {
+        "client": "SaaS B2B \u2014 35 employ\u00e9s",
+        "name": "Prospection multi-canal automatis\u00e9e",
+        "metricLabel": "prospects qualifi\u00e9s / mois",
+        "description": "Enrichissement automatique des prospects, messages personnalis\u00e9s par canal (email, LinkedIn, t\u00e9l\u00e9phone), ciblage ICP automatique.",
+        "outcome": "0 ressource d\u00e9di\u00e9e \u00b7 3\u00d7 de taux de r\u00e9ponse",
+        "problem": "La g\u00e9n\u00e9ration de leads d\u00e9pendait du temps que les commerciaux pouvaient y consacrer. Ciblage \u00e0 la main, messages g\u00e9n\u00e9riques, relances au petit bonheur.",
+        "solution": "Enrichissement automatique des prospects, ciblage ICP calcul\u00e9, puis s\u00e9quences personnalis\u00e9es par canal \u2014 email, LinkedIn, t\u00e9l\u00e9phone \u2014 orchestr\u00e9es dans n8n avec des agents IA \u00e0 la r\u00e9daction.",
+        "results": {
+          "0": "prospects qualifi\u00e9s par mois",
+          "1": "de taux de r\u00e9ponse",
+          "2": "ressource humaine d\u00e9di\u00e9e"
+        }
+      },
+      "datahub": {
+        "client": "Scale-up fintech \u2014 80 employ\u00e9s",
+        "name": "Centralisation data & dashboards IA",
+        "metricLabel": "\u00e9conomis\u00e9es / semaine",
+        "description": "Data warehouse connect\u00e9 \u00e0 tous les outils existants, interface de gestion centralis\u00e9e, monitoring enrichi par IA.",
+        "outcome": "10+ outils \u2192 1 source de v\u00e9rit\u00e9",
+        "problem": "Les donn\u00e9es vivaient dans une dizaine d'outils qui ne se parlaient pas. Chaque question m\u00e9tier demandait un export manuel et une r\u00e9conciliation \u00e0 la main.",
+        "solution": "Data warehouse connect\u00e9 \u00e0 l'ensemble des outils existants, interface de gestion centralis\u00e9e et monitoring enrichi par IA qui remonte les anomalies avant qu'elles ne deviennent des incidents.",
+        "results": {
+          "0": "\u00e9conomis\u00e9es par semaine",
+          "1": "outils connect\u00e9s",
+          "2": "source de v\u00e9rit\u00e9"
+        }
+      },
+      "orchestrateur": {
+        "client": "Agence digitale \u2014 25 employ\u00e9s",
+        "name": "Orchestrateur multi-\u00e9quipes Telegram",
+        "metricLabel": "d'efficacit\u00e9 op\u00e9rationnelle",
+        "description": "Agent central Telegram coordonnant des sous-agents sp\u00e9cialis\u00e9s \u2014 RH, marketing, prospection, management \u2014 sans recruter de coordinateur.",
+        "outcome": "4 \u00e9quipes pilot\u00e9es, 0 embauche",
+        "problem": "Coordonner RH, marketing, prospection et management demandait un poste de coordinateur \u00e0 plein temps que l'agence ne voulait pas cr\u00e9er.",
+        "solution": "Un agent central sur Telegram distribue les demandes vers des sous-agents sp\u00e9cialis\u00e9s par m\u00e9tier, suit l'avancement et fait remonter ce qui bloque. Le dirigeant garde une seule interface.",
+        "results": {
+          "0": "d'efficacit\u00e9 op\u00e9rationnelle",
+          "1": "\u00e9quipes pilot\u00e9es",
+          "2": "embauche n\u00e9cessaire"
+        }
+      },
+      "support": {
+        "client": "E-commerce mode \u2014 120 employ\u00e9s",
+        "name": "Support client IA 24/7",
+        "metricLabel": "de tickets r\u00e9solus par l'IA",
+        "description": "Agent conversationnel g\u00e9rant le suivi de commande, les retours et la FAQ, avec escalade humaine intelligente.",
+        "outcome": "-45% de co\u00fbts support \u00b7 moins de 30s de r\u00e9ponse",
+        "problem": "Le volume de tickets suivait la croissance du catalogue. Suivi de commande, retours et FAQ occupaient l'essentiel du temps d'une \u00e9quipe de huit personnes.",
+        "solution": "Agent conversationnel branch\u00e9 sur le socle documentaire en RAG, connect\u00e9 \u00e0 WhatsApp et Zendesk. Il traite les demandes courantes de bout en bout et escalade vers un humain d\u00e8s que le contexte sort de son p\u00e9rim\u00e8tre.",
+        "results": {
+          "0": "de tickets r\u00e9solus par l'IA",
+          "1": "de co\u00fbts support",
+          "2": "de temps de r\u00e9ponse"
+        }
+      },
+      "rh": {
+        "client": "Cabinet de conseil \u2014 200 employ\u00e9s",
+        "name": "Automatisation du processus RH",
+        "metricLabel": "de time-to-hire",
+        "description": "Pipeline de recrutement complet : tri des CV par IA, pr\u00e9-qualification, planification des entretiens et onboarding.",
+        "outcome": "45 jours \u2192 18 jours \u00b7 300+ CV tri\u00e9s / mois",
+        "problem": "Le tri des candidatures, la pr\u00e9-qualification et la logistique des entretiens absorbaient l'\u00e9quipe RH. Le d\u00e9lai moyen d'embauche atteignait 45 jours.",
+        "solution": "Pipeline complet automatis\u00e9 : lecture et scoring des CV par NLP, pr\u00e9-qualification asynchrone, planification des entretiens dans Google Calendar et d\u00e9clenchement de l'onboarding dans Notion.",
+        "results": {
+          "0": "de time-to-hire",
+          "1": "de d\u00e9lai moyen, contre 45 jours avant",
+          "2": "CV tri\u00e9s par mois"
+        }
+      },
+      "stocks": {
+        "client": "Distributeur industriel \u2014 500 employ\u00e9s",
+        "name": "Gestion de stocks pr\u00e9dictive",
+        "metricLabel": "de ruptures de stock",
+        "description": "Pr\u00e9vision de demande par IA connect\u00e9e \u00e0 l'ERP, avec r\u00e9approvisionnement automatique et alertes de rupture.",
+        "outcome": "+8% de CA r\u00e9cup\u00e9r\u00e9 \u00b7 -20% de surstock",
+        "problem": "Les pr\u00e9visions se faisaient sous Excel, \u00e0 partir de l'historique et de l'intuition. R\u00e9sultat : des ruptures sur les r\u00e9f\u00e9rences qui tournent et du surstock sur le reste.",
+        "solution": "Mod\u00e8le de pr\u00e9vision de demande en Python branch\u00e9 sur l'ERP SAP via une API temps r\u00e9el. R\u00e9approvisionnement d\u00e9clench\u00e9 automatiquement, alerte de rupture avant qu'elle n'arrive.",
+        "results": {
+          "0": "de ruptures de stock",
+          "1": "de CA r\u00e9cup\u00e9r\u00e9",
+          "2": "de surstock"
+        }
+      },
+      "reporting": {
+        "client": "Groupe e-commerce \u2014 60 employ\u00e9s",
+        "name": "Reporting automatis\u00e9 multi-plateformes",
+        "metricLabel": "de temps de reporting",
+        "description": "Rapports hebdomadaires g\u00e9n\u00e9r\u00e9s automatiquement en consolidant les donn\u00e9es de 8 plateformes \u2014 Shopify, Meta Ads, GA4 et les autres.",
+        "outcome": "8 plateformes \u00b7 100% automatis\u00e9 chaque lundi",
+        "problem": "Consolider les chiffres de huit plateformes prenait deux jours par semaine. Le rapport arrivait quand la d\u00e9cision \u00e9tait d\u00e9j\u00e0 prise.",
+        "solution": "Collecte automatique via les API de chaque plateforme, consolidation dans n8n, mise en forme et r\u00e9daction du commentaire par GPT-4, publication dans Notion tous les lundis matin.",
+        "results": {
+          "0": "de temps de reporting",
+          "1": "plateformes connect\u00e9es",
+          "2": "automatis\u00e9"
+        }
+      },
+      "telavie": {
+        "client": "Produit \u2014 sant\u00e9",
         "name": "T\u00e9lavie",
-        "description": "Plateforme unifi\u00e9e de t\u00e9l\u00e9consultation et de gestion de structures de sant\u00e9. Un syst\u00e8me coh\u00e9rent pour patients, praticiens et administrateurs."
+        "metricLabel": "r\u00f4les unifi\u00e9s sur une plateforme",
+        "description": "Plateforme unifi\u00e9e de t\u00e9l\u00e9consultation et de gestion de structures de sant\u00e9, h\u00e9berg\u00e9e sur serveur HDS. Un syst\u00e8me coh\u00e9rent pour patients, praticiens et administrateurs, avec \u00e9changes temps r\u00e9el.",
+        "outcome": "T\u00e9l\u00e9consultation et administration dans un seul syst\u00e8me",
+        "problem": "Les structures de sant\u00e9 jonglaient entre un outil de t\u00e9l\u00e9consultation, un logiciel de gestion et des \u00e9changes \u00e9clat\u00e9s. Rien ne communiquait, et l'h\u00e9bergement des donn\u00e9es de sant\u00e9 imposait ses contraintes.",
+        "solution": "Plateforme unique couvrant la t\u00e9l\u00e9consultation et la gestion de structure, avec trois espaces coh\u00e9rents : patient, praticien, administrateur. Next.js et Prisma sur PostgreSQL, donn\u00e9es rafra\u00eechies c\u00f4t\u00e9 client avec SWR, \u00e9changes temps r\u00e9el via Socket, h\u00e9bergement sur serveur HDS.",
+        "results": {
+          "0": "r\u00f4les unifi\u00e9s : patient, praticien, administrateur",
+          "1": "h\u00e9bergement de donn\u00e9es de sant\u00e9",
+          "2": "pour les \u00e9changes"
+        }
       },
-      "1": {
+      "talentfindr": {
+        "client": "Produit \u2014 recrutement & sourcing",
+        "name": "TalentFindr",
+        "metricLabel": "profils explor\u00e9s par l'IA",
+        "description": "Plateforme de sourcing IA : recherche sur plus de 800 millions de profils, scoring automatique de pertinence, coordonn\u00e9es v\u00e9rifi\u00e9es et s\u00e9quences multicanal LinkedIn, email et WhatsApp. Mode copilote, ou autopilote avec KAIA, l'agent qui source, contacte et relance seul. Conforme RGPD, h\u00e9berg\u00e9 dans l'UE.",
+        "outcome": "1 500+ recruteurs, cabinets et ESN dans plus de 10 pays",
+        "problem": "Le sourcing reste la partie la plus chronophage du recrutement : chercher, v\u00e9rifier les coordonn\u00e9es, \u00e9crire, relancer, puis tout recommencer sur le poste suivant.",
+        "solution": "Plateforme de sourcing IA sur plus de 800 millions de profils : scoring de pertinence, coordonn\u00e9es v\u00e9rifi\u00e9es, s\u00e9quences multicanal LinkedIn, email et WhatsApp, messagerie unifi\u00e9e et gestion du pipeline. Deux modes : copilote, o\u00f9 le recruteur garde la main, et autopilote avec KAIA, l'agent qui source, contacte et relance seul. Conforme RGPD, h\u00e9berg\u00e9 dans l'UE.",
+        "results": {
+          "0": "profils explor\u00e9s",
+          "1": "recruteurs, cabinets et ESN",
+          "2": "pays couverts"
+        }
+      },
+      "growit": {
+        "client": "Produit \u2014 prospection B2B",
         "name": "GrowIt",
-        "description": "Syst\u00e8me multi-agents IA de prospection autonome : identification, extraction et qualification de leads, injection directe dans le CRM."
+        "metricLabel": "\u00e9tapes de prospection automatis\u00e9es",
+        "description": "Syst\u00e8me multi-agents IA de prospection autonome : identification, extraction et qualification des leads, injection directe dans le CRM.",
+        "outcome": "Du lead brut au CRM sans intervention humaine",
+        "problem": "Identifier une cible, extraire ses coordonn\u00e9es, la qualifier puis la saisir dans le CRM : quatre \u00e9tapes manuelles r\u00e9p\u00e9t\u00e9es pour chaque lead.",
+        "solution": "Syst\u00e8me multi-agents o\u00f9 chaque agent prend une \u00e9tape de la cha\u00eene. Le lead entre brut et ressort qualifi\u00e9 dans le CRM, sans reprise manuelle.",
+        "results": {
+          "0": "\u00e9tapes automatis\u00e9es de bout en bout",
+          "1": "injection directe dans le CRM",
+          "2": "ressaisie manuelle"
+        }
       },
-      "2": {
+      "mojo": {
+        "client": "Produit \u2014 relation client",
         "name": "Mojo APP",
-        "description": "Assistant WhatsApp intelligent qui structure la relation client 24/7 : gestion des \u00e9changes, prise de commandes et organisation de l'agenda."
+        "metricLabel": "de relation client tenue",
+        "description": "Assistant WhatsApp intelligent qui structure la relation client en continu : gestion des \u00e9changes, prise de commandes et organisation de l'agenda.",
+        "outcome": "\u00c9changes, commandes et agenda pilot\u00e9s depuis WhatsApp",
+        "problem": "Les \u00e9changes clients arrivent sur WhatsApp \u00e0 toute heure. Les commandes se perdent dans le fil, les rendez-vous se notent \u00e0 c\u00f4t\u00e9.",
+        "solution": "Assistant WhatsApp qui tient la conversation, enregistre les commandes et pose les rendez-vous dans l'agenda. Le client garde son canal habituel, la structure se fait derri\u00e8re.",
+        "results": {
+          "0": "de disponibilit\u00e9",
+          "1": "usages couverts : \u00e9changes, commandes, agenda",
+          "2": "canal unique \u00e0 g\u00e9rer"
+        }
       },
-      "3": {
-        "name": "+2 000 Automatisations",
-        "description": "Workflows n8n & Make d\u00e9ploy\u00e9s dans l'e-commerce, la sant\u00e9, l'immobilier et le SaaS. R\u00e9duction des op\u00e9rations manuelles, acc\u00e9l\u00e9ration de la croissance."
+      "automations": {
+        "client": "Multi-secteurs \u2014 e-commerce, sant\u00e9, immobilier, SaaS",
+        "name": "+2 000 automatisations d\u00e9ploy\u00e9es",
+        "metricLabel": "workflows en production",
+        "description": "Workflows n8n & Make d\u00e9ploy\u00e9s dans l'e-commerce, la sant\u00e9, l'immobilier et le SaaS. Moins d'op\u00e9rations manuelles, plus de vitesse de croissance.",
+        "outcome": "Quatre secteurs, une m\u00eame m\u00e9canique de d\u00e9ploiement",
+        "problem": "Le m\u00eame constat revient d'un secteur \u00e0 l'autre : des t\u00e2ches r\u00e9p\u00e9titives tenues \u00e0 la main parce que les outils en place ne se parlent pas.",
+        "solution": "Plus de 2 000 workflows n8n et Make d\u00e9ploy\u00e9s dans l'e-commerce, la sant\u00e9, l'immobilier et le SaaS. Connexion des outils existants plut\u00f4t que remplacement, avec la m\u00eame m\u00e9canique : cartographie, puis mise en production.",
+        "results": {
+          "0": "workflows d\u00e9ploy\u00e9s",
+          "1": "secteurs couverts",
+          "2": "plateformes : n8n et Make"
+        }
       }
     }
   },
@@ -171,9 +374,6 @@
   },
   "FavPosts": {
     "title": "Lectures recommand\u00e9es"
-  },
-  "Activities": {
-    "title": "Ce qui m'anime"
   },
   "Contact": {
     "title": "Engageons la conversation"

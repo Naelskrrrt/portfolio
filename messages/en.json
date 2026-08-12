@@ -27,9 +27,18 @@
   "ThingsIveDone": {
     "title": "Measurable impact",
     "metrics": {
-      "0": { "value": "+15", "label": "Clients supported" },
-      "1": { "value": "+25", "label": "Projects delivered" },
-      "2": { "value": "+2,000", "label": "Templates deployed" }
+      "0": {
+        "value": "+15",
+        "label": "Clients supported"
+      },
+      "1": {
+        "value": "+25",
+        "label": "Projects delivered"
+      },
+      "2": {
+        "value": "+2,000",
+        "label": "Templates deployed"
+      }
     },
     "items": {
       "0": {
@@ -63,49 +72,243 @@
     "title": "Background",
     "experiences": {
       "0": {
+        "role": "Founder & AI Architect \u2014 Freelance",
+        "company": "Flow AI Studio",
+        "period": "2024 \u2014 Present",
+        "description": "Custom AI agents and automation systems for teams that want to scale without hiring \u2014 n8n workflows, data centralization, AI-augmented monitoring."
+      },
+      "1": {
         "role": "Tech Lead & Automation Architect",
         "company": "Mon Ambassadeur",
         "period": "Aug 2024 \u2014 Present",
         "description": "Technical governance, software architecture design, and orchestration of intelligent workflows with n8n, Make, and AI agents."
       },
-      "1": {
+      "2": {
         "role": "Frontend Developer & UX/UI Designer",
         "company": "Acc\u00e8sBanque Madagascar",
         "period": "Jan 2024 \u2014 Feb 2025",
         "description": "Structuring intuitive interfaces in ReactJS, optimizing user experience, and converting design systems into functional components."
       },
-      "2": {
+      "3": {
         "role": "Web Developer \u2014 Independent engagement",
         "company": "SPAT Toamasina",
         "period": "Jun 2022 \u2014 Dec 2023",
         "description": "Design and architecture of a leave management system \u2014 ReactJS, Node.js, MySQL."
       },
-      "3": {
+      "4": {
         "role": "Systems Support & Maintenance",
         "company": "PANDA COMPANY",
         "period": "2022",
         "description": "Incident diagnosis and resolution, user support, technical infrastructure maintenance."
       }
-    }
+    },
+    "maintenance": "Under maintenance"
   },
   "Projects": {
     "title": "Recent work",
+    "intro": "Systems shipped to production. Every card shows the measured gain, not a promise.",
+    "filterLabel": "Filter work by type of engagement",
+    "countLabel": "{count} projects shown",
+    "featuredBadge": "Featured case",
+    "more": "See every case study on flow-ai.studio",
+    "showAll": "Show {count} more projects",
+    "showLess": "Show less",
+    "detail": "See the detail",
+    "close": "Close",
+    "problemTitle": "The problem",
+    "solutionTitle": "The system",
+    "resultsTitle": "Results",
+    "stackTitle": "Stack",
+    "visit": "Visit the site",
+    "filters": {
+      "all": "All",
+      "agentic": "Agentic AI",
+      "automation": "Automation",
+      "saas": "SaaS & product",
+      "data": "Data & integration"
+    },
     "items": {
-      "0": {
+      "minia": {
+        "client": "Multi-company owner \u2014 holding",
+        "name": "Multi-agent AI Chief of Staff (Minia)",
+        "metricLabel": "saved / month",
+        "description": "Context was scattered across Gmail, CRM, meetings and documents, multiplied by several companies. An orchestrator agent reachable on Telegram, WhatsApp and Discord, backed by specialised AI staff and a sourced memory where every fact is tied to its evidence. Read-first: any sensitive external write goes through human approval.",
+        "outcome": "21 live automations \u00b7 6+ specialised agents",
+        "problem": "Every file started from scratch: context scattered across Gmail, CRM, meetings and documents, forgotten follow-ups, decisions made on incomplete information. All of it multiplied by several companies.",
+        "solution": "An orchestrator agent reachable on Telegram, WhatsApp and Discord, backed by specialised AI staff and a sourced, versioned memory where every fact is tied to its evidence. Connectors for Gmail, Calendar, Drive, Monday, Sellsy, Fireflies and Pennylane. Read-first: any sensitive external write goes through human approval.",
+        "results": {
+          "0": "saved per month (estimate)",
+          "1": "live automations",
+          "2": "specialised agents"
+        }
+      },
+      "prospection": {
+        "client": "B2B SaaS \u2014 35 employees",
+        "name": "Automated multi-channel prospecting",
+        "metricLabel": "qualified leads / month",
+        "description": "Automatic lead enrichment, per-channel personalised outreach (email, LinkedIn, phone), automatic ICP targeting.",
+        "outcome": "0 dedicated headcount \u00b7 3\u00d7 reply rate",
+        "problem": "Lead generation depended on whatever time the sales team could spare. Manual targeting, generic messaging, follow-ups left to chance.",
+        "solution": "Automatic lead enrichment, computed ICP targeting, then per-channel personalised sequences \u2014 email, LinkedIn, phone \u2014 orchestrated in n8n with AI agents doing the writing.",
+        "results": {
+          "0": "qualified leads per month",
+          "1": "reply rate",
+          "2": "dedicated headcount"
+        }
+      },
+      "datahub": {
+        "client": "Fintech scale-up \u2014 80 employees",
+        "name": "Data centralisation & AI dashboards",
+        "metricLabel": "saved / week",
+        "description": "Data warehouse wired to every existing tool, one central management interface, AI-enriched monitoring.",
+        "outcome": "10+ tools \u2192 1 source of truth",
+        "problem": "Data lived in a dozen tools that did not talk to each other. Every business question meant a manual export and a hand-made reconciliation.",
+        "solution": "A data warehouse wired to every existing tool, one central management interface, and AI-enriched monitoring that surfaces anomalies before they turn into incidents.",
+        "results": {
+          "0": "saved per week",
+          "1": "connected tools",
+          "2": "source of truth"
+        }
+      },
+      "orchestrateur": {
+        "client": "Digital agency \u2014 25 employees",
+        "name": "Multi-team Telegram orchestrator",
+        "metricLabel": "operational efficiency",
+        "description": "A central Telegram agent coordinating specialised sub-agents \u2014 HR, marketing, prospecting, management \u2014 without hiring a coordinator.",
+        "outcome": "4 teams run, 0 new hires",
+        "problem": "Coordinating HR, marketing, prospecting and management called for a full-time coordinator the agency did not want to hire.",
+        "solution": "A central Telegram agent routes requests to sub-agents specialised per function, tracks progress and escalates what is stuck. One interface for the founder.",
+        "results": {
+          "0": "operational efficiency",
+          "1": "teams run",
+          "2": "new hires needed"
+        }
+      },
+      "support": {
+        "client": "Fashion e-commerce \u2014 120 employees",
+        "name": "24/7 AI customer support",
+        "metricLabel": "of tickets solved by AI",
+        "description": "Conversational agent handling order tracking, returns and FAQ, with smart hand-off to a human.",
+        "outcome": "-45% support cost \u00b7 under 30s response",
+        "problem": "Ticket volume grew with the catalogue. Order tracking, returns and FAQ took up most of an eight-person team's time.",
+        "solution": "A conversational agent on a RAG document base, wired to WhatsApp and Zendesk. It handles routine requests end to end and escalates to a human as soon as the context leaves its scope.",
+        "results": {
+          "0": "of tickets solved by AI",
+          "1": "support cost",
+          "2": "response time"
+        }
+      },
+      "rh": {
+        "client": "Consulting firm \u2014 200 employees",
+        "name": "HR process automation",
+        "metricLabel": "time-to-hire",
+        "description": "Full recruiting pipeline: AI CV screening, pre-qualification, interview scheduling and onboarding.",
+        "outcome": "45 days \u2192 18 days \u00b7 300+ CVs screened / month",
+        "problem": "CV screening, pre-qualification and interview logistics ate the HR team's week. Average time-to-hire sat at 45 days.",
+        "solution": "A fully automated pipeline: NLP CV reading and scoring, asynchronous pre-qualification, interview scheduling in Google Calendar and onboarding triggered in Notion.",
+        "results": {
+          "0": "time-to-hire",
+          "1": "average, down from 45 days",
+          "2": "CVs screened per month"
+        }
+      },
+      "stocks": {
+        "client": "Industrial distributor \u2014 500 employees",
+        "name": "Predictive inventory management",
+        "metricLabel": "of stockouts",
+        "description": "AI demand forecasting wired into the ERP, with automatic replenishment and stockout alerts.",
+        "outcome": "+8% revenue recovered \u00b7 -20% overstock",
+        "problem": "Forecasting ran on Excel, history and gut feel. The result: stockouts on fast movers and overstock on everything else.",
+        "solution": "A Python demand-forecasting model wired to the SAP ERP over a real-time API. Replenishment triggered automatically, stockout alerts raised before the shelf empties.",
+        "results": {
+          "0": "of stockouts",
+          "1": "revenue recovered",
+          "2": "overstock"
+        }
+      },
+      "reporting": {
+        "client": "E-commerce group \u2014 60 employees",
+        "name": "Automated multi-platform reporting",
+        "metricLabel": "reporting time",
+        "description": "Weekly reports generated automatically by consolidating data from 8 platforms \u2014 Shopify, Meta Ads, GA4 and the rest.",
+        "outcome": "8 platforms \u00b7 100% automated every Monday",
+        "problem": "Consolidating figures from eight platforms took two days a week. The report landed after the decision had already been made.",
+        "solution": "Automatic collection through each platform's API, consolidation in n8n, formatting and commentary written by GPT-4, published to Notion every Monday morning.",
+        "results": {
+          "0": "reporting time",
+          "1": "connected platforms",
+          "2": "automated"
+        }
+      },
+      "telavie": {
+        "client": "Product \u2014 healthcare",
         "name": "T\u00e9lavie",
-        "description": "Unified telemedicine and healthcare facility management platform. A coherent system for patients, practitioners, and administrators."
+        "metricLabel": "roles unified on one platform",
+        "description": "Unified telemedicine and healthcare facility management platform, hosted on HDS-certified infrastructure. A coherent system for patients, practitioners and administrators, with real-time exchanges.",
+        "outcome": "Telemedicine and administration in a single system",
+        "problem": "Healthcare providers juggled a telemedicine tool, a management system and scattered conversations. Nothing talked to anything, and health-data hosting brought its own constraints.",
+        "solution": "One platform covering both telemedicine and facility management, with three coherent spaces: patient, practitioner, administrator. Next.js and Prisma on PostgreSQL, client-side data kept fresh with SWR, real-time exchanges over Socket, hosted on HDS-certified infrastructure.",
+        "results": {
+          "0": "roles unified: patient, practitioner, admin",
+          "1": "certified health-data hosting",
+          "2": "for live exchanges"
+        }
       },
-      "1": {
+      "talentfindr": {
+        "client": "Product \u2014 recruiting & sourcing",
+        "name": "TalentFindr",
+        "metricLabel": "profiles searched by AI",
+        "description": "AI sourcing platform: search across 800M+ profiles, automatic relevance scoring, verified contact details and multi-channel LinkedIn, email and WhatsApp sequences. Copilot mode, or autopilot with KAIA, the agent that sources, reaches out and follows up on its own. GDPR compliant, hosted in the EU.",
+        "outcome": "1,500+ recruiters, agencies and consultancies across 10+ countries",
+        "problem": "Sourcing is still the most time-consuming part of recruiting: search, verify contact details, write, follow up, then start over on the next role.",
+        "solution": "An AI sourcing platform across 800M+ profiles: relevance scoring, verified contact details, multi-channel LinkedIn, email and WhatsApp sequences, unified inbox and pipeline management. Two modes: copilot, where the recruiter stays in control, and autopilot with KAIA, the agent that sources, reaches out and follows up on its own. GDPR compliant, hosted in the EU.",
+        "results": {
+          "0": "profiles searched",
+          "1": "recruiters, agencies and consultancies",
+          "2": "countries covered"
+        }
+      },
+      "growit": {
+        "client": "Product \u2014 B2B prospecting",
         "name": "GrowIt",
-        "description": "Multi-agent AI prospecting system: autonomous lead identification, extraction, and qualification with direct CRM injection."
+        "metricLabel": "prospecting steps automated",
+        "description": "Multi-agent AI prospecting system: autonomous lead identification, extraction and qualification with direct CRM injection.",
+        "outcome": "From raw lead to CRM with no human step",
+        "problem": "Identify a target, extract contact details, qualify it, then key it into the CRM: four manual steps repeated on every single lead.",
+        "solution": "A multi-agent system where each agent owns one step of the chain. The lead comes in raw and lands qualified in the CRM, with no manual pass.",
+        "results": {
+          "0": "steps automated end to end",
+          "1": "direct CRM injection",
+          "2": "manual re-entry"
+        }
       },
-      "2": {
+      "mojo": {
+        "client": "Product \u2014 customer relations",
         "name": "Mojo APP",
-        "description": "Intelligent WhatsApp assistant that structures client relations 24/7: conversation management, order taking, and schedule organization."
+        "metricLabel": "customer relations held",
+        "description": "Intelligent WhatsApp assistant that structures client relations around the clock: conversation management, order taking and schedule organisation.",
+        "outcome": "Conversations, orders and calendar run from WhatsApp",
+        "problem": "Customer conversations land on WhatsApp at any hour. Orders get lost in the thread, appointments end up noted somewhere else.",
+        "solution": "A WhatsApp assistant that holds the conversation, records orders and books appointments in the calendar. The customer keeps their usual channel; the structure happens behind it.",
+        "results": {
+          "0": "availability",
+          "1": "uses covered: chat, orders, calendar",
+          "2": "single channel to manage"
+        }
       },
-      "3": {
-        "name": "+2,000 Automations",
-        "description": "n8n & Make workflows deployed across e-commerce, healthcare, real estate, and SaaS. Reduced manual operations, accelerated growth."
+      "automations": {
+        "client": "Multi-sector \u2014 e-commerce, healthcare, real estate, SaaS",
+        "name": "+2,000 automations deployed",
+        "metricLabel": "workflows in production",
+        "description": "n8n & Make workflows deployed across e-commerce, healthcare, real estate and SaaS. Fewer manual operations, faster growth.",
+        "outcome": "Four sectors, one deployment playbook",
+        "problem": "The same picture shows up from one sector to the next: repetitive tasks held together by hand because the tools in place do not talk to each other.",
+        "solution": "Over 2,000 n8n and Make workflows deployed across e-commerce, healthcare, real estate and SaaS. Connecting the existing tools rather than replacing them, with the same routine: map it, then ship it.",
+        "results": {
+          "0": "workflows deployed",
+          "1": "sectors covered",
+          "2": "platforms: n8n and Make"
+        }
       }
     }
   },
@@ -115,23 +318,33 @@
       "0": {
         "description": "Reference framework for structured web applications"
       },
-      "1": { "description": "Rigorous typing for reliable, maintainable code" },
+      "1": {
+        "description": "Rigorous typing for reliable, maintainable code"
+      },
       "2": {
         "description": "Language of choice for AI and automation"
       },
       "3": {
         "description": "Performant APIs, fast to design and deploy"
       },
-      "4": { "description": "Building applications that integrate LLMs" },
+      "4": {
+        "description": "Building applications that integrate LLMs"
+      },
       "5": {
         "description": "Orchestrating collaborative AI agents"
       },
-      "6": { "description": "Reference platform for ML models" },
+      "6": {
+        "description": "Reference platform for ML models"
+      },
       "7": {
         "description": "Pillars of automation and AI orchestration"
       },
-      "8": { "description": "Robust and battle-tested relational database" },
-      "9": { "description": "Structured ORM for efficient data access" }
+      "8": {
+        "description": "Robust and battle-tested relational database"
+      },
+      "9": {
+        "description": "Structured ORM for efficient data access"
+      }
     }
   },
   "Certifications": {
@@ -161,9 +374,6 @@
   },
   "FavPosts": {
     "title": "Recommended reads"
-  },
-  "Activities": {
-    "title": "What drives me"
   },
   "Contact": {
     "title": "Start a conversation"
