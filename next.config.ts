@@ -4,6 +4,14 @@ import createNextIntlPlugin from "next-intl/plugin";
 const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
+  // React PDF resolves fonts and images through Node's fs — keep it external
+  // instead of letting the bundler rewrite those paths.
+  serverExternalPackages: ["@react-pdf/renderer"],
+  // The CV PDF route reads fonts and the portrait from disk; keep them in the
+  // traced bundle so it also works if the route ever renders at runtime.
+  outputFileTracingIncludes: {
+    "/[locale]/cv/pdf": ["./assets/fonts/**", "./public/photo-profile.png"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200],

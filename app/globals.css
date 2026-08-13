@@ -153,6 +153,352 @@ body {
 }
 
 /* ========================================
+   CV — print / PDF (ATS-friendly)
+
+   Goal: one selectable-text column, no decoration, no multi-column blocks
+   that a résumé parser could read out of order.
+   ======================================== */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm 18mm;
+  }
+
+  /* Always print on the light palette, whatever the on-screen theme is */
+  :root,
+  .dark {
+    --background: #ffffff;
+    --foreground: #111827;
+    --muted: #ffffff;
+    --muted-foreground: #374151;
+    --primary: #a4581a;
+    --primary-foreground: #ffffff;
+    --accent: #ffffff;
+    --accent-foreground: #111827;
+    --border: #cbd5e1;
+    --card: #ffffff;
+    --card-foreground: #111827;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  /* Decorative layers never reach the paper */
+  .noise::before {
+    display: none !important;
+  }
+
+  /* ---------- Page frame ---------- */
+
+  .cv-page {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 9.6pt;
+    line-height: 1.45;
+    color: var(--foreground);
+  }
+
+  /* Screen stacks are built with flex gaps in pixels. On paper the rhythm is
+     driven by point margins instead, so every stack becomes a plain block. */
+  .cv-page .flex-col,
+  .cv-page .grid,
+  .cv-contact,
+  .cv-areas {
+    display: block !important;
+  }
+
+  .cv-page p {
+    orphans: 2;
+    widows: 2;
+  }
+
+  /* ---------- Identity ---------- */
+
+  .cv-page header {
+    padding: 0 0 9pt !important;
+  }
+
+  .cv-identity {
+    display: flex !important;
+    align-items: center;
+    gap: 13pt !important;
+  }
+
+  .cv-photo {
+    width: 64px !important;
+    height: 64px !important;
+    border-width: 0.5pt !important;
+  }
+
+  .cv-page h1 {
+    font-size: 20pt;
+    line-height: 1.05;
+  }
+
+  .cv-idtext > * + * {
+    margin-top: 2pt;
+  }
+
+  .cv-idtext p {
+    font-size: 10pt;
+  }
+
+  /* ---------- Contact ---------- */
+
+  .cv-contact {
+    margin-top: 10pt !important;
+    font-size: 8.8pt;
+    line-height: 1.7;
+  }
+
+  /* inline-block keeps a label glued to its value when the line wraps */
+  .cv-contact > div {
+    display: inline-block !important;
+    margin-right: 8pt;
+  }
+
+  .cv-contact > div:not(:last-child)::after {
+    content: " ·";
+    color: #9ca3af;
+  }
+
+  .cv-contact dt,
+  .cv-contact dd {
+    display: inline !important;
+  }
+
+  .cv-contact dt::after {
+    content: ": ";
+  }
+
+  .cv-contact dd {
+    margin-left: 0 !important;
+  }
+
+  /* ---------- Sections ---------- */
+
+  .cv-page section {
+    padding: 10pt 0 0 !important;
+    border-top: 0.5pt solid var(--border) !important;
+  }
+
+  .cv-page h2 {
+    font-size: 12.5pt;
+    line-height: 1.2;
+  }
+
+  .cv-page h3 {
+    font-size: 9.8pt;
+  }
+
+  .cv-section-body {
+    margin-top: 5pt !important;
+  }
+
+  .cv-page ul > li + li {
+    margin-top: 5pt;
+  }
+
+  /* ---------- Profile ---------- */
+
+  .cv-summary > * + * {
+    margin-top: 6pt;
+  }
+
+  .cv-quote {
+    font-size: 10pt !important;
+    padding-left: 8pt !important;
+    border-left-width: 1.5pt !important;
+  }
+
+  /* ---------- Chips (metrics, skills, ways of working) ---------- */
+
+  .cv-chips {
+    display: block !important;
+  }
+
+  .cv-chip {
+    display: inline !important;
+    height: auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .cv-chip + .cv-chip::before {
+    content: " · ";
+    color: #9ca3af;
+  }
+
+  /* Flattened chips lose the flex gap between value and label — emit a real
+     space glyph so extractors never read "40 hrestituées" */
+  .cv-chip > span + span::before {
+    content: "\00a0";
+  }
+
+  /* ---------- Areas of expertise: title and body share one paragraph ---------- */
+
+  .cv-index {
+    display: none !important;
+  }
+
+  .cv-areas > li + li {
+    margin-top: 4pt;
+  }
+
+  .cv-areas .cv-inline-title,
+  .cv-areas .cv-inline-body {
+    display: inline !important;
+    font-size: 9.6pt !important;
+  }
+
+  .cv-areas .cv-inline-title::after {
+    content: " : ";
+    font-weight: 400;
+  }
+
+  /* ---------- Skills: label on its own line, keywords under it ---------- */
+
+  .cv-groups > div + div {
+    margin-top: 5pt;
+  }
+
+  .cv-groups .cv-inline-title {
+    font-size: 9.6pt !important;
+  }
+
+  .cv-groups .cv-chips {
+    margin-top: 1pt;
+  }
+
+  /* ---------- Cards lose their frame, keep their content ---------- */
+
+  .cv-card {
+    border: 0 !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+
+  .cv-proj-context {
+    font-size: 8.8pt;
+  }
+
+  .cv-proj-result {
+    margin-top: 1.5pt !important;
+  }
+
+  /* ---------- Certifications & languages ----------
+     Their rows are flex on screen; as blocks the inline children would run
+     together, so give each one an explicit break or separator. */
+
+  .cv-cert-name {
+    display: block !important;
+  }
+
+  .cv-lang-name::after {
+    content: " · ";
+    color: #9ca3af;
+    font-weight: 400;
+  }
+
+  /* ---------- Experience: timeline collapses to one column ---------- */
+
+  /* Scoped with .cv-page so these outrank the generic .flex-col reset above */
+  .cv-page .cv-exp-side,
+  .cv-page .cv-exp-dot {
+    display: none !important;
+  }
+
+  .cv-exp-list > li {
+    display: block !important;
+  }
+
+  .cv-exp-list > li + li {
+    margin-top: 9pt;
+  }
+
+  .cv-exp-body {
+    display: block !important;
+    padding-left: 0 !important;
+    border-left: 0 !important;
+  }
+
+  .cv-exp-body h3 {
+    font-size: 10.2pt;
+  }
+
+  /* Company, contract type, dates and place read as a single meta line */
+  .cv-exp-org,
+  .cv-exp-inline {
+    display: inline !important;
+    font-size: 9.2pt;
+  }
+
+  .cv-exp-inline::before {
+    content: " · ";
+  }
+
+  .cv-exp-summary {
+    margin-top: 2.5pt !important;
+  }
+
+  .cv-bullets {
+    margin-top: 3.5pt !important;
+  }
+
+  .cv-bullets > li {
+    gap: 5pt !important;
+  }
+
+  .cv-bullets > li > span:first-child {
+    color: var(--muted-foreground) !important;
+    margin-top: 0 !important;
+  }
+
+  .cv-bullets > li + li {
+    margin-top: 2pt;
+  }
+
+  .cv-exp-stack {
+    margin-top: 3.5pt !important;
+    font-size: 8.6pt;
+  }
+
+  /* ---------- Pagination ---------- */
+
+  /* Keep short entries whole on one page */
+  .cv-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Experience entries are tall: forcing them whole leaves half-empty pages,
+     so let them flow and just keep their heading attached to what follows */
+  .cv-exp-list > li {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .cv-page h2,
+  .cv-page h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Links print as plain text — every URL is already spelled out in the contact block */
+  .cv-page a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+
+/* ========================================
    Pixel Art Animations
    ======================================== */
 

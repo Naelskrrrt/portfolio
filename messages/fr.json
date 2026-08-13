@@ -42,14 +42,14 @@
     },
     "items": {
       "0": {
-        "text": "Syst\u00e8mes d'automatisation g\u00e9n\u00e9rant",
-        "linkText": "+3 000 $ de ROI",
-        "suffix": "en moins de 2 mois"
+        "text": "Structuration avanc\u00e9e des processus :",
+        "linkText": "jusqu'\u00e0 10 000 \u20ac gagn\u00e9s",
+        "suffix": "sur les syst\u00e8mes que je d\u00e9ploie"
       },
       "1": {
-        "text": "Jusqu'\u00e0",
-        "linkText": "40 h/mois restitu\u00e9es",
-        "suffix": "par la restructuration des workflows"
+        "text": "En moyenne",
+        "linkText": "40 h par mois restitu\u00e9es",
+        "suffix": "gr\u00e2ce \u00e0 la restructuration des workflows"
       },
       "2": {
         "text": "Applications web con\u00e7ues et livr\u00e9es de bout en bout \u2014 Next.js, React, APIs structur\u00e9es",
@@ -377,6 +377,369 @@
   },
   "Contact": {
     "title": "Engageons la conversation"
+  },
+  "CV": {
+    "meta": {
+      "title": "CV de LALASON Anna\u00ebl \u00b7 Architecte Syst\u00e8mes & IA",
+      "description": "Curriculum vitae de LALASON Anna\u00ebl, architecte syst\u00e8mes et IA : agents IA et syst\u00e8mes multi-agents, RAG, automatisation n8n & Make, architecture logicielle et applications Next.js. Exp\u00e9rience, comp\u00e9tences, certifications."
+    },
+    "toolbar": {
+      "back": "Portfolio",
+      "print": "T\u00e9l\u00e9charger en PDF",
+      "printAria": "T\u00e9l\u00e9charge le CV au format PDF"
+    },
+    "header": {
+      "role": "Architecte Syst\u00e8mes & IA \u00b7 AI Solutions Architect",
+      "available": "Disponible pour des missions et des collaborations strat\u00e9giques",
+      "location": "Antananarivo, Madagascar (GMT+3) \u00b7 missions \u00e0 distance, horaires align\u00e9s du Canada \u00e0 l'Asie (GMT-8 \u00e0 GMT+9)",
+      "photoAlt": "Photo de LALASON Anna\u00ebl",
+      "labels": {
+        "email": "Email",
+        "phone": "T\u00e9l\u00e9phone",
+        "location": "Localisation",
+        "site": "Site",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+      }
+    },
+    "summary": {
+      "title": "Profil",
+      "body": "Architecte syst\u00e8mes et IA, je con\u00e7ois et je livre des syst\u00e8mes intelligents de bout en bout : agents IA et architectures multi-agents, automatisation de processus m\u00e9tiers, applications web structur\u00e9es. Plus de 15 clients accompagn\u00e9s, 25 projets livr\u00e9s et 2 000 automatisations d\u00e9ploy\u00e9es dans l'e-commerce, la sant\u00e9, l'immobilier et le SaaS. Jusqu'\u00e0 10 000 \u20ac gagn\u00e9s gr\u00e2ce \u00e0 une structuration avanc\u00e9e des processus, et 40 heures restitu\u00e9es en moyenne chaque mois aux \u00e9quipes. Tech Lead en poste, je circule sans friction entre la gouvernance technique, la conception d'architecture et le code.",
+      "quote": "Avant d'automatiser, je comprends. Avant de construire, je structure."
+    },
+    "impact": {
+      "title": "Chiffres cl\u00e9s",
+      "metrics": [
+        {
+          "value": "+15",
+          "label": "clients accompagn\u00e9s"
+        },
+        {
+          "value": "+25",
+          "label": "projets livr\u00e9s"
+        },
+        {
+          "value": "+2 000",
+          "label": "automatisations en production"
+        },
+        {
+          "value": "40 h",
+          "label": "restitu\u00e9es en moyenne chaque mois"
+        },
+        {
+          "value": "jusqu'\u00e0 10 000 \u20ac",
+          "label": "gagn\u00e9s par la structuration des processus"
+        }
+      ]
+    },
+    "expertise": {
+      "title": "Domaines d'expertise",
+      "areas": [
+        {
+          "title": "Architecture de syst\u00e8mes IA",
+          "body": "Agents et syst\u00e8mes multi-agents, RAG et m\u00e9moire sourc\u00e9e o\u00f9 chaque fait reste rattach\u00e9 \u00e0 sa preuve, garde-fous humains sur les \u00e9critures sensibles, supervision en production."
+        },
+        {
+          "title": "Automatisation & orchestration",
+          "body": "Cartographie des processus avant tout code, workflows n8n et Make, int\u00e9gration des outils m\u00e9tiers existants plut\u00f4t que leur remplacement."
+        },
+        {
+          "title": "Ing\u00e9nierie produit web",
+          "body": "Applications Next.js et React livr\u00e9es de bout en bout : APIs structur\u00e9es, PostgreSQL, \u00e9changes temps r\u00e9el, contraintes de conformit\u00e9 RGPD et h\u00e9bergement de donn\u00e9es de sant\u00e9."
+        },
+        {
+          "title": "Gouvernance technique",
+          "body": "Cadrage des besoins, revues d'architecture et de code, encadrement et mentorat d'\u00e9quipe, documentation et veille technologique appliqu\u00e9e."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Comp\u00e9tences techniques",
+      "groups": [
+        {
+          "label": "IA appliqu\u00e9e & LLM",
+          "items": [
+            "LLM Engineering",
+            "RAG",
+            "Fine-tuning / QLoRA",
+            "Prompt engineering",
+            "Agents IA",
+            "Syst\u00e8mes multi-agents",
+            "LangChain",
+            "CrewAI",
+            "Hugging Face",
+            "OpenAI / GPT-4",
+            "NLP",
+            "Machine Learning",
+            "Deep Learning",
+            "Computer Vision",
+            "MLOps"
+          ]
+        },
+        {
+          "label": "Automatisation & orchestration",
+          "items": [
+            "n8n",
+            "Make",
+            "Webhooks & APIs",
+            "Apify",
+            "Talend",
+            "ETL",
+            "Google Workspace",
+            "Monday",
+            "Sellsy",
+            "Pennylane",
+            "Zendesk",
+            "Shopify",
+            "Meta Ads",
+            "GA4",
+            "Monitoring augment\u00e9 par IA"
+          ]
+        },
+        {
+          "label": "Architecture & backend",
+          "items": [
+            "Architecture logicielle",
+            "Conception de syst\u00e8mes",
+            "Clean Code",
+            "API REST",
+            "Python",
+            "FastAPI",
+            "Node.js",
+            "Express.js",
+            "Bun",
+            "Java",
+            "UML",
+            "MERISE"
+          ]
+        },
+        {
+          "label": "Frontend & produit",
+          "items": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML / CSS / Sass",
+            "Tailwind CSS",
+            "SWR",
+            "Socket.io",
+            "UX/UI Design",
+            "Figma",
+            "Adobe XD",
+            "Design systems"
+          ]
+        },
+        {
+          "label": "Donn\u00e9es & infrastructure",
+          "items": [
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Prisma",
+            "SQL",
+            "Pandas",
+            "Data warehouse",
+            "Vercel",
+            "H\u00e9bergement HDS",
+            "RGPD",
+            "Git / GitHub / GitLab",
+            "CI/CD"
+          ]
+        },
+        {
+          "label": "Pilotage & m\u00e9thodes",
+          "items": [
+            "Tech Lead",
+            "Gouvernance technique",
+            "Agile Scrum",
+            "Gestion de projet",
+            "Encadrement & mentorat",
+            "Revue de code",
+            "Cadrage & documentation",
+            "Veille technologique"
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Exp\u00e9rience professionnelle",
+      "stackLabel": "Stack",
+      "items": [
+        {
+          "role": "Fondateur & Architecte IA",
+          "company": "Flow AI Studio",
+          "type": "Freelance",
+          "period": "Depuis 2024",
+          "location": "\u00c0 distance",
+          "summary": "Conception d'agents IA et de syst\u00e8mes d'automatisation sur mesure pour les \u00e9quipes qui veulent scaler sans recruter.",
+          "bullets": [
+            "Architecture de syst\u00e8mes multi-agents : un orchestrateur central, des agents sp\u00e9cialis\u00e9s par m\u00e9tier, une m\u00e9moire sourc\u00e9e et versionn\u00e9e o\u00f9 chaque fait reste rattach\u00e9 \u00e0 sa preuve.",
+            "Principe de conception \u00ab lecture d'abord \u00bb : toute \u00e9criture externe sensible passe par une validation humaine explicite.",
+            "Plus de 2 000 workflows n8n et Make d\u00e9ploy\u00e9s en production dans l'e-commerce, la sant\u00e9, l'immobilier et le SaaS.",
+            "Jusqu'\u00e0 10 000 \u20ac gagn\u00e9s gr\u00e2ce \u00e0 une structuration avanc\u00e9e des processus, et 40 heures restitu\u00e9es en moyenne chaque mois aux \u00e9quipes clientes.",
+            "Accompagnement de plus de 15 clients, de la cartographie des processus jusqu'\u00e0 la mise en production et au monitoring."
+          ],
+          "stack": "Python \u00b7 TypeScript \u00b7 n8n \u00b7 Make \u00b7 LangChain \u00b7 CrewAI \u00b7 OpenAI GPT-4 \u00b7 RAG \u00b7 PostgreSQL \u00b7 Next.js"
+        },
+        {
+          "role": "Tech Lead & Architecte Automatisation",
+          "company": "Mon Ambassadeur",
+          "type": "CDI",
+          "period": "Depuis ao\u00fbt 2024",
+          "location": "Madagascar \u00b7 hybride",
+          "summary": "Gouvernance technique, conception d'architectures logicielles et orchestration de workflows intelligents.",
+          "bullets": [
+            "Supervision technique de l'\u00e9quipe : revues d'architecture et de code, encadrement et mentorat des d\u00e9veloppeurs.",
+            "Conception et orchestration de workflows d'automatisation avec n8n, Make et des agents IA autonomes.",
+            "Int\u00e9gration des plateformes de recrutement et de prospection (LinkedIn, Upwork, Apify, Talend) dans des pipelines automatis\u00e9s.",
+            "Pilotage de projet, cadrage des besoins et veille technologique appliqu\u00e9e aux produits IA."
+          ],
+          "stack": "TypeScript \u00b7 Next.js \u00b7 Python \u00b7 n8n \u00b7 Make \u00b7 APIs & webhooks \u00b7 PostgreSQL"
+        },
+        {
+          "role": "D\u00e9veloppeur Frontend & Designer UX/UI",
+          "company": "Acc\u00e8sBanque Madagascar",
+          "type": "Development Hub",
+          "period": "Janvier 2024 \u00e0 f\u00e9vrier 2025",
+          "location": "Fianarantsoa, Madagascar",
+          "summary": "Structuration d'interfaces internet et intranet, du wireframe au composant livr\u00e9.",
+          "bullets": [
+            "Conversion de maquettes et de design systems en composants React r\u00e9utilisables.",
+            "Maquettage et wireframing d'interfaces web et mobiles sous Figma, Adobe XD et Sketch.",
+            "Optimisation de l'exp\u00e9rience utilisateur et de la coh\u00e9rence visuelle des applications internes."
+          ],
+          "stack": "ReactJS \u00b7 JavaScript \u00b7 HTML / CSS / Sass \u00b7 Figma \u00b7 Adobe XD \u00b7 Sketch"
+        },
+        {
+          "role": "D\u00e9veloppeur Web (mission ind\u00e9pendante)",
+          "company": "SPAT, Soci\u00e9t\u00e9 du Port \u00e0 Gestion Autonome de Toamasina",
+          "type": "Freelance",
+          "period": "Juin 2022 \u00e0 d\u00e9cembre 2023",
+          "location": "Toamasina, Madagascar \u00b7 hybride",
+          "summary": "Conception et architecture d'un syst\u00e8me de gestion des cong\u00e9s pour l'ensemble du personnel.",
+          "bullets": [
+            "Mod\u00e9lisation des donn\u00e9es et de l'architecture applicative (MERISE, UML) avant tout d\u00e9veloppement.",
+            "D\u00e9veloppement full-stack : ReactJS c\u00f4t\u00e9 client, Node.js et Express c\u00f4t\u00e9 serveur, MySQL en base.",
+            "Tableau de bord analytique pour le suivi des demandes et des soldes de cong\u00e9s."
+          ],
+          "stack": "ReactJS \u00b7 Node.js \u00b7 Express.js \u00b7 MySQL \u00b7 MERISE \u00b7 UML \u00b7 Git"
+        },
+        {
+          "role": "Support & Maintenance Syst\u00e8mes",
+          "company": "PANDA COMPANY",
+          "type": "Freelance",
+          "period": "2022",
+          "location": "Madagascar",
+          "summary": "Support informatique et accompagnement des utilisateurs.",
+          "bullets": [
+            "Diagnostic et r\u00e9solution d'incidents mat\u00e9riels et logiciels.",
+            "Formation et accompagnement des utilisateurs sur les outils informatiques.",
+            "Maintenance de l'infrastructure technique et des postes de travail."
+          ],
+          "stack": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "R\u00e9alisations s\u00e9lectionn\u00e9es",
+      "resultLabel": "R\u00e9sultat",
+      "items": [
+        {
+          "name": "Minia, Chief of Staff IA multi-agent",
+          "context": "Dirigeant multi-soci\u00e9t\u00e9s \u00b7 holding",
+          "body": "Agent orchestrateur accessible sur Telegram, WhatsApp et Discord, appuy\u00e9 sur des staffs IA sp\u00e9cialis\u00e9s et une m\u00e9moire sourc\u00e9e. Connecteurs Gmail, Calendar, Drive, Monday, Sellsy, Fireflies et Pennylane.",
+          "result": "40 h \u00e9conomis\u00e9es en moyenne chaque mois \u00b7 21 automatisations actives \u00b7 6+ agents sp\u00e9cialis\u00e9s"
+        },
+        {
+          "name": "TalentFindr, plateforme de sourcing IA",
+          "context": "Produit \u00b7 recrutement & sourcing",
+          "body": "Recherche sur plus de 800 millions de profils, scoring de pertinence, coordonn\u00e9es v\u00e9rifi\u00e9es et s\u00e9quences multicanal LinkedIn, email et WhatsApp. Mode copilote ou autopilote avec KAIA, l'agent qui source, contacte et relance seul. Conforme RGPD, h\u00e9berg\u00e9 dans l'UE.",
+          "result": "1 500+ recruteurs, cabinets et ESN dans plus de 10 pays"
+        },
+        {
+          "name": "T\u00e9lavie, plateforme de t\u00e9l\u00e9consultation",
+          "context": "Produit \u00b7 sant\u00e9",
+          "body": "Plateforme unique couvrant la t\u00e9l\u00e9consultation et la gestion de structure de sant\u00e9, avec trois espaces coh\u00e9rents : patient, praticien, administrateur. \u00c9changes temps r\u00e9el, h\u00e9bergement sur serveur HDS.",
+          "result": "3 r\u00f4les unifi\u00e9s \u00b7 Next.js, Prisma, PostgreSQL, SWR, Socket \u00b7 h\u00e9bergement HDS"
+        },
+        {
+          "name": "+2 000 automatisations d\u00e9ploy\u00e9es",
+          "context": "Multi-secteurs \u00b7 e-commerce, sant\u00e9, immobilier, SaaS",
+          "body": "Workflows n8n et Make d\u00e9ploy\u00e9s en production : connexion des outils existants plut\u00f4t que remplacement, avec la m\u00eame m\u00e9canique de cartographie puis de mise en production.",
+          "result": "4 secteurs couverts \u00b7 2 plateformes d'orchestration"
+        }
+      ]
+    },
+    "education": {
+      "title": "Formation",
+      "items": [
+        {
+          "degree": "Ma\u00eetrise en Science des Donn\u00e9es & Intelligence Artificielle",
+          "school": "EMIT, Universit\u00e9 de Fianarantsoa",
+          "location": "Fianarantsoa, Madagascar",
+          "detail": "Apprentissage automatique, NLP, IA conversationnelle, MLOps.",
+          "edge": ""
+        },
+        {
+          "degree": "Licence en D\u00e9veloppement d'Applications Internet et Intranet",
+          "school": "EMIT, Universit\u00e9 de Fianarantsoa",
+          "location": "Fianarantsoa, Madagascar",
+          "detail": "Algorithmique, r\u00e9solution de probl\u00e8mes, programmation.",
+          "edge": ""
+        },
+        {
+          "degree": "Licence en Management, Finance et Comptabilit\u00e9",
+          "school": "EMEDIA",
+          "location": "Antananarivo, Madagascar",
+          "detail": "Leadership, gestion de projet, management et gestion d'\u00e9quipe, gestion des ressources, RH et chasse de profils.",
+          "edge": "La moiti\u00e9 business du m\u00e9tier : lire un P&L, cadrer un budget, structurer une \u00e9quipe et recruter les bons profils. C'est ce qui me fait chiffrer un syst\u00e8me en heures gagn\u00e9es plut\u00f4t qu'en lignes de code."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications"
+    },
+    "languages": {
+      "title": "Langues",
+      "items": [
+        {
+          "name": "Malagasy",
+          "level": "Langue maternelle"
+        },
+        {
+          "name": "Fran\u00e7ais",
+          "level": "Bilingue, langue de travail quotidienne"
+        },
+        {
+          "name": "Anglais",
+          "level": "Professionnel, \u00e0 l'\u00e9crit comme sur la documentation technique"
+        }
+      ]
+    },
+    "soft": {
+      "title": "Savoir-\u00eatre & m\u00e9thodes",
+      "items": [
+        "Leadership",
+        "Vulgarisation technique",
+        "Esprit d'analyse",
+        "Autonomie",
+        "Mentorat",
+        "Curiosit\u00e9 technologique",
+        "Travail en \u00e9quipe distribu\u00e9e",
+        "Initiatives STEM"
+      ]
+    },
+    "outro": {
+      "title": "Parlons de votre syst\u00e8me",
+      "body": "Un processus qui coince, une architecture \u00e0 cadrer, un agent IA \u00e0 concevoir : la conversation commence par une cartographie, pas par un devis.",
+      "cta": "\u00c9crire un message",
+      "portfolio": "Voir le portfolio complet"
+    },
+    "pdf": {
+      "pageLabel": "page"
+    }
   },
   "Footer": {
     "projects": "R\u00e9alisations",

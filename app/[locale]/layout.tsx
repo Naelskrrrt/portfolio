@@ -182,8 +182,11 @@ export default async function LocaleLayout({ children, params }: Props) {
             enableSystem
             disableTransitionOnChange={false}
           >
-            <GalaxyJourney />
-            <DawnSideRays />
+            {/* Decorative WebGL/pixel layers — never printed (see CV print styles) */}
+            <div className="contents print:hidden">
+              <GalaxyJourney />
+              <DawnSideRays />
+            </div>
             <div className="noise relative z-10">{children}</div>
           </ThemeProvider>
         </NextIntlClientProvider>

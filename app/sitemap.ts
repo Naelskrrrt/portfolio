@@ -28,5 +28,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: `${BASE_URL}/fr/cv`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: {
+        languages: {
+          fr: `${BASE_URL}/fr/cv`,
+          en: `${BASE_URL}/en/cv`,
+        },
+      },
+    },
+    {
+      url: `${BASE_URL}/en/cv`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+      alternates: {
+        languages: {
+          fr: `${BASE_URL}/fr/cv`,
+          en: `${BASE_URL}/en/cv`,
+        },
+      },
+    },
   ];
 }

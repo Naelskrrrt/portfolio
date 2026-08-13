@@ -142,10 +142,18 @@ export function SideRays({
     let renderer: Renderer | null = null;
     let animationId: number | null = null;
 
-    const renderer_ = new Renderer({
-      dpr: Math.min(window.devicePixelRatio, 2),
-      alpha: true,
-    });
+    let renderer_: Renderer;
+    try {
+      renderer_ = new Renderer({
+        dpr: Math.min(window.devicePixelRatio, 2),
+        alpha: true,
+      });
+    } catch {
+      // No WebGL context (headless rendering, hardware acceleration disabled,
+      // locked-down browser). The rays are decorative: skip them rather than
+      // letting the exception take the whole page down.
+      return;
+    }
     renderer = renderer_;
 
     const gl = renderer_.gl;

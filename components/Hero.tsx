@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { ConstellationBackground } from "./ConstellationBackground";
 
 const PUNCHLINE_COUNT = 10;
@@ -19,8 +20,11 @@ const socialLinks = [
     icon: LinkedinIcon,
   },
   { name: "X", href: "https://www.x.com/lalasonnael29", icon: XIcon },
-  { name: "CV", href: "/CV Lalason Annael.pdf", icon: CvIcon, download: true },
+  { name: "CV", href: "/cv", icon: CvIcon, internal: true },
 ];
+
+const socialLinkClass =
+  "h-8 px-3 rounded-md border border-border bg-background/80 backdrop-blur-sm shadow-xs flex items-center gap-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors";
 
 function getRandomIndex() {
   return Math.floor(Math.random() * PUNCHLINE_COUNT);
@@ -100,17 +104,19 @@ export function Hero() {
 
         {/* Social Links */}
         <div className="flex items-center gap-2 flex-wrap">
-          {socialLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              {...("download" in link && { download: true })}
-              className="h-8 px-3 rounded-md border border-border bg-background/80 backdrop-blur-sm shadow-xs flex items-center gap-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-            >
-              <link.icon className="w-4 h-4" />
-              <span>{link.name}</span>
-            </a>
-          ))}
+          {socialLinks.map((link) =>
+            "internal" in link ? (
+              <Link key={link.name} href={link.href} className={socialLinkClass}>
+                <link.icon className="w-4 h-4" />
+                <span>{link.name}</span>
+              </Link>
+            ) : (
+              <a key={link.name} href={link.href} className={socialLinkClass}>
+                <link.icon className="w-4 h-4" />
+                <span>{link.name}</span>
+              </a>
+            )
+          )}
         </div>
       </div>
     </section>

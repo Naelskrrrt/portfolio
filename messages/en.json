@@ -42,13 +42,13 @@
     },
     "items": {
       "0": {
-        "text": "Automation systems generating",
-        "linkText": "+$3,000 ROI",
-        "suffix": "in under 2 months"
+        "text": "Advanced process structuring:",
+        "linkText": "up to \u20ac10,000 gained",
+        "suffix": "on the systems I ship"
       },
       "1": {
-        "text": "Up to",
-        "linkText": "40 hours/month reclaimed",
+        "text": "On average",
+        "linkText": "40 hours reclaimed per month",
         "suffix": "through workflow restructuring"
       },
       "2": {
@@ -377,6 +377,369 @@
   },
   "Contact": {
     "title": "Start a conversation"
+  },
+  "CV": {
+    "meta": {
+      "title": "Resume of LALASON Anna\u00ebl \u00b7 AI Systems Architect",
+      "description": "Resume of LALASON Anna\u00ebl, AI systems architect: AI agents and multi-agent systems, RAG, n8n & Make automation, software architecture and Next.js applications. Experience, skills, certifications."
+    },
+    "toolbar": {
+      "back": "Portfolio",
+      "print": "Download as PDF",
+      "printAria": "Download the resume as a PDF"
+    },
+    "header": {
+      "role": "AI Systems Architect \u00b7 Architecte Syst\u00e8mes & IA",
+      "available": "Available for engagements and strategic collaborations",
+      "location": "Antananarivo, Madagascar (GMT+3) \u00b7 remote work on hours spanning Canada to Asia (GMT-8 to GMT+9)",
+      "photoAlt": "Photo of LALASON Anna\u00ebl",
+      "labels": {
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "site": "Website",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+      }
+    },
+    "summary": {
+      "title": "Profile",
+      "body": "AI systems architect. I design and ship intelligent systems end to end: AI agents and multi-agent architectures, business process automation, structured web applications. 15+ clients supported, 25+ projects delivered and 2,000+ automations running in e-commerce, healthcare, real estate and SaaS. Up to \u20ac10,000 gained through advanced process structuring, and 40 hours reclaimed on average every month. Currently a Tech Lead, equally at home in technical governance, architecture design and code.",
+      "quote": "Before automating, I understand. Before building, I structure."
+    },
+    "impact": {
+      "title": "Key numbers",
+      "metrics": [
+        {
+          "value": "+15",
+          "label": "clients supported"
+        },
+        {
+          "value": "+25",
+          "label": "projects delivered"
+        },
+        {
+          "value": "+2,000",
+          "label": "automations in production"
+        },
+        {
+          "value": "40 h",
+          "label": "reclaimed on average every month"
+        },
+        {
+          "value": "up to \u20ac10,000",
+          "label": "gained through process structuring"
+        }
+      ]
+    },
+    "expertise": {
+      "title": "Areas of expertise",
+      "areas": [
+        {
+          "title": "AI systems architecture",
+          "body": "Agents and multi-agent systems, RAG and sourced memory where every fact stays tied to its evidence, human guardrails on sensitive writes, production supervision."
+        },
+        {
+          "title": "Automation & orchestration",
+          "body": "Process mapping before any code, n8n and Make workflows, connecting the existing business tools rather than replacing them."
+        },
+        {
+          "title": "Web product engineering",
+          "body": "Next.js and React applications delivered end to end: structured APIs, PostgreSQL, real-time exchanges, GDPR and health-data hosting constraints."
+        },
+        {
+          "title": "Technical governance",
+          "body": "Requirement framing, architecture and code reviews, team coaching and mentoring, documentation and applied technology watch."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Technical skills",
+      "groups": [
+        {
+          "label": "Applied AI & LLMs",
+          "items": [
+            "LLM Engineering",
+            "RAG",
+            "Fine-tuning / QLoRA",
+            "Prompt engineering",
+            "AI agents",
+            "Multi-agent systems",
+            "LangChain",
+            "CrewAI",
+            "Hugging Face",
+            "OpenAI / GPT-4",
+            "NLP",
+            "Machine Learning",
+            "Deep Learning",
+            "Computer Vision",
+            "MLOps"
+          ]
+        },
+        {
+          "label": "Automation & orchestration",
+          "items": [
+            "n8n",
+            "Make",
+            "Webhooks & APIs",
+            "Apify",
+            "Talend",
+            "ETL",
+            "Google Workspace",
+            "Monday",
+            "Sellsy",
+            "Pennylane",
+            "Zendesk",
+            "Shopify",
+            "Meta Ads",
+            "GA4",
+            "AI-augmented monitoring"
+          ]
+        },
+        {
+          "label": "Architecture & backend",
+          "items": [
+            "Software architecture",
+            "Systems design",
+            "Clean Code",
+            "REST APIs",
+            "Python",
+            "FastAPI",
+            "Node.js",
+            "Express.js",
+            "Bun",
+            "Java",
+            "UML",
+            "MERISE"
+          ]
+        },
+        {
+          "label": "Frontend & product",
+          "items": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML / CSS / Sass",
+            "Tailwind CSS",
+            "SWR",
+            "Socket.io",
+            "UX/UI Design",
+            "Figma",
+            "Adobe XD",
+            "Design systems"
+          ]
+        },
+        {
+          "label": "Data & infrastructure",
+          "items": [
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Prisma",
+            "SQL",
+            "Pandas",
+            "Data warehouse",
+            "Vercel",
+            "HDS health hosting",
+            "GDPR",
+            "Git / GitHub / GitLab",
+            "CI/CD"
+          ]
+        },
+        {
+          "label": "Leadership & methods",
+          "items": [
+            "Tech Lead",
+            "Technical governance",
+            "Agile Scrum",
+            "Project management",
+            "Coaching & mentoring",
+            "Code review",
+            "Framing & documentation",
+            "Technology watch"
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Professional experience",
+      "stackLabel": "Stack",
+      "items": [
+        {
+          "role": "Founder & AI Architect",
+          "company": "Flow AI Studio",
+          "type": "Freelance",
+          "period": "Since 2024",
+          "location": "Remote",
+          "summary": "Designing custom AI agents and automation systems for teams that want to scale without hiring.",
+          "bullets": [
+            "Multi-agent system architecture: a central orchestrator, business-specialised agents, and a sourced, versioned memory where every fact stays tied to its evidence.",
+            "\"Read first\" design principle: every sensitive external write goes through explicit human validation.",
+            "2,000+ n8n and Make workflows shipped to production across e-commerce, healthcare, real estate and SaaS.",
+            "Up to \u20ac10,000 gained through advanced process structuring, and 40 hours reclaimed on average every month by client teams.",
+            "15+ clients supported, from process mapping through to production rollout and monitoring."
+          ],
+          "stack": "Python \u00b7 TypeScript \u00b7 n8n \u00b7 Make \u00b7 LangChain \u00b7 CrewAI \u00b7 OpenAI GPT-4 \u00b7 RAG \u00b7 PostgreSQL \u00b7 Next.js"
+        },
+        {
+          "role": "Tech Lead & Automation Architect",
+          "company": "Mon Ambassadeur",
+          "type": "Full-time",
+          "period": "Since August 2024",
+          "location": "Madagascar \u00b7 hybrid",
+          "summary": "Technical governance, software architecture design and orchestration of intelligent workflows.",
+          "bullets": [
+            "Technical supervision of the team: architecture and code reviews, developer coaching and mentoring.",
+            "Design and orchestration of automation workflows with n8n, Make and autonomous AI agents.",
+            "Integration of recruiting and prospecting platforms (LinkedIn, Upwork, Apify, Talend) into automated pipelines.",
+            "Project steering, requirement framing and technology watch applied to AI products."
+          ],
+          "stack": "TypeScript \u00b7 Next.js \u00b7 Python \u00b7 n8n \u00b7 Make \u00b7 APIs & webhooks \u00b7 PostgreSQL"
+        },
+        {
+          "role": "Frontend Developer & UX/UI Designer",
+          "company": "Acc\u00e8sBanque Madagascar",
+          "type": "Development Hub",
+          "period": "January 2024 to February 2025",
+          "location": "Fianarantsoa, Madagascar",
+          "summary": "Structuring internet and intranet interfaces, from wireframe to shipped component.",
+          "bullets": [
+            "Converting mockups and design systems into reusable React components.",
+            "Wireframing and prototyping web and mobile interfaces in Figma, Adobe XD and Sketch.",
+            "Improving user experience and visual consistency across internal applications."
+          ],
+          "stack": "ReactJS \u00b7 JavaScript \u00b7 HTML / CSS / Sass \u00b7 Figma \u00b7 Adobe XD \u00b7 Sketch"
+        },
+        {
+          "role": "Web Developer (independent engagement)",
+          "company": "SPAT, Toamasina Autonomous Port Authority",
+          "type": "Freelance",
+          "period": "June 2022 to December 2023",
+          "location": "Toamasina, Madagascar \u00b7 hybrid",
+          "summary": "Design and architecture of a company-wide leave management system.",
+          "bullets": [
+            "Data and application architecture modelling (MERISE, UML) ahead of any development.",
+            "Full-stack development: ReactJS on the client, Node.js and Express on the server, MySQL for storage.",
+            "Analytics dashboard to track requests and remaining leave balances."
+          ],
+          "stack": "ReactJS \u00b7 Node.js \u00b7 Express.js \u00b7 MySQL \u00b7 MERISE \u00b7 UML \u00b7 Git"
+        },
+        {
+          "role": "Systems Support & Maintenance",
+          "company": "PANDA COMPANY",
+          "type": "Freelance",
+          "period": "2022",
+          "location": "Madagascar",
+          "summary": "IT support and user enablement.",
+          "bullets": [
+            "Diagnosing and resolving hardware and software incidents.",
+            "Training and supporting users on their IT tools.",
+            "Maintaining the technical infrastructure and workstations."
+          ],
+          "stack": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Selected work",
+      "resultLabel": "Outcome",
+      "items": [
+        {
+          "name": "Minia, a multi-agent AI Chief of Staff",
+          "context": "Multi-company executive \u00b7 holding",
+          "body": "Orchestrator agent reachable on Telegram, WhatsApp and Discord, backed by specialised AI staff and a sourced memory. Connectors for Gmail, Calendar, Drive, Monday, Sellsy, Fireflies and Pennylane.",
+          "result": "40 h saved on average every month \u00b7 21 active automations \u00b7 6+ specialised agents"
+        },
+        {
+          "name": "TalentFindr, AI sourcing platform",
+          "context": "Product \u00b7 recruiting & sourcing",
+          "body": "Search across 800+ million profiles, relevance scoring, verified contact details and multichannel sequences on LinkedIn, email and WhatsApp. Copilot mode, or autopilot with KAIA, the agent that sources, contacts and follows up on its own. GDPR compliant, hosted in the EU.",
+          "result": "1,500+ recruiters, agencies and consultancies across 10+ countries"
+        },
+        {
+          "name": "T\u00e9lavie, telemedicine platform",
+          "context": "Product \u00b7 healthcare",
+          "body": "A single platform covering teleconsultation and practice management, with three coherent spaces: patient, practitioner, administrator. Real-time exchanges, hosted on an HDS-certified server.",
+          "result": "3 unified roles \u00b7 Next.js, Prisma, PostgreSQL, SWR, Socket \u00b7 HDS hosting"
+        },
+        {
+          "name": "2,000+ automations deployed",
+          "context": "Cross-industry \u00b7 e-commerce, healthcare, real estate, SaaS",
+          "body": "n8n and Make workflows shipped to production: connecting existing tools rather than replacing them, with the same mechanics of mapping first, then going live.",
+          "result": "4 industries covered \u00b7 2 orchestration platforms"
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "degree": "Master's in Data Science & Artificial Intelligence",
+          "school": "EMIT, University of Fianarantsoa",
+          "location": "Fianarantsoa, Madagascar",
+          "detail": "Machine learning, NLP, conversational AI, MLOps.",
+          "edge": ""
+        },
+        {
+          "degree": "Bachelor's in Internet and Intranet Application Development",
+          "school": "EMIT, University of Fianarantsoa",
+          "location": "Fianarantsoa, Madagascar",
+          "detail": "Algorithms, problem solving, programming.",
+          "edge": ""
+        },
+        {
+          "degree": "Bachelor's in Management, Finance and Accounting",
+          "school": "EMEDIA",
+          "location": "Antananarivo, Madagascar",
+          "detail": "Leadership, project management, team management, resource management, HR and profile hunting.",
+          "edge": "The business half of the job: reading a P&L, framing a budget, structuring a team and hiring the right people. It is why I price a system in hours reclaimed rather than in lines of code."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications"
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        {
+          "name": "Malagasy",
+          "level": "Native language"
+        },
+        {
+          "name": "French",
+          "level": "Bilingual, daily working language"
+        },
+        {
+          "name": "English",
+          "level": "Professional, in writing and across technical documentation"
+        }
+      ]
+    },
+    "soft": {
+      "title": "Ways of working",
+      "items": [
+        "Leadership",
+        "Explaining technical work clearly",
+        "Analytical thinking",
+        "Autonomy",
+        "Mentoring",
+        "Technical curiosity",
+        "Distributed teamwork",
+        "STEM initiatives"
+      ]
+    },
+    "outro": {
+      "title": "Let's talk about your system",
+      "body": "A process that keeps jamming, an architecture to frame, an AI agent to design: the conversation starts with a map, not a quote.",
+      "cta": "Send a message",
+      "portfolio": "See the full portfolio"
+    },
+    "pdf": {
+      "pageLabel": "page"
+    }
   },
   "Footer": {
     "projects": "Work",
