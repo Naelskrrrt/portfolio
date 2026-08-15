@@ -312,41 +312,6 @@
       }
     }
   },
-  "TechILove": {
-    "title": "Tech stack",
-    "techs": {
-      "0": {
-        "description": "Reference framework for structured web applications"
-      },
-      "1": {
-        "description": "Rigorous typing for reliable, maintainable code"
-      },
-      "2": {
-        "description": "Language of choice for AI and automation"
-      },
-      "3": {
-        "description": "Performant APIs, fast to design and deploy"
-      },
-      "4": {
-        "description": "Building applications that integrate LLMs"
-      },
-      "5": {
-        "description": "Orchestrating collaborative AI agents"
-      },
-      "6": {
-        "description": "Reference platform for ML models"
-      },
-      "7": {
-        "description": "Pillars of automation and AI orchestration"
-      },
-      "8": {
-        "description": "Robust and battle-tested relational database"
-      },
-      "9": {
-        "description": "Structured ORM for efficient data access"
-      }
-    }
-  },
   "Certifications": {
     "title": "Certifications",
     "items": {
@@ -455,6 +420,122 @@
     },
     "skills": {
       "title": "Technical skills",
+      "filterLabel": "Filter skills by profile",
+      "profiles": [
+        {
+          "label": "AI automation",
+          "items": [
+            "n8n",
+            "Make",
+            "Webhooks & APIs",
+            "Apify",
+            "Talend",
+            "ETL",
+            "Google Workspace",
+            "Monday",
+            "Sellsy",
+            "Pennylane",
+            "Zendesk",
+            "Shopify",
+            "Meta Ads",
+            "GA4",
+            "AI-augmented monitoring",
+            "Python",
+            "REST APIs",
+            "FastAPI",
+            "AI agents",
+            "Data warehouse"
+          ]
+        },
+        {
+          "label": "Agentic AI",
+          "items": [
+            "LLM Engineering",
+            "RAG",
+            "Fine-tuning / QLoRA",
+            "Prompt engineering",
+            "AI agents",
+            "Multi-agent systems",
+            "LangChain",
+            "CrewAI",
+            "Hugging Face",
+            "OpenAI / GPT-4",
+            "NLP",
+            "Machine Learning",
+            "Deep Learning",
+            "Computer Vision",
+            "MLOps",
+            "Python",
+            "FastAPI",
+            "REST APIs"
+          ]
+        },
+        {
+          "label": "Product build",
+          "items": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML / CSS / Sass",
+            "Tailwind CSS",
+            "SWR",
+            "Socket.io",
+            "UX/UI Design",
+            "Figma",
+            "Adobe XD",
+            "Design systems",
+            "Node.js",
+            "Express.js",
+            "Bun",
+            "REST APIs",
+            "PostgreSQL",
+            "Prisma",
+            "Vercel"
+          ]
+        },
+        {
+          "label": "Data & platform",
+          "items": [
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Prisma",
+            "SQL",
+            "Pandas",
+            "Data warehouse",
+            "Vercel",
+            "HDS health hosting",
+            "GDPR",
+            "Git / GitHub / GitLab",
+            "CI/CD",
+            "ETL",
+            "Talend",
+            "Python"
+          ]
+        },
+        {
+          "label": "Tech Lead",
+          "items": [
+            "Tech Lead",
+            "Technical governance",
+            "Agile Scrum",
+            "Project management",
+            "Coaching & mentoring",
+            "Code review",
+            "Framing & documentation",
+            "Technology watch",
+            "Software architecture",
+            "Systems design",
+            "Clean Code",
+            "UML",
+            "MERISE",
+            "Git / GitHub / GitLab",
+            "CI/CD"
+          ]
+        }
+      ],
       "groups": [
         {
           "label": "Applied AI & LLMs",

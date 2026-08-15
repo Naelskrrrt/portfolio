@@ -312,41 +312,6 @@
       }
     }
   },
-  "TechILove": {
-    "title": "Stack technique",
-    "techs": {
-      "0": {
-        "description": "Framework de r\u00e9f\u00e9rence pour les applications web structur\u00e9es"
-      },
-      "1": {
-        "description": "Typage rigoureux pour un code fiable et maintenable"
-      },
-      "2": {
-        "description": "Langage de pr\u00e9dilection pour l'IA et l'automatisation"
-      },
-      "3": {
-        "description": "APIs performantes, rapides \u00e0 concevoir et \u00e0 d\u00e9ployer"
-      },
-      "4": {
-        "description": "Construction d'applications int\u00e9grant des LLMs"
-      },
-      "5": {
-        "description": "Orchestration d'agents IA collaboratifs"
-      },
-      "6": {
-        "description": "Plateforme de r\u00e9f\u00e9rence pour les mod\u00e8les de ML"
-      },
-      "7": {
-        "description": "Piliers de l'automatisation et de l'orchestration IA"
-      },
-      "8": {
-        "description": "Base de donn\u00e9es relationnelle robuste et \u00e9prouv\u00e9e"
-      },
-      "9": {
-        "description": "ORM structur\u00e9 pour un acc\u00e8s donn\u00e9es efficace"
-      }
-    }
-  },
   "Certifications": {
     "title": "Certifications",
     "items": {
@@ -455,6 +420,122 @@
     },
     "skills": {
       "title": "Comp\u00e9tences techniques",
+      "filterLabel": "Filtrer les comp\u00e9tences par profil",
+      "profiles": [
+        {
+          "label": "Automatisation IA",
+          "items": [
+            "n8n",
+            "Make",
+            "Webhooks & APIs",
+            "Apify",
+            "Talend",
+            "ETL",
+            "Google Workspace",
+            "Monday",
+            "Sellsy",
+            "Pennylane",
+            "Zendesk",
+            "Shopify",
+            "Meta Ads",
+            "GA4",
+            "Monitoring augment\u00e9 par IA",
+            "Python",
+            "API REST",
+            "FastAPI",
+            "Agents IA",
+            "Data warehouse"
+          ]
+        },
+        {
+          "label": "IA agentique",
+          "items": [
+            "LLM Engineering",
+            "RAG",
+            "Fine-tuning / QLoRA",
+            "Prompt engineering",
+            "Agents IA",
+            "Syst\u00e8mes multi-agents",
+            "LangChain",
+            "CrewAI",
+            "Hugging Face",
+            "OpenAI / GPT-4",
+            "NLP",
+            "Machine Learning",
+            "Deep Learning",
+            "Computer Vision",
+            "MLOps",
+            "Python",
+            "FastAPI",
+            "API REST"
+          ]
+        },
+        {
+          "label": "Product builder",
+          "items": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML / CSS / Sass",
+            "Tailwind CSS",
+            "SWR",
+            "Socket.io",
+            "UX/UI Design",
+            "Figma",
+            "Adobe XD",
+            "Design systems",
+            "Node.js",
+            "Express.js",
+            "Bun",
+            "API REST",
+            "PostgreSQL",
+            "Prisma",
+            "Vercel"
+          ]
+        },
+        {
+          "label": "Data & plateforme",
+          "items": [
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Prisma",
+            "SQL",
+            "Pandas",
+            "Data warehouse",
+            "Vercel",
+            "H\u00e9bergement HDS",
+            "RGPD",
+            "Git / GitHub / GitLab",
+            "CI/CD",
+            "ETL",
+            "Talend",
+            "Python"
+          ]
+        },
+        {
+          "label": "Tech Lead",
+          "items": [
+            "Tech Lead",
+            "Gouvernance technique",
+            "Agile Scrum",
+            "Gestion de projet",
+            "Encadrement & mentorat",
+            "Revue de code",
+            "Cadrage & documentation",
+            "Veille technologique",
+            "Architecture logicielle",
+            "Conception de syst\u00e8mes",
+            "Clean Code",
+            "UML",
+            "MERISE",
+            "Git / GitHub / GitLab",
+            "CI/CD"
+          ]
+        }
+      ],
       "groups": [
         {
           "label": "IA appliqu\u00e9e & LLM",
