@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Section } from "./Section";
 import { ProjectModal } from "./ProjectModal";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const CATEGORIES = ["all", "agentic", "automation", "saas", "data"] as const;
@@ -291,14 +292,12 @@ export function Projects() {
         </button>
       )}
 
-      <a
-        href="https://flow-ai.studio/cas-clients"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        href="/offre"
         className="w-fit text-sm text-muted-foreground underline underline-offset-2 hover:text-foreground transition-colors"
       >
         {t("more")}
-      </a>
+      </Link>
 
       {selected && (
         <ProjectModal

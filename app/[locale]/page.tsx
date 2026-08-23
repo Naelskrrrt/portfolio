@@ -16,9 +16,9 @@ export default function Home() {
       <Header />
       <Hero />
       <ThingsIveDone />
-      <ThingsIveBuild />
       <Projects />
       <TechStack />
+      <ThingsIveBuild />
       <Certifications />
       <FavPosts />
 

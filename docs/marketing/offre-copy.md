@@ -1,194 +1,111 @@
-# Copy — page `/offre`
+# Copy de référence — page `/offre`
 
-> Cible : dirigeants multi-sociétés (holding, groupe, entrepreneur multi-casquettes), 10-100 personnes au total, pas de DSI.
-> Objectif unique de la page : déclencher la prise de rendez-vous.
-> Voix : « je ». Le mot « nous » n'apparaît nulle part. Signature : Annaël Lalason.
-> Écrit le 17/08/2026. Prix repris de `flow-ai.studio/src/lib/offer.ts`.
+> Version dirigeant, centrée sur l’investissement, le seuil de rentabilité et la décision. Elle remplace la page longue fondée sur le problème et le parcours en cinq étapes.
 
----
+## Contrat éditorial
 
-## Meta
+- **Cible :** dirigeants de PME, holdings et entrepreneurs qui pilotent plusieurs équipes sans DSI dédiée.
+- **Objectif :** obtenir un appel de qualification de 30 minutes autour d’un processus concret.
+- **Question principale :** combien investir, quel résultat acheter et à partir de quel gain le projet devient-il rationnel ?
+- **Produit principal :** le Pilote Flow, pas la cartographie ni le support mensuel.
+- **Règle de preuve :** aucune économie n’est garantie. Les hypothèses du simulateur sont modifiables et les gains du cas réel restent présentés comme l’estimation d’un dirigeant sur un système plus large.
+- **Source unique des prix :** `lib/offer.ts`. Les montants injectés dans la page ne doivent pas être dupliqués dans les traductions.
 
-**title** — `Offre & tarifs — Annaël Lalason · Flow AI Studio`
+## Hiérarchie de la page
 
-**description** — `Quatre marches, prix affichés, périmètre fermé : cartographie à 890 €, systèmes de 4 500 à 9 500 €, run mensuel à partir de 390 €. Et la liste de ce que je refuse d'automatiser.`
+1. Problème concret, prix, délai, identité du prestataire et appel gratuit dans le premier écran.
+2. Cas réel anonymisé, avec métriques et limites de la preuve explicites.
+3. Simulateur de seuil de rentabilité avec hypothèses visibles.
+4. Comparatif de trois engagements et appel à l’action sur le Pilote recommandé.
+5. Périmètre exact du Pilote et démonstration vidéo réelle sur WhatsApp.
+6. Cinq questions de décision, dont les données et les accès.
+7. Appel à l’action final.
 
----
+Les anciennes sections autonomes « problème », « exemples », « parcours », « système complet », « Run », « cartographie » et « garde-fous » ne doivent pas réapparaître. Leurs informations essentielles sont fusionnées dans les blocs ci-dessus. La preuve anonymisée reste un bloc autonome pour séparer clairement le cas observé des hypothèses du simulateur.
 
 ## Hero
 
 **H1**
-> Quatre marches. Vous pouvez vous arrêter à chacune.
 
-**Sous-titre**
-> Prix affichés, périmètre fermé, et la liste de ce que je refuse d'automatiser. Vous saurez ce que vous achetez avant de me parler.
-
-**CTA** → `Réserver 30 minutes`
-
----
-
-## Encart Pilote — en haut de page, au-dessus du problème
-
-**Titre**
-> Pilote Flow — 3 places jusqu'au 30 septembre 2026
+> Votre équipe ne manque pas d’outils. Elle perd du temps à les recoller.
 
 **Corps**
-> 1 500 € au lieu de 4 500 €. La cartographie est offerte au lieu d'être déduite. Le run passe à 290 € par mois au lieu de 390 €.
->
-> **Ce n'est pas une remise, c'est un échange.** Je construis mes références publiques sur ces trois premiers systèmes. En contrepartie du prix, je vous demande trois choses :
 
-1. Un témoignage nommé, avec votre fonction et votre entreprise
-2. L'accès aux chiffres avant / après du processus automatisé
-3. Un appel de référence pour un futur prospect, une fois le système en production
+> Je transforme un processus prioritaire en un flux opérationnel en 2 à 3 semaines, dès 1 500 € HT. Vos informations restent reliées à leurs sources et vous validez chaque action sensible.
 
-> Si l'une des trois vous pose un problème, prenez la grille normale. Elle est juste en dessous.
+**Repères visibles immédiatement**
 
-**CTA** → `Prendre une des 3 places`
+- Pilote dès 1 500 € HT ;
+- mise en production en deux à trois semaines ;
+- 35 à 50 heures récupérées par mois sur le système observé, selon l’estimation du dirigeant et sans garantie de reproductibilité ;
+- appel de qualification gratuit de 30 minutes.
+- conception et livraison par Annaël Lalason, interlocuteur unique du cadrage à la mise en production.
 
----
+## Simulateur de ROI
 
-## Le problème
+Le simulateur part du prix d’entrée du Pilote et permet au visiteur de modifier :
 
-**H2**
-> Vous ne manquez pas de temps. Vous repartez de zéro.
+- le temps manuel mensuel consacré au processus ;
+- la part raisonnablement récupérable ;
+- le coût horaire chargé ;
+- l’inclusion ou non de Flow Run au prix de départ.
 
-**Corps**
-> À chaque dossier, il faut reconstituer le contexte. Le mail est dans une boîte, la décision dans un compte-rendu, le chiffre dans un tableur, l'historique dans la tête de quelqu'un. Multiplié par le nombre de sociétés que vous dirigez.
->
-> Le coût réel n'est pas le temps passé à chercher. C'est la décision prise avec une information incomplète, la relance oubliée, le dossier qui avance de trois semaines en retard parce que personne n'avait la pièce manquante sous les yeux.
->
-> Ce n'est pas un problème de talent. C'est un problème de système.
+Il calcule :
 
----
+```text
+heures récupérées = heures manuelles × part récupérable
+valeur brute mensuelle = heures récupérées × coût horaire
+valeur nette mensuelle = valeur brute − coût récurrent simulé
+amortissement = investissement initial ÷ valeur nette mensuelle
+ROI 12 mois = (valeur 12 mois − coût total 12 mois) ÷ coût total 12 mois
+```
 
-## Les quatre marches
+Scénario initial affiché, explicitement modifiable et non contractuel : 40 heures manuelles, 40 % récupérables, 60 € par heure et Flow Run inclus. Il produit 16 heures récupérées, 960 € de valeur brute mensuelle, 570 € de valeur nette, 2,6 mois d’amortissement et 86,4 % de ROI indicatif à 12 mois.
 
-### 1. Diagnostic — gratuit, 10 minutes, en ligne
+Les outils tiers, l’adoption, la qualité des données, les variations de périmètre, les gains de revenu et la réduction du risque ne sont pas inclus dans ce calcul.
 
-> Vingt questions sur votre organisation. À la fin, un score et les trois processus où vous perdez le plus.
->
-> Vous repartez avec le résultat même si on ne se parle jamais.
+## Échelle commerciale
 
-**CTA** → `Faire le diagnostic`
+| Décision | Engagement | Prix | Délai |
+| --- | --- | ---: | --- |
+| Faut-il automatiser ce processus ? | Cadrage express | 290 € HT | Sous 5 jours ouvrés |
+| La valeur existe-t-elle en production ? | Pilote Flow | Dès 1 500 € HT | 2 à 3 semaines |
+| Faut-il étendre à plusieurs processus ? | Système complet | Dès 4 500 € HT | Selon le périmètre |
 
----
+- Les 290 € du cadrage sont déduits si un Pilote ou un système démarre dans les 30 jours.
+- Flow Run est optionnel, dès 390 € HT par mois.
+- La cartographie complète est une option autonome à 890 € HT, jamais un prérequis.
 
-### 2. Cartographie — 890 €
+## Périmètre du Pilote
 
-> Deux semaines. Je démonte vos processus réels, pas ceux du manuel : qui fait quoi, avec quel outil, à quel moment ça casse.
->
-> Vous recevez la carte de vos flux, la liste priorisée de ce qui vaut la peine d'être automatisé, ce que ça coûterait, et ce que je vous déconseille de toucher.
->
-> **Vous pouvez vous arrêter là.** La carte est à vous, exploitable par n'importe qui — moi, votre équipe, un autre prestataire. Si vous continuez avec moi, elle est déduite du système.
+**Ce que le prix de départ achète :** un processus prioritaire réellement mis en production, pas une maquette.
 
----
+- un processus et une équipe ;
+- jusqu’à trois outils ou sources ;
+- un déclencheur, un parcours principal, ses exceptions essentielles et un résultat concret exploitable par l’équipe ;
+- validations humaines avant les actions sensibles ;
+- tests, journal d’exécution, alerte d’échec et mise en production ;
+- documentation, passation et critère de succès défini avant de construire ;
+- quatorze jours de stabilisation corrective.
 
-### 3. Le système — 4 500 € à 9 500 €
+Le prix de départ exclut les autres processus ou équipes, un tableau de bord sur mesure, une application mobile, le remplacement d’un ERP ou CRM, les abonnements, la consommation d’API et les services tiers.
 
-> Deux à quatre semaines selon le palier. Mise en production et documentation incluses dans les trois cas.
+Une démonstration vidéo réelle montre une demande formulée depuis WhatsApp, puis le brief opérationnel produit à partir du contexte connecté. WhatsApp est l’interface visible ; le produit vendu reste le flux relié aux outils du client, pas un chatbot isolé.
 
-| | Prix | Périmètre |
-|---|---|---|
-| **Flow Solo** | 4 500 € | 1 processus, jusqu'à 3 outils connectés. Un déclencheur, un chemin principal, une sortie. Les exceptions remontent à un humain. |
-| **Flow Duo** | 7 000 € | 2 processus enchaînés, jusqu'à 5 outils. Gestion des cas de reprise entre les deux. |
-| **Flow Ops** | 9 500 € | 3 processus orchestrés + tableau de bord des volumes et des incidents. |
+## FAQ de décision
 
-> Le périmètre est fermé et écrit avant de commencer. Si vous voulez l'élargir en cours de route, on en refait un — je ne fais pas glisser un forfait.
+La page répond uniquement à cinq questions :
 
----
-
-### 4. Le run — à partir de 390 € / mois
-
-> Un système d'automatisation n'est pas un livrable, c'est une installation. Les APIs changent, les outils se mettent à jour, les volumes évoluent. Sans surveillance, ça casse en silence et vous l'apprenez par un client mécontent.
-
-| | Prix / mois | Inclus |
-|---|---|---|
-| **Run Essentiel** | 390 € | Surveillance et alertes, correction des pannes, 1 h d'ajustement |
-| **Run Actif** | 690 € | Tout Essentiel + 3 h d'évolutions + point mensuel de 30 min |
-| **Run Pilote** | 1 200 € | Tout Actif + 8 h d'évolutions, priorité d'intervention, reporting mensuel |
-
-> Sans engagement de durée. Vous arrêtez quand vous voulez, et vous gardez le système et sa documentation.
-
----
-
-## Ce que je refuse d'automatiser
-
-**H2**
-> Quatre choses que je ne toucherai pas, même si vous insistez
-
-> **La relation client de première ligne.** Un message à un client qui compte ne part pas d'un agent. L'agent prépare, vous relisez, vous envoyez.
->
-> **Toute décision qui engage juridiquement ou financièrement.** Le système monte le dossier et vous le pose sur la table. La signature reste la vôtre.
->
-> **Un processus que personne ne sait décrire.** On n'automatise pas du flou, on le multiplie. Si trois personnes donnent trois versions du même processus, il faut le clarifier avant, pas le coder.
->
-> **Un processus qui tourne trois fois par an.** L'automatiser coûtera plus cher que de le faire à la main. Je vous le dirai.
-
-> C'est aussi ce qui me permet de tenir des délais : le périmètre est étroit et connu à l'avance.
-
----
-
-## La preuve
-
-**H2**
-> Un exemple, en détail
-
-> **Chief of Staff IA multi-agent** — dirigeant de plusieurs sociétés, holding.
->
-> Le contexte était éparpillé entre Gmail, le CRM, les réunions et les documents, multiplié par plusieurs sociétés. Chaque dossier repartait de zéro.
->
-> J'ai construit un agent orchestrateur accessible sur Telegram, WhatsApp et Discord, appuyé sur des agents spécialisés par fonction et sur une mémoire sourcée : **chaque fait est rattaché à sa preuve**, donc rien n'est affirmé sans origine vérifiable. Connecteurs Gmail, Calendar, Drive, Monday, Sellsy, Fireflies, Pennylane.
->
-> Le principe de conception, non négociable : **lecture d'abord.** Toute écriture externe sensible passe par une validation humaine.
->
-> Aujourd'hui : 21 automatisations actives, plus de 6 agents spécialisés. Le gain de temps est estimé entre 35 et 50 heures par mois — c'est une estimation du dirigeant, pas une mesure instrumentée, et je le présente comme tel.
->
-> Le résultat qui compte n'est pas le temps. C'est d'arriver préparé à chaque décision.
-
-**Bandeau de crédibilité, sous le cas**
-> Annaël Lalason — Architecte Systèmes & IA. Tech Lead & Architecte Automatisation chez Mon Ambassadeur. Plus de 15 clients accompagnés, plus de 25 projets livrés.
-
----
-
-## Objections
-
-**« Je ne veux pas qu'une IA écrive à mes clients. »**
-> Moi non plus. Tous les systèmes que je livre sont en lecture d'abord : ils rassemblent, préparent, proposent. Toute écriture externe sensible attend votre validation. C'est un choix d'architecture, pas une option à activer.
-
-**« J'ai déjà essayé, ça n'a pas tenu. »**
-> C'est le cas le plus fréquent, et la cause est presque toujours la même : le système a été livré sans surveillance ni gestion des exceptions. Le jour où une API change ou qu'un cas imprévu arrive, il s'arrête sans prévenir. C'est précisément pour ça que le run existe, et pourquoi les exceptions remontent à un humain par conception.
-
-**« 890 € pour un diagnostic, alors que d'autres le font gratuitement. »**
-> Un audit gratuit est un argumentaire de vente. Vous repartez de la cartographie avec un document exploitable sans moi, y compris la liste de ce que je vous déconseille d'automatiser — ce qu'un audit gratuit ne vous dira jamais, puisqu'il est payé par ce qui suit.
-
-**« Combien de temps avant que ça tourne ? »**
-> Deux semaines pour la cartographie. Deux à quatre semaines pour le système selon le palier. Mise en production et documentation comprises.
-
-**« Et si je veux internaliser plus tard ? »**
-> Vous le pourrez. Tout est documenté, et le handover fait partie de la livraison. L'objectif est que vous soyez autonomes, pas dépendants.
-
-**« Vous êtes seul ? »**
-> Oui. C'est Flow AI Studio, et c'est moi qui conçois et qui livre. C'est pour ça que le périmètre est étroit, que les délais sont courts et qu'il n'y a que trois places au Pilote. Vous parlez à la personne qui construit, du premier appel jusqu'au handover.
-
----
+1. Que couvre le prix de départ du Pilote ?
+2. Comment le ROI est-il mesuré ?
+3. Quels frais peuvent s’ajouter ?
+4. Que se passe-t-il après les quatorze jours de stabilisation ?
+5. Que deviennent les données et les accès ?
 
 ## CTA final
 
 **H2**
-> Trente minutes suffisent pour savoir si je peux vous aider
 
-> Pas de présentation commerciale. Vous décrivez comment ça se passe aujourd'hui, je vous dis ce qui est automatisable, ce qui ne l'est pas, et ce que ça coûterait. Si ce n'est pas pour moi, je vous le dis pendant l'appel.
+> Apportez un processus et trois chiffres. Repartez avec une décision.
 
-**CTA** → `Réserver 30 minutes`
-
-**Sous le bouton**
-> Pilote Flow — 3 places jusqu'au 30 septembre 2026.
-
----
-
-## Notes d'implémentation
-
-- Le compte à rebours doit se calculer sur la date réelle. **Si le 30 septembre passe sans que les 3 places soient prises, re-dater explicitement l'offre** — ne pas laisser une échéance expirée à l'écran, c'est le signal de crédibilité le plus coûteux à perdre.
-- L'encart Pilote passe en haut de page tant que des places restent, et disparaît entièrement quand `seats` atteint 0 (ne pas afficher « complet » : ça vend la place suivante que vous n'avez pas).
-- Le témoignage audio de Julien M. se place juste après la section preuve, avec son nom et sa fonction affichés.
-- Chiffre à vérifier avant publication : le cas prospection affiche 400+ prospects/mois dans les données actuelles contre 200+ dans l'audit de mars 2026.
+Le premier échange utilise le volume mensuel, le temps passé et le coût chargé pour tester si le gain potentiel justifie un cadrage ou un Pilote. L’appel reste gratuit, sans audit caché ni engagement sur la suite.

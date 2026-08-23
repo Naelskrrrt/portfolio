@@ -4,11 +4,16 @@
     "description": "I design intelligent systems that structure, automate, and durably transform organizations. Software architecture, applied AI, strategic automation."
   },
   "Header": {
-    "cta": "Let's talk"
+    "availability": "Available for a new project",
+    "navigationLabel": "Primary navigation",
+    "home": "Home",
+    "offer": "Offer",
+    "cta": "Book 30 minutes"
   },
   "Hero": {
     "role": "AI Systems Architect",
     "available": "Available for strategic collaborations",
+    "offerCta": "See the offer",
     "shuffleLabel": "Another perspective",
     "profileAlt": "Profile picture",
     "punchlines": {
@@ -110,7 +115,7 @@
     "filterLabel": "Filter work by type of engagement",
     "countLabel": "{count} projects shown",
     "featuredBadge": "Featured case",
-    "more": "See every case study on flow-ai.studio",
+    "more": "See the offer and pricing",
     "showAll": "Show {count} more projects",
     "showLess": "Show less",
     "detail": "See the detail",
@@ -341,7 +346,9 @@
     "title": "Recommended reads"
   },
   "Contact": {
-    "title": "Start a conversation"
+    "title": "Start a conversation",
+    "cta": "Book 30 minutes",
+    "secondaryCta": "View my offer"
   },
   "CV": {
     "meta": {
@@ -822,9 +829,442 @@
       "pageLabel": "page"
     }
   },
+  "Offre": {
+    "meta": {
+      "title": "Engagements & pricing — Annaël Lalason · Flow AI Studio",
+    "description": "Flow Pilot from €1,500 excl. VAT, delivered in 2–3 weeks. Estimate break-even, compare prices and see exactly what is included."
+    },
+  "hero": {
+    "eyebrow": "AI automation for SMEs · Flow AI Studio",
+    "title": "Your team does not lack tools. It loses time stitching them together.",
+    "body": "I turn one priority process into an operational workflow in 2–3 weeks, from €1,500 excl. VAT. Your information stays linked to its sources, and you approve every sensitive action.",
+    "cta": "Assess my process",
+    "secondaryCta": "Estimate the return",
+    "note": "Free qualification call · 30 minutes · a direct answer on feasibility",
+    "byline": "Designed and delivered by Annaël Lalason",
+    "bylineRole": "Systems & AI architect · one point of contact from scoping to production"
+  },
+  "decision": {
+    "eyebrow": "The decision in three numbers",
+    "investmentLabel": "Pilot investment",
+    "investmentPrefix": "From",
+    "investmentNote": "One clearly defined process actually put into production",
+    "deliveryLabel": "Production launch",
+    "deliveryValue": "2 to 3 weeks",
+    "deliveryNote": "Once the required access and approvals are available",
+    "referenceLabel": "Observed reference",
+    "referenceValue": "35–50 h / month",
+    "referenceNote": "The executive's estimate on a broader system · not a guaranteed result"
+  },
+  "roi": {
+    "eyebrow": "Break-even simulator",
+    "title": "Does the Pilot pay off with your figures?",
+    "body": "Enter the manual time, recoverable share and hourly cost. The calculation isolates the value of recovered time; additional revenue and risk reduction are not counted.",
+    "scenarioLabel": "Editable example · no promise of results",
+    "manualHoursLabel": "Manual time on this process / month",
+    "manualHoursHint": "Search, re-entry, follow-ups, checking and preparation.",
+    "recoveryRateLabel": "Reasonably recoverable share",
+    "recoveryRateHint": "Start conservatively: not all manual work disappears.",
+    "costLabel": "Average loaded cost / hour",
+    "costHint": "Salary, employer costs and overhead for the people involved.",
+    "runLabel": "Add Flow Run",
+    "runHint": "Optional. Monitoring, incidents and changes within an agreed allowance.",
+    "investmentLabel": "Simulated initial investment",
+    "recoveredHoursLabel": "Hours recovered / month",
+    "grossMonthlyValueLabel": "Gross value / month",
+    "netMonthlyValueLabel": "Net value / month",
+    "paybackLabel": "Estimated payback",
+    "paybackUnit": "months",
+    "annualRoiLabel": "Indicative 12-month ROI",
+    "breakEvenLabel": "Hours to recover each month to break even over 12 months:",
+    "formula": "ROI = (12-month value − 12-month total cost) ÷ total cost",
+    "disclaimer": "Indicative calculation based on starting prices. Third-party tools, adoption, data quality and scope changes can alter the result."
+  },
+  "pricing": {
+    "eyebrow": "Pricing and decisions",
+    "title": "Start with the decision you need to make.",
+    "intro": "Each engagement reduces one specific uncertainty. The Pilot is the recommended entry point when one priority process is already clear.",
+    "decisionLabel": "Decision to make",
+    "resultLabel": "You receive",
+    "durationLabel": "Timeline",
+    "recommended": "Recommended",
+    "cards": [
+      {
+        "id": "framing",
+        "title": "Focused scoping",
+        "pricePrefix": "",
+        "decision": "Should this process be automated?",
+        "result": "A written target, risks, scope, timeline and budget.",
+        "duration": "Within 5 business days"
+      },
+      {
+        "id": "pilot",
+        "title": "Flow Pilot",
+        "pricePrefix": "From",
+        "decision": "Does the value hold up in production?",
+        "result": "One clearly defined process, automated, documented, monitored and handed over to your team.",
+        "duration": "2 to 3 weeks"
+      },
+      {
+        "id": "system",
+        "title": "Full system",
+        "pricePrefix": "From",
+        "decision": "Should it expand across several processes?",
+        "result": "Several workflows and tools connected around shared context.",
+        "duration": "Based on scope"
+      }
+    ],
+    "cta": "Qualify this Pilot in 30 min",
+    "creditNote": "The €290 scoping fee is credited when a Pilot or full system starts within 30 days.",
+    "runLabel": "Optional support",
+    "runBody": "Flow Run covers monitoring, incidents and an agreed change allowance.",
+    "mappingLabel": "Need to study several workflows first?",
+    "mappingBody": "Full operational mapping remains a standalone option, never a prerequisite."
+  },
+  "scopeSummary": {
+    "eyebrow": "The core product",
+    "title": "What a €1,500 excl. VAT Pilot buys",
+    "intro": "One priority process in production, not a prototype or a company-wide transformation.",
+    "metrics": [
+      { "value": "1", "label": "priority process" },
+      { "value": "1", "label": "team involved" },
+      { "value": "3 max.", "label": "tools or sources" },
+      { "value": "14 days", "label": "of stabilisation" }
+    ],
+    "includedTitle": "Included in the starting price",
+    "included": [
+      "One trigger, one main path, its essential exceptions and one concrete result your team can use",
+      "Testing, production deployment, execution logs and failure alerts",
+      "Documentation, handover and a success measure agreed before building"
+    ],
+    "limitsTitle": "Boundaries that protect the budget",
+    "limits": [
+      "One process and one team only",
+      "No custom dashboard, mobile app or replacement of an ERP or CRM",
+      "Subscriptions, API usage and third-party services are not included"
+    ],
+    "interfaceTitle": "Real WhatsApp demonstration",
+    "interfaceBody": "A request arrives in WhatsApp, the workflow gathers the relevant context, then prepares a response or action for approval. This video shows the system in a real interaction.",
+    "videoCaption": "An operational brief prepared from connected tools · sound available",
+    "videoFallback": "Open the video on Google Drive",
+    "guarantees": [
+      "Answers linked to their sources",
+      "Human approval before sensitive actions",
+      "Execution log and failure alerts"
+    ]
+  },
+  "executiveFaq": {
+    "title": "The five questions to answer before deciding",
+    "items": [
+      {
+        "question": "What exactly does the €1,500 starting price cover?",
+        "answer": "One process, one team, up to three tools or sources, one main path and its essential exceptions, one concrete result, human approvals, testing, production deployment, documentation and 14 days of corrective stabilisation. The exact scope is written down before work starts."
+      },
+      {
+        "question": "How is ROI measured?",
+        "answer": "Before building, I set a simple baseline with you: time spent, volume processed, errors or delays observed. We review the same indicators after launch. The simulator provides a decision hypothesis; observed figures remain the source of truth."
+      },
+      {
+        "question": "Which costs can be added?",
+        "answer": "Subscriptions, API usage and third-party services remain your responsibility. Flow Run is optional. Any expansion to another process, team or custom interface receives a separate priced scope."
+      },
+      {
+        "question": "What happens after the 14-day stabilisation period?",
+        "answer": "The system remains documented and is handed over to your team. You can operate it without a subscription to me, or choose Flow Run for monitoring, incidents and an agreed change allowance."
+      },
+      {
+        "question": "What happens to my data and access credentials?",
+        "answer": "Access is limited to the agreed scope, and sensitive actions remain subject to your approval. Scoping specifies the data consulted, third-party services used, where data transits and how access is revoked. If these conditions are not acceptable, the project does not start."
+      }
+    ]
+  },
+    "problem": {
+      "title": "The problem is not a lack of information. It is having to rebuild the context.",
+      "intro": "Part of the truth lives in email, another part in the CRM, a meeting note or someone's head. The real cost appears when a decision moves forward without the missing piece.",
+      "items": [
+        {
+          "title": "Every file starts from scratch",
+          "body": "The history exists, but no one has it in front of them when the decision is made."
+        },
+        {
+          "title": "Every tool tells one part",
+          "body": "None of them brings together the decision, its source and the next action."
+        },
+        {
+          "title": "Exceptions surface too late",
+          "body": "The process looks healthy until a customer or a team discovers the failure."
+        },
+        {
+          "title": "The executive fills the gaps",
+          "body": "You cross-check, chase and arbitrate by hand what the tools fail to coordinate."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Start with one useful flow, not a company-wide transformation",
+      "intro": "The right first scope is narrow, frequent and observable. These are strong starting points for an initial project.",
+      "items": [
+        {
+          "title": "Prepare a decision brief",
+          "body": "Bring email, documents, CRM records and meeting notes into one sourced brief before a meeting."
+        },
+        {
+          "title": "Consolidate reporting",
+          "body": "Collect figures from several tools and flag the gaps that require a decision."
+        },
+        {
+          "title": "Surface forgotten actions",
+          "body": "Catch a follow-up, document or approval before it holds the file back."
+        },
+        {
+          "title": "Detect a silent failure",
+          "body": "Alert the right person with the relevant context before a customer finds the problem."
+        }
+      ]
+    },
+    "path": {
+      "title": "A straightforward way to start small",
+      "intro": "Each step answers one decision. You know what is included, what remains your responsibility and what you keep if you stop there.",
+      "steps": [
+        {
+          "id": "qualification",
+          "kicker": "Step 1",
+          "title": "Qualification call",
+          "situation": "A process is costing you time or context, but you do not yet know whether it warrants a project.",
+          "result": "In 30 minutes, the problem, its potential and the appropriate next step become clear — including when the right decision is to build nothing.",
+          "pricePrefix": "Free",
+          "duration": "30 minutes",
+          "scope": "One process discussed. No full audit and no written deliverable."
+        },
+        {
+          "id": "framing",
+          "kicker": "Step 2",
+          "title": "Focused scoping",
+          "situation": "The problem is real, but its mechanics, risks and cost of resolution are still unclear.",
+          "result": "You leave with a simplified map, the friction and risks, a recommended target, then a scope, timeline and budget you can decide against.",
+          "pricePrefix": "",
+          "duration": "Within 5 business days",
+          "scope": "A 90-minute workshop, one process, one organisation, up to three tools or sources, followed by a 30-minute review. Credited if a Flow Pilot or full system starts within 30 days."
+        },
+        {
+          "id": "pilot",
+          "kicker": "Step 3",
+          "title": "Flow Pilot",
+          "situation": "You want to prove value in day-to-day work before extending the system.",
+          "result": "One useful flow runs in production, documented, monitored and handed over to your team.",
+          "pricePrefix": "From",
+          "duration": "2 to 3 weeks",
+          "scope": "One process, one team, up to three sources, one trigger, one main path, its essential exceptions and one output."
+        },
+        {
+          "id": "system",
+          "kicker": "Step 4",
+          "title": "Full system",
+          "situation": "One flow has proved itself, or several processes need to share the same context.",
+          "result": "Your priority tools, approval rules and processes work as one coherent system.",
+          "pricePrefix": "From",
+          "duration": "Based on scope",
+          "scope": "Several processes and tools, sourced memory, permissions, error handling, monitoring, documentation and capability transfer."
+        },
+        {
+          "id": "run",
+          "kicker": "Step 5",
+          "title": "Flow Run",
+          "situation": "The system is live and needs to remain reliable as tools, APIs and volumes change.",
+          "result": "Incidents are detected, corrected and tracked before they become an operational problem.",
+          "pricePrefix": "From",
+          "duration": "Monthly",
+          "scope": "Monitoring, alerts, fixes and evolution time according to the selected scope."
+        }
+      ]
+    },
+    "pilot": {
+      "eyebrow": "The first system to put into production",
+      "title": "Flow Pilot: one useful flow, end to end",
+      "intro": "The Pilot is a standalone product with its own outcome and scope. Its job is to prove value on one flow that everyone can explain and observe.",
+      "promise": "At handover, one defined process runs inside your tools with its sources, approvals, exceptions and monitoring.",
+      "includedTitle": "What is included",
+      "included": [
+        "One process and one team, with up to three tools or sources",
+        "One trigger, one main path, its essential exceptions and one output",
+        "Human approval rules before any sensitive external action",
+        "Execution logs and an alert when something fails",
+        "Testing, production deployment, documentation and handover"
+      ],
+      "excludedTitle": "What remains out of scope",
+      "excluded": [
+        "Automating several departments or processes",
+        "A custom dashboard, a mobile app or a channel other than Telegram",
+        "Replacing an ERP, CRM or the wider information system",
+        "Large-scale cleanup of historical data",
+        "A legal or financial decision, or a sensitive message sent without approval",
+        "Third-party subscriptions and usage charges"
+      ],
+      "timingLabel": "Indicative timeline",
+      "timing": "2 to 3 weeks once the required access and approvals are available",
+      "stabilizationLabel": "After go-live",
+      "stabilization": "14 days of corrective stabilisation included",
+      "interfaceTitle": "A private interface with sourced answers",
+      "interfaceBody": "From a private Telegram assistant, you request a brief or receive an alert. Every answer shows its sources, and you keep the final decision.",
+      "telegram": {
+        "status": "Online · sources connected",
+        "you": "You",
+        "userMessage": "Prepare the Nova file before the 2 pm meeting. What is blocking it?",
+        "assistant": "Flow Assistant",
+        "response": "The file is ready. Two points need your decision: the quote has not been approved, and yesterday's follow-up was not sent.",
+        "sourceLabel": "Sources",
+        "sourceValue": "Gmail · CRM · meeting notes from 21 August",
+        "actionLabel": "Suggested action",
+        "actionValue": "Draft the follow-up without sending it",
+        "buttons": [
+          "View sources",
+          "Approve follow-up",
+          "Leave pending"
+        ]
+      }
+    },
+    "system": {
+      "eyebrow": "When the first flow needs to expand",
+      "title": "Full system",
+      "body": "I extend a proven flow or connect several processes around shared context. The scope depends on the decisions to prepare, the tools involved and the required controls.",
+      "pricePrefix": "From",
+      "items": [
+        "Several connected processes and tools",
+        "Sourced operational memory",
+        "Specialised assistants by function",
+        "Multiple working interfaces where useful",
+        "Role-appropriate permissions and approvals",
+        "Error, retry and exception handling",
+        "A monitoring dashboard",
+        "Documentation and capability transfer"
+      ],
+      "note": "The scope, timeline and price are written down before work starts. An extension becomes a new scope, never a silent expansion of the fixed fee."
+    },
+    "run": {
+      "eyebrow": "After go-live",
+      "title": "Flow Run",
+      "body": "A useful system must remain observable. I monitor what is running, surface incidents and maintain the delivered system as its environment changes.",
+      "pricePrefix": "From",
+      "items": [
+        "Execution monitoring and alerts",
+        "Incident diagnosis and correction",
+        "Adjustments when APIs change",
+        "Evolution time according to the selected scope",
+        "A regular review and visibility into interventions"
+      ],
+      "exclusion": "Third-party subscriptions, API usage and external services remain your responsibility. The intervention allowance, response time and product changes are set in the proposal: support is not unlimited."
+    },
+    "cartography": {
+      "eyebrow": "Standalone option",
+      "title": "Full operational mapping",
+      "body": "This engagement is for organisations that need to understand several flows before deciding what to build, or want a document they can use independently of implementation.",
+      "pricePrefix": "",
+      "items": [
+        "A detailed map of processes, roles and tools",
+        "Dependencies, risks and failure points",
+        "Opportunities prioritised by value and feasibility",
+        "A recommended target operating flow",
+        "An implementation plan your team or another provider can use"
+      ],
+      "note": "It is not required before a Flow Pilot. If one priority process is already clear, focused scoping is usually the better fit."
+    },
+    "proof": {
+      "eyebrow": "A real production case",
+      "title": "The context is prepared before each decision.",
+      "body": "For an executive running several companies, the system brings Gmail, CRM records, meetings and documents into a sourced, versioned memory. Every fact remains tied to its origin, and every sensitive external write waits for human approval.",
+      "metrics": [
+        {
+          "value": "21",
+          "label": "active automations"
+        },
+        {
+          "value": "6+",
+          "label": "specialised agents"
+        },
+        {
+          "value": "35–50 h",
+          "label": "saved per month, estimated by the executive"
+        }
+      ]
+    },
+    "guardrails": {
+      "title": "What the system does not decide for you",
+      "intro": "Reliability comes from boundaries as much as automation. These rules are part of the architecture from day one.",
+      "items": [
+        {
+          "title": "A source before a claim",
+          "body": "Important information must lead back to the email, document or meeting note that supports it."
+        },
+        {
+          "title": "Approval before a sensitive action",
+          "body": "AI prepares; you authorise the messages, decisions and external writes that carry consequences."
+        },
+        {
+          "title": "A visible exception",
+          "body": "Anything outside the expected path is raised to a person with the relevant context instead of failing silently."
+        },
+        {
+          "title": "A system you control",
+          "body": "Accounts, access, rules, documentation and configuration remain transferable and usable."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Where should I start?",
+          "answer": "Start with the qualification call if you have a specific process in mind. If it needs to be clarified before development, focused scoping is the next step. The Pilot fits when the scope and expected outcome are already clear enough."
+        },
+        {
+          "question": "What do I receive from focused scoping?",
+          "answer": "A simplified map of the current process, its friction, risks and dependencies, a recommended target flow, then an estimate of scope, timeline and budget. The document remains useful if you decide not to continue with me."
+        },
+        {
+          "question": "Is the €290 scoping fee added to the Pilot price?",
+          "answer": "No. If the Pilot or full system starts within 30 days, the €290 already paid is credited. For a €1,500 Pilot, the remaining invoice is €1,210: your total stays €1,500 excluding VAT."
+        },
+        {
+          "question": "Why are the Pilot and the full system priced differently?",
+          "answer": "They do not cover the same scope. The Pilot puts one flow into production to prove its value. A full system connects several processes, tools, permissions and monitoring mechanisms. The Pilot is a standalone product."
+        },
+        {
+          "question": "Can the AI write or act without approval?",
+          "answer": "Sensitive external actions wait for human approval. The system can gather, verify, prepare and suggest; the decision and final authorisation remain yours."
+        },
+        {
+          "question": "How long does it take to go live?",
+          "answer": "Focused scoping is delivered within five business days of the workshop. A Flow Pilot typically takes two to three weeks once access and approvals are available. A full system timeline is fixed with its scope."
+        },
+        {
+          "question": "What happens after delivery?",
+          "answer": "The system is documented and handed over to your team. The Pilot includes a corrective stabilisation period. If you want continuous monitoring and evolution, Flow Run can take over afterwards."
+        },
+        {
+          "question": "How are data and access handled?",
+          "answer": "The required tools, accounts, data and access levels are agreed before work starts. The system receives only the permissions needed for the scope, and sensitive actions remain subject to your approval rules."
+        },
+        {
+          "question": "Is full operational mapping required?",
+          "answer": "No. It is useful when several flows need to be studied or when you want a broader operational view. For one priority process that is already identified, focused scoping or a Pilot is usually more proportionate."
+        }
+      ]
+    },
+    "final": {
+    "title": "Bring one process and three figures. Leave with a decision.",
+    "body": "Monthly volume, time spent and loaded cost are enough for a first calculation. In 30 minutes, I test with you whether the potential gain justifies scoping or a Pilot.",
+    "cta": "Assess my process",
+      "note": "Free qualification call. No hidden audit and no commitment to continue."
+    }
+  },
   "Footer": {
+    "navigationLabel": "Footer navigation",
+    "home": "View portfolio",
+    "offer": "View my offer",
+    "cv": "View my resume",
     "projects": "Work",
     "findMe": "Find me",
+    "role": "Systems & AI Architect",
     "lightMode": "Light mode",
     "darkMode": "Dark mode"
   }

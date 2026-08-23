@@ -10,7 +10,7 @@
   --foreground: #0a0e1a;
   --muted: #f6f2ec;
   --muted-foreground: #6b7280;
-  --primary: #c96a1f;
+  --primary: #b45c17;
   --primary-foreground: #ffffff;
   --accent: #f6f2ec;
   --accent-foreground: #1a2234;
@@ -84,9 +84,13 @@ body {
   inset: 0;
   background-image: url("/noise.gif");
   background-repeat: repeat;
-  opacity: 0.05;
+  opacity: 0.025;
   pointer-events: none;
   z-index: 100;
+}
+
+.dark .noise::before {
+  opacity: 0.035;
 }
 
 /* ========================================

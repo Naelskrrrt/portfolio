@@ -28,6 +28,14 @@ const instrumentSerif = Instrument_Serif({
   style: "italic",
 });
 
+const BASE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.lalason.pro"
+).replace(/\/$/, "");
+
+function localizedHomeUrl(locale: string) {
+  return locale === routing.defaultLocale ? BASE_URL : `${BASE_URL}/${locale}`;
+}
+
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -55,11 +63,10 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://www.lalason.pro";
+  const canonicalUrl = localizedHomeUrl(locale);
 
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(BASE_URL),
     title: t("title"),
     description: t("description"),
     keywords: [
@@ -71,7 +78,7 @@ export async function generateMetadata({
       "Madagascar",
       "LALASON Annaël",
     ],
-    authors: [{ name: "LALASON Annaël", url: baseUrl }],
+    authors: [{ name: "LALASON Annaël", url: BASE_URL }],
     creator: "LALASON Annaël",
     robots: {
       index: true,
@@ -79,16 +86,16 @@ export async function generateMetadata({
       googleBot: { index: true, follow: true },
     },
     alternates: {
-      canonical: `${baseUrl}/${locale}`,
+      canonical: canonicalUrl,
       languages: {
-        fr: `${baseUrl}/fr`,
-        en: `${baseUrl}/en`,
+        fr: BASE_URL,
+        en: `${BASE_URL}/en`,
       },
     },
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
-      url: `${baseUrl}/${locale}`,
+      url: canonicalUrl,
       siteName: "LALASON Annaël",
       title: t("title"),
       description: t("description"),
@@ -133,29 +140,52 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.lalason.pro";
+  const pageUrl = localizedHomeUrl(locale);
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": `${baseUrl}/#person`,
-    name: "LALASON Annaël",
-    url: baseUrl,
-    image: `${baseUrl}/photo-profile.png`,
-    sameAs: [
-      "https://github.com/NaelSkrrrt",
-      "https://www.linkedin.com/in/lalasonnael",
-      "https://x.com/lalasonnael29",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": `${BASE_URL}/#person`,
+        name: "LALASON Annaël",
+        url: BASE_URL,
+        image: `${BASE_URL}/photo-profile.png`,
+        sameAs: [
+          "https://github.com/NaelSkrrrt",
+          "https://www.linkedin.com/in/lalasonnael",
+          "https://x.com/lalasonnael29",
+        ],
+        jobTitle: "Architecte Systèmes & IA",
+        description:
+          "Architecte des systèmes intelligents — automatisation, IA, stratégie digitale.",
+        knowsAbout: [
+          "Intelligence Artificielle",
+          "Automatisation",
+          "Next.js",
+          "Architecture Systèmes",
+        ],
+        nationality: "MG",
+        worksFor: { "@id": `${BASE_URL}/#studio` },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": pageUrl,
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${BASE_URL}/#studio`,
+        name: "Flow AI Studio",
+        alternateName: "flow-ai.studio",
+        url: "https://flow-ai.studio",
+        description:
+          locale === "fr"
+            ? "Flow AI Studio — le studio d’automatisation IA d’Annaël Lalason."
+            : "Flow AI Studio — Annaël Lalason’s AI automation studio.",
+        founder: { "@id": `${BASE_URL}/#person` },
+        sameAs: ["https://flow-ai.studio"],
+      },
     ],
-    jobTitle: "Architecte Systèmes & IA",
-    description:
-      "Architecte des systèmes intelligents — automatisation, IA, stratégie digitale.",
-    knowsAbout: ["Intelligence Artificielle", "Automatisation", "Next.js", "Architecture Systèmes"],
-    nationality: "MG",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${baseUrl}/${locale}`,
-    },
   };
 
   return (

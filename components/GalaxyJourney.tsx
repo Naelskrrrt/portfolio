@@ -11,7 +11,11 @@ export function GalaxyJourney() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = window.requestAnimationFrame(() => {
+      setMounted(true);
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
@@ -45,7 +49,7 @@ export function GalaxyJourney() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 pointer-events-none z-[50] overflow-hidden"
+      className="galaxy-journey fixed inset-0 pointer-events-none z-[50] overflow-hidden"
     >
       {/* Rocket Easter Egg */}
       <Rocket isLaunching={isRocketLaunching} onLaunchComplete={handleLaunchComplete} />

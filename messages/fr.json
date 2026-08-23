@@ -4,11 +4,16 @@
     "description": "Je con\u00e7ois des syst\u00e8mes intelligents qui structurent, automatisent et transforment durablement les organisations. Architecture logicielle, IA appliqu\u00e9e, automatisation strat\u00e9gique."
   },
   "Header": {
-    "cta": "\u00c9changer"
+    "availability": "Disponible pour un nouveau projet",
+    "navigationLabel": "Navigation principale",
+    "home": "Accueil",
+    "offer": "Offre",
+    "cta": "R\u00e9server 30 min"
   },
   "Hero": {
     "role": "Architecte Syst\u00e8mes & IA",
     "available": "Disponible pour collaborations strat\u00e9giques",
+    "offerCta": "Voir l'offre",
     "shuffleLabel": "Autre perspective",
     "profileAlt": "Photo de profil",
     "punchlines": {
@@ -110,7 +115,7 @@
     "filterLabel": "Filtrer les r\u00e9alisations par nature de mission",
     "countLabel": "{count} r\u00e9alisations affich\u00e9es",
     "featuredBadge": "Cas mis en avant",
-    "more": "Voir tous les cas clients sur flow-ai.studio",
+    "more": "Voir l'offre et les tarifs",
     "showAll": "Voir les {count} autres r\u00e9alisations",
     "showLess": "Afficher moins",
     "detail": "Voir le d\u00e9tail",
@@ -341,7 +346,9 @@
     "title": "Lectures recommand\u00e9es"
   },
   "Contact": {
-    "title": "Engageons la conversation"
+    "title": "Engageons la conversation",
+    "cta": "R\u00e9server 30 min",
+    "secondaryCta": "Voir mon offre"
   },
   "CV": {
     "meta": {
@@ -822,9 +829,442 @@
       "pageLabel": "page"
     }
   },
+  "Offre": {
+    "meta": {
+      "title": "Offre & tarifs — Annaël Lalason · Flow AI Studio",
+    "description": "Pilote Flow dès 1 500 € HT, livré en 2 à 3 semaines. Simulez le seuil de rentabilité, comparez les prix et voyez précisément ce qui est inclus."
+    },
+  "hero": {
+    "eyebrow": "Automatisation IA pour PME · Flow AI Studio",
+    "title": "Votre équipe ne manque pas d'outils. Elle perd du temps à les recoller.",
+    "body": "Je transforme un processus prioritaire en un flux opérationnel en 2 à 3 semaines, dès 1 500 € HT. Vos informations restent reliées à leurs sources et vous validez chaque action sensible.",
+    "cta": "Évaluer mon processus",
+    "secondaryCta": "Simuler le retour",
+    "note": "Appel de qualification gratuit · 30 minutes · réponse franche sur la faisabilité",
+    "byline": "Conçu et livré par Annaël Lalason",
+    "bylineRole": "Architecte systèmes & IA · un interlocuteur unique du cadrage à la mise en production"
+  },
+  "decision": {
+    "eyebrow": "La décision en trois chiffres",
+    "investmentLabel": "Investissement du Pilote",
+    "investmentPrefix": "Dès",
+    "investmentNote": "Un processus clairement défini, réellement mis en production",
+    "deliveryLabel": "Mise en production",
+    "deliveryValue": "2 à 3 semaines",
+    "deliveryNote": "Après réception des accès et validations",
+    "referenceLabel": "Repère observé",
+    "referenceValue": "35–50 h / mois",
+    "referenceNote": "Estimation du dirigeant sur un système plus large · résultat non garanti"
+  },
+  "roi": {
+    "eyebrow": "Simulateur de seuil",
+    "title": "Le Pilote est-il rentable avec vos chiffres ?",
+    "body": "Indiquez le temps manuel, la part récupérable et le coût horaire. Le calcul isole la valeur du temps récupéré ; les revenus supplémentaires et la réduction du risque ne sont pas comptés.",
+    "scenarioLabel": "Exemple modifiable · aucune promesse de résultat",
+    "manualHoursLabel": "Temps manuel sur ce processus / mois",
+    "manualHoursHint": "Recherche, ressaisie, relances, contrôle et préparation.",
+    "recoveryRateLabel": "Part raisonnablement récupérable",
+    "recoveryRateHint": "Commencez prudemment : tout le travail manuel ne disparaît pas.",
+    "costLabel": "Coût chargé moyen / heure",
+    "costHint": "Salaire, charges et coût de structure de la personne concernée.",
+    "runLabel": "Ajouter Flow Run",
+    "runHint": "Optionnel. Surveillance, incidents et évolutions dans un périmètre défini.",
+    "investmentLabel": "Investissement initial simulé",
+    "recoveredHoursLabel": "Heures récupérées / mois",
+    "grossMonthlyValueLabel": "Valeur brute / mois",
+    "netMonthlyValueLabel": "Valeur nette / mois",
+    "paybackLabel": "Amortissement estimé",
+    "paybackUnit": "mois",
+    "annualRoiLabel": "ROI indicatif à 12 mois",
+    "breakEvenLabel": "Heures à récupérer chaque mois pour atteindre l'équilibre sur 12 mois :",
+    "formula": "ROI = (valeur sur 12 mois − coût total sur 12 mois) ÷ coût total",
+    "disclaimer": "Calcul indicatif basé sur les prix de départ. Les outils tiers, l'adoption, la qualité des données et les écarts de périmètre peuvent modifier le résultat."
+  },
+  "pricing": {
+    "eyebrow": "Prix et décisions",
+    "title": "Commencez par la décision que vous devez prendre.",
+    "intro": "Chaque offre réduit une incertitude précise. Le Pilote est le point d'entrée recommandé lorsqu'un processus prioritaire est déjà identifié.",
+    "decisionLabel": "Décision à prendre",
+    "resultLabel": "Vous obtenez",
+    "durationLabel": "Délai",
+    "recommended": "Recommandé",
+    "cards": [
+      {
+        "id": "framing",
+        "title": "Cadrage express",
+        "pricePrefix": "",
+        "decision": "Faut-il automatiser ce processus ?",
+        "result": "Une cible, les risques, un périmètre, un délai et un budget écrits.",
+        "duration": "Sous 5 jours ouvrés"
+      },
+      {
+        "id": "pilot",
+        "title": "Pilote Flow",
+        "pricePrefix": "Dès",
+        "decision": "La valeur existe-t-elle en production ?",
+        "result": "Un processus clairement défini, automatisé, documenté, surveillé et transmis à votre équipe.",
+        "duration": "2 à 3 semaines"
+      },
+      {
+        "id": "system",
+        "title": "Système complet",
+        "pricePrefix": "Dès",
+        "decision": "Faut-il étendre à plusieurs processus ?",
+        "result": "Plusieurs flux et outils reliés autour d'un contexte commun.",
+        "duration": "Selon le périmètre"
+      }
+    ],
+    "cta": "Qualifier ce Pilote en 30 min",
+    "creditNote": "Les 290 € du cadrage sont déduits si le Pilote ou le système démarre dans les 30 jours.",
+    "runLabel": "Suivi optionnel",
+    "runBody": "Flow Run couvre la surveillance, les incidents et un volume d'évolution défini.",
+    "mappingLabel": "Besoin d'étudier plusieurs flux d'abord ?",
+    "mappingBody": "La cartographie opérationnelle complète reste une option indépendante, jamais un prérequis."
+  },
+  "scopeSummary": {
+    "eyebrow": "Le produit principal",
+    "title": "Ce que vous achetez avec un Pilote à 1 500 € HT",
+    "intro": "Un processus prioritaire mis en production, pas une maquette ni une transformation générale de l'entreprise.",
+    "metrics": [
+      { "value": "1", "label": "processus prioritaire" },
+      { "value": "1", "label": "équipe concernée" },
+      { "value": "3 max.", "label": "outils ou sources" },
+      { "value": "14 jours", "label": "de stabilisation" }
+    ],
+    "includedTitle": "Inclus dans le prix de départ",
+    "included": [
+      "Un déclencheur, un parcours principal, ses exceptions essentielles et un résultat concret exploitable par l'équipe",
+      "Les tests, la mise en production, le journal d'exécution et l'alerte d'échec",
+      "La documentation, la passation et un critère de succès défini avant de construire"
+    ],
+    "limitsTitle": "Limites qui protègent le budget",
+    "limits": [
+      "Un seul processus et une seule équipe",
+      "Pas de tableau de bord sur mesure, d'application mobile ni de remplacement d'ERP ou de CRM",
+      "Abonnements, consommations d'API et services tiers non inclus"
+    ],
+    "interfaceTitle": "Démonstration réelle sur WhatsApp",
+    "interfaceBody": "Une demande arrive dans WhatsApp, le flux rassemble le contexte utile puis prépare une réponse ou une action à valider. Cette vidéo montre le système en situation réelle.",
+    "videoCaption": "Un brief opérationnel préparé à partir des outils connectés · son disponible",
+    "videoFallback": "Ouvrir la vidéo sur Google Drive",
+    "guarantees": [
+      "Réponses reliées à leurs sources",
+      "Validation humaine avant toute action sensible",
+      "Journal et alerte en cas d'échec"
+    ]
+  },
+  "executiveFaq": {
+    "title": "Les cinq questions avant de décider",
+    "items": [
+      {
+        "question": "Que couvre précisément le prix de départ de 1 500 € HT ?",
+        "answer": "Un processus, une équipe, jusqu'à trois outils ou sources, un parcours principal et ses exceptions essentielles, un résultat concret, les validations humaines, les tests, la mise en production, la documentation et 14 jours de stabilisation corrective. Le périmètre exact est écrit avant le démarrage."
+      },
+      {
+        "question": "Comment le ROI est-il mesuré ?",
+        "answer": "Je fixe avec vous une base simple avant de construire : temps passé, volume traité, erreurs ou délais observés. Après la mise en production, nous relisons les mêmes indicateurs. Le simulateur donne une hypothèse de décision ; les chiffres constatés font foi."
+      },
+      {
+        "question": "Quels frais peuvent s'ajouter ?",
+        "answer": "Les abonnements, consommations d'API et services tiers restent à votre charge. Flow Run est optionnel. Tout élargissement à un autre processus, une autre équipe ou une interface sur mesure fait l'objet d'un nouveau périmètre chiffré."
+      },
+      {
+        "question": "Que se passe-t-il après les 14 jours de stabilisation ?",
+        "answer": "Le système reste documenté et transmis à votre équipe. Vous pouvez l'exploiter sans abonnement auprès de moi, ou choisir Flow Run pour la surveillance, les incidents et un volume d'évolution convenu."
+      },
+      {
+        "question": "Que deviennent mes données et mes accès ?",
+        "answer": "Les accès sont limités au périmètre convenu et les actions sensibles restent soumises à votre validation. Le cadrage précise les données consultées, les services tiers utilisés, les lieux de transit et la procédure de révocation des accès. Si ces conditions ne sont pas acceptables, le projet ne démarre pas."
+      }
+    ]
+  },
+    "problem": {
+      "title": "Le problème n'est pas l'information. C'est le contexte qu'il faut reconstruire.",
+      "intro": "À chaque dossier, une partie de la vérité vit dans les emails, une autre dans le CRM, un compte-rendu ou la tête de quelqu'un. Le coût réel apparaît quand une décision part sans la pièce manquante.",
+      "items": [
+        {
+          "title": "Chaque dossier repart de zéro",
+          "body": "L'historique existe, mais personne ne l'a sous les yeux au moment de décider."
+        },
+        {
+          "title": "Chaque outil raconte une partie",
+          "body": "Aucun ne rassemble la décision, sa source et l'action suivante."
+        },
+        {
+          "title": "Les exceptions remontent trop tard",
+          "body": "Le processus semble fonctionner jusqu'au jour où un client ou une équipe découvre l'échec."
+        },
+        {
+          "title": "Le dirigeant compense le système",
+          "body": "Il recoupe, relance et arbitre manuellement ce que les outils ne coordonnent pas."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Commencer par un flux utile, pas par une transformation totale",
+      "intro": "Le bon premier périmètre est étroit, fréquent et observable. Voici les situations qui se prêtent bien à un premier projet.",
+      "items": [
+        {
+          "title": "Préparer un dossier de décision",
+          "body": "Rassembler emails, documents, CRM et comptes-rendus dans un brief sourcé avant une réunion."
+        },
+        {
+          "title": "Consolider un reporting",
+          "body": "Réunir les chiffres de plusieurs outils et signaler les écarts qui demandent une décision."
+        },
+        {
+          "title": "Faire remonter les actions oubliées",
+          "body": "Repérer une relance, une pièce ou une validation manquante avant qu'elle ne bloque le dossier."
+        },
+        {
+          "title": "Détecter un échec silencieux",
+          "body": "Alerter la bonne personne avec le contexte nécessaire avant qu'un client ne découvre le problème."
+        }
+      ]
+    },
+    "path": {
+      "title": "Un chemin simple pour commencer petit",
+      "intro": "Chaque étape répond à une décision précise. Vous savez ce qui est inclus, ce qui reste à votre charge et ce que vous gardez si vous vous arrêtez.",
+      "steps": [
+        {
+          "id": "qualification",
+          "kicker": "Étape 1",
+          "title": "Appel de qualification",
+          "situation": "Vous avez un processus qui vous fait perdre du temps ou du contexte, sans savoir s'il mérite un projet.",
+          "result": "En 30 minutes, le problème, son potentiel et la prochaine étape deviennent clairs — y compris quand la bonne décision est de ne rien construire.",
+          "pricePrefix": "Gratuit",
+          "duration": "30 minutes",
+          "scope": "Un processus présenté. Aucun audit complet ni document livré."
+        },
+        {
+          "id": "framing",
+          "kicker": "Étape 2",
+          "title": "Cadrage express",
+          "situation": "Le problème est réel, mais son fonctionnement, ses risques et son coût de résolution restent flous.",
+          "result": "Vous repartez avec une carte simplifiée, les frictions et risques, une cible recommandée, puis un périmètre, un délai et un budget pour décider.",
+          "pricePrefix": "",
+          "duration": "Sous 5 jours ouvrés",
+          "scope": "Atelier de 90 minutes, un processus, une organisation, jusqu'à trois outils ou sources, puis restitution de 30 minutes. Montant crédité si un Pilote Flow ou un système complet démarre dans les 30 jours."
+        },
+        {
+          "id": "pilot",
+          "kicker": "Étape 3",
+          "title": "Pilote Flow",
+          "situation": "Vous voulez vérifier la valeur sur le terrain avant d'étendre le système.",
+          "result": "Un premier flux utile tourne en production, documenté, surveillé et transmis à votre équipe.",
+          "pricePrefix": "À partir de",
+          "duration": "2 à 3 semaines",
+          "scope": "Un processus, une équipe, jusqu'à trois sources, un déclencheur, un parcours principal, ses exceptions essentielles et une sortie."
+        },
+        {
+          "id": "system",
+          "kicker": "Étape 4",
+          "title": "Système complet",
+          "situation": "Un flux a fait ses preuves ou plusieurs processus doivent partager le même contexte.",
+          "result": "Les outils, règles de validation et processus prioritaires fonctionnent comme un système cohérent.",
+          "pricePrefix": "À partir de",
+          "duration": "Selon le périmètre",
+          "scope": "Plusieurs processus et outils, mémoire sourcée, permissions, gestion des erreurs, suivi, documentation et transfert de compétences."
+        },
+        {
+          "id": "run",
+          "kicker": "Étape 5",
+          "title": "Flow Run",
+          "situation": "Le système est en production et doit rester fiable malgré les changements d'outils, d'API et de volume.",
+          "result": "Les incidents sont détectés, corrigés et suivis avant de devenir un problème opérationnel.",
+          "pricePrefix": "À partir de",
+          "duration": "Mensuel",
+          "scope": "Surveillance, alertes, correctifs et temps d'évolution selon le périmètre retenu."
+        }
+      ]
+    },
+    "pilot": {
+      "eyebrow": "Le premier système à mettre en production",
+      "title": "Pilote Flow : un flux utile, de bout en bout",
+      "intro": "Le Pilote est un produit autonome avec son propre résultat et son propre périmètre. Son rôle est de prouver la valeur sur un flux que tout le monde peut expliquer et observer.",
+      "promise": "À la fin, un processus précis tourne dans vos outils avec ses sources, ses validations, ses exceptions et son suivi.",
+      "includedTitle": "Ce qui est inclus",
+      "included": [
+        "Un processus et une équipe, jusqu'à trois outils ou sources",
+        "Un déclencheur, un parcours principal, ses exceptions essentielles et une sortie",
+        "Les règles de validation humaine avant toute action externe sensible",
+        "Le journal des exécutions et une alerte en cas d'échec",
+        "Les tests, la mise en production, la documentation et la passation"
+      ],
+      "excludedTitle": "Ce qui reste hors périmètre",
+      "excluded": [
+        "L'automatisation de plusieurs services ou processus",
+        "Un tableau de bord sur mesure, une application mobile ou un autre canal que Telegram",
+        "Le remplacement d'un ERP, d'un CRM ou du système d'information",
+        "Le nettoyage massif de données historiques",
+        "Une décision juridique, financière ou un message sensible envoyé sans validation",
+        "Les abonnements et consommations des outils tiers"
+      ],
+      "timingLabel": "Délai indicatif",
+      "timing": "2 à 3 semaines après réception des accès et validations nécessaires",
+      "stabilizationLabel": "Après la mise en production",
+      "stabilization": "14 jours de stabilisation corrective inclus",
+      "interfaceTitle": "Une interface privée, des réponses sourcées",
+      "interfaceBody": "Depuis un assistant Telegram privé, vous demandez un brief ou recevez une alerte. Chaque réponse montre ses sources et vous gardez la décision finale.",
+      "telegram": {
+        "status": "En ligne · sources connectées",
+        "you": "Vous",
+        "userMessage": "Prépare-moi le dossier Nova avant la réunion de 14 h. Qu'est-ce qui bloque ?",
+        "assistant": "Assistant Flow",
+        "response": "Le dossier est prêt. Deux points demandent votre décision : le devis n'a pas encore été validé et la relance prévue hier n'est pas partie.",
+        "sourceLabel": "Sources",
+        "sourceValue": "Gmail · CRM · compte-rendu du 21 août",
+        "actionLabel": "Action proposée",
+        "actionValue": "Préparer la relance sans l'envoyer",
+        "buttons": [
+          "Voir les sources",
+          "Valider la relance",
+          "Laisser en attente"
+        ]
+      }
+    },
+    "system": {
+      "eyebrow": "Quand le premier flux doit s'étendre",
+      "title": "Système complet",
+      "body": "J'étends un flux validé ou je relie plusieurs processus autour d'un contexte partagé. Le périmètre dépend des décisions à préparer, des outils concernés et des règles de contrôle.",
+      "pricePrefix": "À partir de",
+      "items": [
+        "Plusieurs processus et outils connectés",
+        "Une mémoire opérationnelle sourcée",
+        "Des assistants spécialisés par fonction",
+        "Plusieurs interfaces de travail si nécessaire",
+        "Des permissions et validations adaptées aux rôles",
+        "La gestion des erreurs, reprises et exceptions",
+        "Un tableau de bord de suivi",
+        "La documentation et le transfert de compétences"
+      ],
+      "note": "Le périmètre, le calendrier et le prix sont écrits avant le démarrage. Une extension devient un nouveau périmètre, jamais un glissement silencieux du forfait."
+    },
+    "run": {
+      "eyebrow": "Après la mise en production",
+      "title": "Flow Run",
+      "body": "Un système utile doit rester observable. Je surveille ce qui tourne, fais remonter les incidents et maintiens le système livré quand son environnement évolue.",
+      "pricePrefix": "À partir de",
+      "items": [
+        "Surveillance des exécutions et alertes",
+        "Analyse et correction des incidents",
+        "Adaptation aux changements d'API",
+        "Temps d'évolution selon le périmètre retenu",
+        "Point de suivi et visibilité sur les interventions"
+      ],
+      "exclusion": "Les abonnements, consommations d'API et services tiers restent à votre charge. Le volume d'intervention, le délai de réponse et les évolutions sont fixés dans la proposition : le support n'est pas illimité."
+    },
+    "cartography": {
+      "eyebrow": "Option autonome",
+      "title": "Cartographie opérationnelle complète",
+      "body": "Cette prestation s'adresse aux organisations qui doivent comprendre plusieurs flux avant de choisir quoi construire, ou qui veulent repartir avec un document exploitable indépendamment de la réalisation.",
+      "pricePrefix": "",
+      "items": [
+        "Carte détaillée des processus, rôles et outils",
+        "Dépendances, risques et points de rupture",
+        "Opportunités priorisées selon leur valeur et leur faisabilité",
+        "Fonctionnement cible recommandé",
+        "Plan de mise en œuvre exploitable par votre équipe ou un autre prestataire"
+      ],
+      "note": "Elle n'est pas obligatoire pour démarrer un Pilote Flow. Si un seul processus prioritaire est déjà identifié, le cadrage express est généralement plus adapté."
+    },
+    "proof": {
+      "eyebrow": "Cas réel en production",
+      "title": "Le contexte est préparé avant chaque décision.",
+      "body": "Pour un dirigeant de plusieurs sociétés, le système rassemble Gmail, CRM, réunions et documents dans une mémoire sourcée et versionnée. Chaque fait reste rattaché à son origine et toute écriture externe sensible attend une validation humaine.",
+      "metrics": [
+        {
+          "value": "21",
+          "label": "automatisations actives"
+        },
+        {
+          "value": "6+",
+          "label": "agents spécialisés"
+        },
+        {
+          "value": "35–50 h",
+          "label": "économisées par mois, selon le dirigeant"
+        }
+      ]
+    },
+    "guardrails": {
+      "title": "Ce que le système ne décide pas à votre place",
+      "intro": "La fiabilité vient autant des limites que des automatisations. Ces règles font partie de l'architecture dès le départ.",
+      "items": [
+        {
+          "title": "Une source avant une affirmation",
+          "body": "Une information importante doit permettre de retrouver le mail, le document ou le compte-rendu qui la justifie."
+        },
+        {
+          "title": "Une validation avant une action sensible",
+          "body": "L'IA prépare ; vous autorisez les messages, décisions et écritures externes qui engagent."
+        },
+        {
+          "title": "Une exception visible",
+          "body": "Ce qui sort du chemin prévu remonte à une personne avec le contexte nécessaire, au lieu d'échouer en silence."
+        },
+        {
+          "title": "Un système que vous contrôlez",
+          "body": "Les comptes, accès, règles, documentation et configuration restent transmissibles et exploitables."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "question": "Par quelle étape commencer ?",
+          "answer": "Commencez par l'appel de qualification si vous avez un processus précis en tête. S'il mérite d'être clarifié avant tout développement, le cadrage express est l'étape suivante. Le Pilote convient quand le périmètre et le résultat attendu sont déjà assez nets."
+        },
+        {
+          "question": "Que reçoit-on avec le cadrage express ?",
+          "answer": "Une carte simplifiée du processus actuel, ses frictions, risques et dépendances, un fonctionnement cible recommandé, puis une estimation du périmètre, du délai et du budget. Le document reste exploitable si vous ne poursuivez pas avec moi."
+        },
+        {
+          "question": "Les 290 € du cadrage s'ajoutent-ils au prix du Pilote ?",
+          "answer": "Non. Si le Pilote ou le système démarre dans les 30 jours, les 290 € déjà payés sont crédités. Pour un Pilote à 1 500 €, il reste donc 1 210 € à facturer : le total reste 1 500 € HT."
+        },
+        {
+          "question": "Pourquoi le Pilote et le système complet ont-ils deux prix différents ?",
+          "answer": "Parce qu'ils ne vendent pas le même périmètre. Le Pilote met un seul flux en production pour prouver sa valeur. Le système complet relie plusieurs processus, outils, permissions et mécanismes de suivi. Le Pilote est un produit à part entière."
+        },
+        {
+          "question": "L'IA peut-elle écrire ou agir sans validation ?",
+          "answer": "Les actions externes sensibles attendent une validation humaine. Le système peut rassembler, vérifier, préparer et proposer ; vous gardez la décision et l'autorisation finale."
+        },
+        {
+          "question": "Quel délai prévoir avant la mise en production ?",
+          "answer": "Le cadrage express est livré sous cinq jours ouvrés après l'atelier. Un Pilote Flow demande généralement deux à trois semaines une fois les accès et validations reçus. Le calendrier d'un système complet est fixé avec son périmètre."
+        },
+        {
+          "question": "Que se passe-t-il après la livraison ?",
+          "answer": "Le système est documenté et transmis à votre équipe. Le Pilote inclut une période de stabilisation corrective. Si vous souhaitez une surveillance et des évolutions continues, Flow Run prend ensuite le relais."
+        },
+        {
+          "question": "Comment les données et les accès sont-ils gérés ?",
+          "answer": "Les outils, comptes, données nécessaires et niveaux d'accès sont définis avant le démarrage. Le système reçoit seulement les permissions utiles au périmètre, et les actions sensibles restent soumises à vos règles de validation."
+        },
+        {
+          "question": "La cartographie complète est-elle obligatoire ?",
+          "answer": "Non. Elle est utile quand plusieurs flux doivent être étudiés ou lorsque vous voulez une vue opérationnelle plus large. Pour un processus prioritaire déjà identifié, le cadrage express ou le Pilote est généralement plus proportionné."
+        }
+      ]
+    },
+    "final": {
+    "title": "Apportez un processus et trois chiffres. Repartez avec une décision.",
+    "body": "Volume mensuel, temps passé et coût chargé suffisent pour un premier calcul. En 30 minutes, je vérifie avec vous si le gain potentiel justifie un cadrage ou un Pilote.",
+    "cta": "Évaluer mon processus",
+      "note": "Appel de qualification gratuit. Aucun audit caché, aucun engagement sur la suite."
+    }
+  },
   "Footer": {
+    "navigationLabel": "Navigation du pied de page",
+    "home": "Voir le portfolio",
+    "offer": "Voir mon offre",
+    "cv": "Voir mon CV",
     "projects": "R\u00e9alisations",
     "findMe": "Me retrouver",
+    "role": "Architecte Systèmes & IA",
     "lightMode": "Mode clair",
     "darkMode": "Mode sombre"
   }

@@ -24,7 +24,7 @@ const socialLinks = [
 ];
 
 const socialLinkClass =
-  "h-8 px-3 rounded-md border border-border bg-background/80 backdrop-blur-sm shadow-xs flex items-center gap-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors";
+  "h-8 px-3 rounded-md border border-border bg-background/80 backdrop-blur-sm shadow-xs flex items-center gap-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/70";
 
 function getRandomIndex() {
   return Math.floor(Math.random() * PUNCHLINE_COUNT);
@@ -35,7 +35,11 @@ export function Hero() {
   const [punchlineIndex, setPunchlineIndex] = useState(0);
 
   useEffect(() => {
-    setPunchlineIndex(getRandomIndex());
+    const frame = window.requestAnimationFrame(() => {
+      setPunchlineIndex(getRandomIndex());
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const shufflePunchline = () => {
@@ -102,7 +106,7 @@ export function Hero() {
           </button>
         </div>
 
-        {/* Social Links */}
+        {/* Secondary links */}
         <div className="flex items-center gap-2 flex-wrap">
           {socialLinks.map((link) =>
             "internal" in link ? (

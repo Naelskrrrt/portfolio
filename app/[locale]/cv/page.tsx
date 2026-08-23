@@ -46,21 +46,25 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "CV.meta" });
+  const canonical =
+    locale === routing.defaultLocale
+      ? `${BASE_URL}/cv`
+      : `${BASE_URL}/${locale}/cv`;
 
   return {
     title: t("title"),
     description: t("description"),
     alternates: {
-      canonical: `${BASE_URL}/${locale}/cv`,
+      canonical,
       languages: {
-        fr: `${BASE_URL}/fr/cv`,
+        fr: `${BASE_URL}/cv`,
         en: `${BASE_URL}/en/cv`,
       },
     },
     openGraph: {
       type: "profile",
       locale: locale === "fr" ? "fr_FR" : "en_US",
-      url: `${BASE_URL}/${locale}/cv`,
+      url: canonical,
       siteName: "LALASON Annaël",
       title: t("title"),
       description: t("description"),
@@ -86,6 +90,11 @@ export default async function CvPage({
 
   setRequestLocale(locale);
 
+  const pageUrl =
+    locale === routing.defaultLocale
+      ? `${BASE_URL}/cv`
+      : `${BASE_URL}/${locale}/cv`;
+
   const t = await getTranslations({ locale, namespace: "CV" });
   const tCert = await getTranslations({ locale, namespace: "Certifications" });
 
@@ -101,8 +110,8 @@ export default async function CvPage({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "@id": `${BASE_URL}/${locale}/cv#profilepage`,
-    url: `${BASE_URL}/${locale}/cv`,
+    "@id": `${pageUrl}#profilepage`,
+    url: pageUrl,
     name: t("meta.title"),
     description: t("meta.description"),
     inLanguage: locale === "fr" ? "fr-FR" : "en-US",
