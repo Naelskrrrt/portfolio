@@ -832,12 +832,12 @@
   "Offre": {
     "meta": {
       "title": "Engagements & pricing — Annaël Lalason · Flow AI Studio",
-    "description": "Flow Pilot from €1,500 excl. VAT, delivered in 2–3 weeks. Estimate break-even, compare prices and see exactly what is included."
+    "description": "Flow Pilot at a €4,500 excl. VAT catalogue price. One Founding Partner place at €1,500, delivered in 2–3 weeks in exchange for documented proof."
     },
   "hero": {
     "eyebrow": "AI automation for SMEs · Flow AI Studio",
     "title": "Your team does not lack tools. It loses time stitching them together.",
-    "body": "I turn one priority process into an operational workflow in 2–3 weeks, from €1,500 excl. VAT. Your information stays linked to its sources, and you approve every sensitive action.",
+    "body": "I turn one priority process into an operational workflow in 2–3 weeks. Catalogue price: €4,500 excl. VAT. One Founding Partner place is open at €1,500 in exchange for a documented customer case.",
     "cta": "Assess my process",
     "secondaryCta": "Estimate the return",
     "note": "Free qualification call · 30 minutes · a direct answer on feasibility",
@@ -846,9 +846,9 @@
   },
   "decision": {
     "eyebrow": "The decision in three numbers",
-    "investmentLabel": "Pilot investment",
-    "investmentPrefix": "From",
-    "investmentNote": "One clearly defined process actually put into production",
+    "investmentLabel": "Founding investment",
+    "investmentPrefix": "",
+    "investmentNote": "One place until 30 September 2026 · catalogue price afterwards: €4,500 excl. VAT",
     "deliveryLabel": "Production launch",
     "deliveryValue": "2 to 3 weeks",
     "deliveryNote": "Once the required access and approvals are available",
@@ -858,7 +858,7 @@
   },
   "roi": {
     "eyebrow": "Break-even simulator",
-    "title": "Does the Pilot pay off with your figures?",
+    "title": "Does the Founding Partner place pay off with your figures?",
     "body": "Enter the manual time, recoverable share and hourly cost. The calculation isolates the value of recovered time; additional revenue and risk reduction are not counted.",
     "scenarioLabel": "Editable example · no promise of results",
     "manualHoursLabel": "Manual time on this process / month",
@@ -878,16 +878,24 @@
     "annualRoiLabel": "Indicative 12-month ROI",
     "breakEvenLabel": "Hours to recover each month to break even over 12 months:",
     "formula": "ROI = (12-month value − 12-month total cost) ÷ total cost",
-    "disclaimer": "Indicative calculation based on starting prices. Third-party tools, adoption, data quality and scope changes can alter the result."
+    "disclaimer": "Indicative calculation based on the €1,500 excl. VAT founding price. Third-party tools, adoption, data quality and scope changes can alter the result."
   },
   "pricing": {
     "eyebrow": "Pricing and decisions",
-    "title": "Start with the decision you need to make.",
-    "intro": "Each engagement reduces one specific uncertainty. The Pilot is the recommended entry point when one priority process is already clear.",
+    "title": "The same delivery standard. A launch contribution in return.",
+    "intro": "The Flow Pilot is priced at €4,500 excl. VAT. The first eligible company receives the same scope for €1,500 because it helps create the commercial proof that is still missing.",
     "decisionLabel": "Decision to make",
     "resultLabel": "You receive",
     "durationLabel": "Timeline",
-    "recommended": "Recommended",
+    "recommended": "1 place",
+    "catalogPriceLabel": "Catalogue price after this place:",
+    "foundingAvailability": "Founding Partner · until 30 September 2026 or until the place is allocated",
+    "foundingExchangeLabel": "In exchange for the launch investment:",
+    "foundingExchange": [
+      "A named testimonial after the result has been validated",
+      "Access to baseline and post-launch performance indicators",
+      "Permission to publish the case and one future reference call"
+    ],
     "cards": [
       {
         "id": "framing",
@@ -899,23 +907,15 @@
       },
       {
         "id": "pilot",
-        "title": "Flow Pilot",
-        "pricePrefix": "From",
-        "decision": "Does the value hold up in production?",
+        "title": "Flow Pilot · Founding Partner",
+        "pricePrefix": "",
+        "decision": "Does this process justify a complete production deployment?",
         "result": "One clearly defined process, automated, documented, monitored and handed over to your team.",
         "duration": "2 to 3 weeks"
-      },
-      {
-        "id": "system",
-        "title": "Full system",
-        "pricePrefix": "From",
-        "decision": "Should it expand across several processes?",
-        "result": "Several workflows and tools connected around shared context.",
-        "duration": "Based on scope"
       }
     ],
-    "cta": "Qualify this Pilot in 30 min",
-    "creditNote": "The €290 scoping fee is credited when a Pilot or full system starts within 30 days.",
+    "cta": "Check my eligibility in 30 min",
+    "creditNote": "The €290 scoping fee is credited when the Pilot starts within 30 days. The place is reserved once the agreement is signed and a 50% deposit is paid.",
     "runLabel": "Optional support",
     "runBody": "Flow Run covers monitoring, incidents and an agreed change allowance.",
     "mappingLabel": "Need to study several workflows first?",
@@ -923,15 +923,15 @@
   },
   "scopeSummary": {
     "eyebrow": "The core product",
-    "title": "What a €1,500 excl. VAT Pilot buys",
-    "intro": "One priority process in production, not a prototype or a company-wide transformation.",
+    "title": "The scope of the €4,500 excl. VAT Flow Pilot",
+    "intro": "The first eligible company receives this exact scope for €1,500 excl. VAT: one priority process in production, not a prototype or a company-wide transformation.",
     "metrics": [
       { "value": "1", "label": "priority process" },
       { "value": "1", "label": "team involved" },
       { "value": "3 max.", "label": "tools or sources" },
       { "value": "14 days", "label": "of stabilisation" }
     ],
-    "includedTitle": "Included in the starting price",
+    "includedTitle": "Included in the Pilot",
     "included": [
       "One trigger, one main path, its essential exceptions and one concrete result your team can use",
       "Testing, production deployment, execution logs and failure alerts",
@@ -957,8 +957,8 @@
     "title": "The five questions to answer before deciding",
     "items": [
       {
-        "question": "What exactly does the €1,500 starting price cover?",
-        "answer": "One process, one team, up to three tools or sources, one main path and its essential exceptions, one concrete result, human approvals, testing, production deployment, documentation and 14 days of corrective stabilisation. The exact scope is written down before work starts."
+        "question": "Why is one place €1,500 excl. VAT when the catalogue price is €4,500?",
+        "answer": "I make an exceptional €3,000 reduction to my fees to create a first documented commercial reference. The scope and delivery standard remain those of the €4,500 excl. VAT Pilot. In exchange, the company agrees to baseline and post-launch measurements, a named testimonial if the result is validated, publication of the case and one future reference call. The place is confirmed once the agreement is signed and a 50% deposit is paid."
       },
       {
         "question": "How is ROI measured?",
@@ -1222,7 +1222,7 @@
         },
         {
           "question": "Is the €290 scoping fee added to the Pilot price?",
-          "answer": "No. If the Pilot or full system starts within 30 days, the €290 already paid is credited. For a €1,500 Pilot, the remaining invoice is €1,210: your total stays €1,500 excluding VAT."
+          "answer": "No. If the Pilot starts within 30 days, the €290 already paid is credited against the remaining amount. This credit also applies to the single Founding Partner place."
         },
         {
           "question": "Why are the Pilot and the full system priced differently?",

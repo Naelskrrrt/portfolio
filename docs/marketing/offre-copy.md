@@ -9,14 +9,14 @@
 - **Question principale :** combien investir, quel résultat acheter et à partir de quel gain le projet devient-il rationnel ?
 - **Produit principal :** le Pilote Flow, pas la cartographie ni le support mensuel.
 - **Règle de preuve :** aucune économie n’est garantie. Les hypothèses du simulateur sont modifiables et les gains du cas réel restent présentés comme l’estimation d’un dirigeant sur un système plus large.
-- **Source unique des prix :** `lib/offer.ts`. Les montants injectés dans la page ne doivent pas être dupliqués dans les traductions.
+- **Source de vérité des prix :** `lib/offer.ts`. Le tarif catalogue et les paramètres de la place fondatrice doivent rester alignés avec les mentions éditoriales traduites.
 
 ## Hiérarchie de la page
 
 1. Problème concret, prix, délai, identité du prestataire et appel gratuit dans le premier écran.
 2. Cas réel anonymisé, avec métriques et limites de la preuve explicites.
 3. Simulateur de seuil de rentabilité avec hypothèses visibles.
-4. Comparatif de trois engagements et appel à l’action sur le Pilote recommandé.
+4. Cadrage express, Pilote au tarif catalogue et conditions de l’unique place Partenaire Fondateur.
 5. Périmètre exact du Pilote et démonstration vidéo réelle sur WhatsApp.
 6. Cinq questions de décision, dont les données et les accès.
 7. Appel à l’action final.
@@ -31,11 +31,12 @@ Les anciennes sections autonomes « problème », « exemples », « parcours »
 
 **Corps**
 
-> Je transforme un processus prioritaire en un flux opérationnel en 2 à 3 semaines, dès 1 500 € HT. Vos informations restent reliées à leurs sources et vous validez chaque action sensible.
+> Je transforme un processus prioritaire en un flux opérationnel en 2 à 3 semaines. Tarif catalogue : 4 500 € HT. Une place Partenaire Fondateur est ouverte à 1 500 € HT en échange d’un cas documenté.
 
 **Repères visibles immédiatement**
 
-- Pilote dès 1 500 € HT ;
+- Pilote Flow au tarif catalogue de 4 500 € HT ;
+- une place Partenaire Fondateur à 1 500 € HT jusqu’au 30 septembre 2026 ou attribution ;
 - mise en production en deux à trois semaines ;
 - 35 à 50 heures récupérées par mois sur le système observé, selon l’estimation du dirigeant et sans garantie de reproductibilité ;
 - appel de qualification gratuit de 30 minutes.
@@ -43,7 +44,7 @@ Les anciennes sections autonomes « problème », « exemples », « parcours »
 
 ## Simulateur de ROI
 
-Le simulateur part du prix d’entrée du Pilote et permet au visiteur de modifier :
+Pendant la période de lancement, le simulateur part du tarif fondateur de 1 500 € HT et permet au visiteur de modifier :
 
 - le temps manuel mensuel consacré au processus ;
 - la part raisonnablement récupérable ;
@@ -69,16 +70,26 @@ Les outils tiers, l’adoption, la qualité des données, les variations de pér
 | Décision | Engagement | Prix | Délai |
 | --- | --- | ---: | --- |
 | Faut-il automatiser ce processus ? | Cadrage express | 290 € HT | Sous 5 jours ouvrés |
-| La valeur existe-t-elle en production ? | Pilote Flow | Dès 1 500 € HT | 2 à 3 semaines |
-| Faut-il étendre à plusieurs processus ? | Système complet | Dès 4 500 € HT | Selon le périmètre |
+| Ce processus mérite-t-il une mise en production complète ? | Pilote Flow | 4 500 € HT | 2 à 3 semaines |
 
-- Les 290 € du cadrage sont déduits si un Pilote ou un système démarre dans les 30 jours.
+- Les 290 € du cadrage sont déduits si un Pilote démarre dans les 30 jours.
+- Une seule place Partenaire Fondateur reçoit le même périmètre pour 1 500 € HT, jusqu’au 30 septembre 2026 ou attribution.
+- La place est confirmée à la signature et au versement de 50 % d’acompte.
 - Flow Run est optionnel, dès 390 € HT par mois.
 - La cartographie complète est une option autonome à 890 € HT, jamais un prérequis.
 
+### Contreparties de la place fondatrice
+
+- un témoignage nommé après validation du résultat ;
+- l’accès aux indicateurs avant et après la mise en production ;
+- l’autorisation de publier le cas ;
+- un appel de référence futur.
+
+La contrepartie explique l’écart de 3 000 € : ce n’est ni une remise permanente ni un périmètre dégradé.
+
 ## Périmètre du Pilote
 
-**Ce que le prix de départ achète :** un processus prioritaire réellement mis en production, pas une maquette.
+**Ce que le tarif catalogue de 4 500 € HT achète :** un processus prioritaire réellement mis en production, pas une maquette. La place fondatrice à 1 500 € HT reçoit exactement le même périmètre.
 
 - un processus et une équipe ;
 - jusqu’à trois outils ou sources ;
@@ -88,7 +99,7 @@ Les outils tiers, l’adoption, la qualité des données, les variations de pér
 - documentation, passation et critère de succès défini avant de construire ;
 - quatorze jours de stabilisation corrective.
 
-Le prix de départ exclut les autres processus ou équipes, un tableau de bord sur mesure, une application mobile, le remplacement d’un ERP ou CRM, les abonnements, la consommation d’API et les services tiers.
+Le prix exclut les autres processus ou équipes, un tableau de bord sur mesure, une application mobile, le remplacement d’un ERP ou CRM, les abonnements, la consommation d’API et les services tiers.
 
 Une démonstration vidéo réelle montre une demande formulée depuis WhatsApp, puis le brief opérationnel produit à partir du contexte connecté. WhatsApp est l’interface visible ; le produit vendu reste le flux relié aux outils du client, pas un chatbot isolé.
 
@@ -96,7 +107,7 @@ Une démonstration vidéo réelle montre une demande formulée depuis WhatsApp, 
 
 La page répond uniquement à cinq questions :
 
-1. Que couvre le prix de départ du Pilote ?
+1. Pourquoi une place à 1 500 € HT si le tarif catalogue est de 4 500 € HT ?
 2. Comment le ROI est-il mesuré ?
 3. Quels frais peuvent s’ajouter ?
 4. Que se passe-t-il après les quatorze jours de stabilisation ?

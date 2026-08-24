@@ -832,12 +832,12 @@
   "Offre": {
     "meta": {
       "title": "Offre & tarifs — Annaël Lalason · Flow AI Studio",
-    "description": "Pilote Flow dès 1 500 € HT, livré en 2 à 3 semaines. Simulez le seuil de rentabilité, comparez les prix et voyez précisément ce qui est inclus."
+    "description": "Pilote Flow à 4 500 € HT au catalogue. Une place Partenaire Fondateur à 1 500 € HT, livrée en 2 à 3 semaines contre une preuve documentée."
     },
   "hero": {
     "eyebrow": "Automatisation IA pour PME · Flow AI Studio",
     "title": "Votre équipe ne manque pas d'outils. Elle perd du temps à les recoller.",
-    "body": "Je transforme un processus prioritaire en un flux opérationnel en 2 à 3 semaines, dès 1 500 € HT. Vos informations restent reliées à leurs sources et vous validez chaque action sensible.",
+    "body": "Je transforme un processus prioritaire en un flux opérationnel en 2 à 3 semaines. Tarif catalogue : 4 500 € HT. Une place Partenaire Fondateur est ouverte à 1 500 € HT en échange d'un cas documenté.",
     "cta": "Évaluer mon processus",
     "secondaryCta": "Simuler le retour",
     "note": "Appel de qualification gratuit · 30 minutes · réponse franche sur la faisabilité",
@@ -846,9 +846,9 @@
   },
   "decision": {
     "eyebrow": "La décision en trois chiffres",
-    "investmentLabel": "Investissement du Pilote",
-    "investmentPrefix": "Dès",
-    "investmentNote": "Un processus clairement défini, réellement mis en production",
+    "investmentLabel": "Investissement fondateur",
+    "investmentPrefix": "",
+    "investmentNote": "Une place jusqu'au 30 septembre 2026 · tarif catalogue ensuite : 4 500 € HT",
     "deliveryLabel": "Mise en production",
     "deliveryValue": "2 à 3 semaines",
     "deliveryNote": "Après réception des accès et validations",
@@ -858,7 +858,7 @@
   },
   "roi": {
     "eyebrow": "Simulateur de seuil",
-    "title": "Le Pilote est-il rentable avec vos chiffres ?",
+    "title": "La place fondatrice est-elle rentable avec vos chiffres ?",
     "body": "Indiquez le temps manuel, la part récupérable et le coût horaire. Le calcul isole la valeur du temps récupéré ; les revenus supplémentaires et la réduction du risque ne sont pas comptés.",
     "scenarioLabel": "Exemple modifiable · aucune promesse de résultat",
     "manualHoursLabel": "Temps manuel sur ce processus / mois",
@@ -878,16 +878,24 @@
     "annualRoiLabel": "ROI indicatif à 12 mois",
     "breakEvenLabel": "Heures à récupérer chaque mois pour atteindre l'équilibre sur 12 mois :",
     "formula": "ROI = (valeur sur 12 mois − coût total sur 12 mois) ÷ coût total",
-    "disclaimer": "Calcul indicatif basé sur les prix de départ. Les outils tiers, l'adoption, la qualité des données et les écarts de périmètre peuvent modifier le résultat."
+    "disclaimer": "Calcul indicatif basé sur le tarif fondateur de 1 500 € HT. Les outils tiers, l'adoption, la qualité des données et les écarts de périmètre peuvent modifier le résultat."
   },
   "pricing": {
     "eyebrow": "Prix et décisions",
-    "title": "Commencez par la décision que vous devez prendre.",
-    "intro": "Chaque offre réduit une incertitude précise. Le Pilote est le point d'entrée recommandé lorsqu'un processus prioritaire est déjà identifié.",
+    "title": "Un même niveau de livraison. Une contrepartie de lancement.",
+    "intro": "Le Pilote Flow est tarifé 4 500 € HT. La première entreprise éligible bénéficie du même périmètre à 1 500 € HT parce qu'elle contribue à produire la preuve commerciale qui manque encore.",
     "decisionLabel": "Décision à prendre",
     "resultLabel": "Vous obtenez",
     "durationLabel": "Délai",
-    "recommended": "Recommandé",
+    "recommended": "1 place",
+    "catalogPriceLabel": "Tarif catalogue après cette place :",
+    "foundingAvailability": "Partenaire Fondateur · jusqu'au 30 septembre 2026 ou attribution de la place",
+    "foundingExchangeLabel": "En échange de l'investissement de lancement :",
+    "foundingExchange": [
+      "Un témoignage nommé après validation du résultat",
+      "L'accès aux indicateurs avant et après la mise en production",
+      "L'autorisation de publier le cas et un appel de référence futur"
+    ],
     "cards": [
       {
         "id": "framing",
@@ -899,23 +907,15 @@
       },
       {
         "id": "pilot",
-        "title": "Pilote Flow",
-        "pricePrefix": "Dès",
-        "decision": "La valeur existe-t-elle en production ?",
+        "title": "Pilote Flow · Partenaire Fondateur",
+        "pricePrefix": "",
+        "decision": "Ce processus mérite-t-il une mise en production complète ?",
         "result": "Un processus clairement défini, automatisé, documenté, surveillé et transmis à votre équipe.",
         "duration": "2 à 3 semaines"
-      },
-      {
-        "id": "system",
-        "title": "Système complet",
-        "pricePrefix": "Dès",
-        "decision": "Faut-il étendre à plusieurs processus ?",
-        "result": "Plusieurs flux et outils reliés autour d'un contexte commun.",
-        "duration": "Selon le périmètre"
       }
     ],
-    "cta": "Qualifier ce Pilote en 30 min",
-    "creditNote": "Les 290 € du cadrage sont déduits si le Pilote ou le système démarre dans les 30 jours.",
+    "cta": "Vérifier mon éligibilité en 30 min",
+    "creditNote": "Les 290 € du cadrage sont déduits si le Pilote démarre dans les 30 jours. La réservation de la place est confirmée à la signature et au versement de 50 % d'acompte.",
     "runLabel": "Suivi optionnel",
     "runBody": "Flow Run couvre la surveillance, les incidents et un volume d'évolution défini.",
     "mappingLabel": "Besoin d'étudier plusieurs flux d'abord ?",
@@ -923,15 +923,15 @@
   },
   "scopeSummary": {
     "eyebrow": "Le produit principal",
-    "title": "Ce que vous achetez avec un Pilote à 1 500 € HT",
-    "intro": "Un processus prioritaire mis en production, pas une maquette ni une transformation générale de l'entreprise.",
+    "title": "Le périmètre du Pilote Flow à 4 500 € HT",
+    "intro": "La première entreprise éligible reçoit exactement ce périmètre à 1 500 € HT : un processus prioritaire mis en production, pas une maquette ni une transformation générale de l'entreprise.",
     "metrics": [
       { "value": "1", "label": "processus prioritaire" },
       { "value": "1", "label": "équipe concernée" },
       { "value": "3 max.", "label": "outils ou sources" },
       { "value": "14 jours", "label": "de stabilisation" }
     ],
-    "includedTitle": "Inclus dans le prix de départ",
+    "includedTitle": "Inclus dans le Pilote",
     "included": [
       "Un déclencheur, un parcours principal, ses exceptions essentielles et un résultat concret exploitable par l'équipe",
       "Les tests, la mise en production, le journal d'exécution et l'alerte d'échec",
@@ -957,8 +957,8 @@
     "title": "Les cinq questions avant de décider",
     "items": [
       {
-        "question": "Que couvre précisément le prix de départ de 1 500 € HT ?",
-        "answer": "Un processus, une équipe, jusqu'à trois outils ou sources, un parcours principal et ses exceptions essentielles, un résultat concret, les validations humaines, les tests, la mise en production, la documentation et 14 jours de stabilisation corrective. Le périmètre exact est écrit avant le démarrage."
+        "question": "Pourquoi une place à 1 500 € HT si le tarif catalogue est de 4 500 € HT ?",
+        "answer": "Je réduis exceptionnellement mes honoraires de 3 000 € pour produire une première référence commerciale documentée. Le périmètre et le niveau d'exigence restent ceux du Pilote à 4 500 € HT. En échange, l'entreprise accepte les mesures avant et après, un témoignage nommé si le résultat est validé, la publication du cas et un futur appel de référence. La place est confirmée à la signature et au versement de 50 % d'acompte."
       },
       {
         "question": "Comment le ROI est-il mesuré ?",
@@ -1222,7 +1222,7 @@
         },
         {
           "question": "Les 290 € du cadrage s'ajoutent-ils au prix du Pilote ?",
-          "answer": "Non. Si le Pilote ou le système démarre dans les 30 jours, les 290 € déjà payés sont crédités. Pour un Pilote à 1 500 €, il reste donc 1 210 € à facturer : le total reste 1 500 € HT."
+          "answer": "Non. Si le Pilote démarre dans les 30 jours, les 290 € déjà payés sont crédités sur le montant restant. Cette déduction s'applique aussi à l'unique place Partenaire Fondateur."
         },
         {
           "question": "Pourquoi le Pilote et le système complet ont-ils deux prix différents ?",

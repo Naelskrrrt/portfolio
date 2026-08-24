@@ -15,7 +15,7 @@ import {
   type RoiCalculatorCopy,
 } from "@/components/offre/RoiCalculator";
 import { routing } from "@/i18n/routing";
-import { OFFER_PRICES, formatPrice } from "@/lib/offer";
+import { FOUNDING_OFFER, OFFER_PRICES, formatPrice } from "@/lib/offer";
 
 const BASE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.lalason.pro"
@@ -118,24 +118,32 @@ export default async function OfferPage({ params }: PageProps) {
   const scopeIncluded = t.raw("scopeSummary.included") as string[];
   const scopeLimits = t.raw("scopeSummary.limits") as string[];
   const guarantees = t.raw("scopeSummary.guarantees") as string[];
+  const foundingExchange = t.raw("pricing.foundingExchange") as string[];
   const faqItems = t.raw("executiveFaq.items") as FaqItem[];
 
   const offers = [
-    ...pricingCards.map((card) => ({
-      "@type": "Offer" as const,
-      "@id": `${pageUrl}#offer-${card.id}`,
-      name: card.title,
-      description: card.result,
-      url: `${pageUrl}#tarifs`,
-      price: OFFER_PRICES[card.id],
-      priceCurrency: "EUR",
-      priceSpecification: {
-        "@type": "UnitPriceSpecification" as const,
-        price: OFFER_PRICES[card.id],
+    ...pricingCards.map((card) => {
+      const price = card.id === "pilot" ? FOUNDING_OFFER.price : OFFER_PRICES[card.id];
+
+      return {
+        "@type": "Offer" as const,
+        "@id": `${pageUrl}#offer-${card.id}`,
+        name: card.title,
+        description: card.result,
+        url: `${pageUrl}#tarifs`,
+        price,
         priceCurrency: "EUR",
-        valueAddedTaxIncluded: false,
-      },
-    })),
+        ...(card.id === "pilot"
+          ? { priceValidUntil: FOUNDING_OFFER.validThrough }
+          : {}),
+        priceSpecification: {
+          "@type": "UnitPriceSpecification" as const,
+          price,
+          priceCurrency: "EUR",
+          valueAddedTaxIncluded: false,
+        },
+      };
+    }),
     {
       "@type": "Offer" as const,
       "@id": `${pageUrl}#offer-run`,
@@ -271,7 +279,7 @@ export default async function OfferPage({ params }: PageProps) {
                 <div className="border-t border-border py-4">
                   <dt className="text-xs text-muted-foreground">{t("decision.investmentLabel")}</dt>
                   <dd className="mt-1 font-elegant text-3xl leading-none text-foreground">
-                    {t("decision.investmentPrefix")} {taxedPrice(locale, OFFER_PRICES.pilot)}
+                    {t("decision.investmentPrefix")} {taxedPrice(locale, FOUNDING_OFFER.price)}
                   </dd>
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
                     {t("decision.investmentNote")}
@@ -342,7 +350,7 @@ export default async function OfferPage({ params }: PageProps) {
             <div className="mt-10">
               <RoiCalculator
                 locale={locale}
-                investment={OFFER_PRICES.pilot}
+                investment={FOUNDING_OFFER.price}
                 monthlyRun={OFFER_PRICES.run}
                 copy={roiCopy}
               />
@@ -371,7 +379,7 @@ export default async function OfferPage({ params }: PageProps) {
                 return (
                   <article
                     key={card.id}
-                    className={`relative flex min-w-0 flex-col p-5 sm:p-6 md:col-span-2 ${
+                    className={`relative flex min-w-0 flex-col p-5 sm:p-6 md:col-span-3 ${
                       featured ? "bg-primary/[0.07]" : "bg-background"
                     }`}
                   >
@@ -387,10 +395,27 @@ export default async function OfferPage({ params }: PageProps) {
                     >
                       {card.title}
                     </h3>
-                    <p className="mt-5 font-elegant text-3xl leading-none text-foreground">
-                      {card.pricePrefix ? `${card.pricePrefix} ` : ""}
-                      {taxedPrice(locale, OFFER_PRICES[card.id])}
-                    </p>
+                    {featured ? (
+                      <div className="mt-5">
+                        <p className="text-xs leading-relaxed text-muted-foreground">
+                          {t("pricing.catalogPriceLabel")}{" "}
+                          <span className="line-through decoration-primary/70">
+                            {taxedPrice(locale, OFFER_PRICES.pilot)}
+                          </span>
+                        </p>
+                        <p className="mt-2 font-elegant text-3xl leading-none text-foreground">
+                          {taxedPrice(locale, FOUNDING_OFFER.price)}
+                        </p>
+                        <p className="mt-2 text-xs font-semibold leading-relaxed text-primary">
+                          {t("pricing.foundingAvailability")}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="mt-5 font-elegant text-3xl leading-none text-foreground">
+                        {card.pricePrefix ? `${card.pricePrefix} ` : ""}
+                        {taxedPrice(locale, OFFER_PRICES[card.id])}
+                      </p>
+                    )}
 
                     <dl className="mt-7 flex flex-1 flex-col gap-5 border-t border-border pt-5">
                       <div>
@@ -413,12 +438,32 @@ export default async function OfferPage({ params }: PageProps) {
                       </div>
                     </dl>
                     {featured ? (
-                      <BookingLink
-                        location="offer_pricing_pilot"
-                        className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-4 py-2.5 text-center text-sm font-semibold text-primary-foreground transition-colors hover:opacity-90 focus-visible:ring-offset-4"
-                      >
-                        {t("pricing.cta")}
-                      </BookingLink>
+                      <>
+                        <div className="mt-6 border-t border-primary/25 pt-5">
+                          <p className="text-xs font-semibold leading-relaxed text-foreground">
+                            {t("pricing.foundingExchangeLabel")}
+                          </p>
+                          <ul className="mt-3 space-y-2">
+                            {foundingExchange.map((item) => (
+                              <li
+                                key={item}
+                                className="grid grid-cols-[1rem_1fr] gap-2 text-xs leading-relaxed text-muted-foreground"
+                              >
+                                <span aria-hidden="true" className="text-primary">
+                                  +
+                                </span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        <BookingLink
+                          location="offer_pricing_pilot"
+                          className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-4 py-2.5 text-center text-sm font-semibold text-primary-foreground transition-colors hover:opacity-90 focus-visible:ring-offset-4"
+                        >
+                          {t("pricing.cta")}
+                        </BookingLink>
+                      </>
                     ) : null}
                   </article>
                 );
