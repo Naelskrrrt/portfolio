@@ -111,10 +111,11 @@
   },
   "Projects": {
     "title": "R\u00e9alisations r\u00e9centes",
-    "intro": "Des syst\u00e8mes livr\u00e9s en production. Chaque carte affiche le gain mesur\u00e9, pas une promesse.",
+    "intro": "Commencez par les projets document\u00e9s : probl\u00e8me de d\u00e9part, syst\u00e8me livr\u00e9 et r\u00e9sultats remis dans leur contexte. Les autres r\u00e9alisations restent accessibles juste apr\u00e8s.",
     "filterLabel": "Filtrer les r\u00e9alisations par nature de mission",
     "countLabel": "{count} r\u00e9alisations affich\u00e9es",
     "featuredBadge": "Cas mis en avant",
+    "caseStudyBadge": "\u00c9tude de cas publi\u00e9e",
     "more": "Voir l'offre et les tarifs",
     "allCases": "Voir toutes les études de cas",
     "caseStudyCta": "Lire l'étude de cas",

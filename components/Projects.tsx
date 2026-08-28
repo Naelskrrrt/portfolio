@@ -19,17 +19,25 @@ export function Projects() {
   const [expanded, setExpanded] = useState(false);
   const [selected, setSelected] = useState<Project | null>(null);
 
-  const matching = useMemo(
-    () =>
+  const matching = useMemo(() => {
+    const projects =
       active === "all"
         ? PROJECTS
-        : PROJECTS.filter((project) => project.categories.includes(active)),
-    [active]
-  );
+        : PROJECTS.filter((project) => project.categories.includes(active));
 
+    return [...projects].sort(
+      (first, second) =>
+        Number(Boolean(second.caseStudySlug)) -
+        Number(Boolean(first.caseStudySlug))
+    );
+  }, [active]);
+
+  const documented = matching.filter((project) => project.caseStudySlug);
   const visible = expanded
     ? matching
-    : matching.filter((project) => project.highlight);
+    : documented.length > 0
+      ? documented
+      : matching.filter((project) => project.highlight);
   const hiddenCount = matching.length - visible.length;
 
   return (
@@ -76,14 +84,24 @@ export function Projects() {
             key={project.id}
             className={cn(
               "flex flex-col gap-3 rounded-xl border border-border bg-card/40 p-4 transition-colors hover:border-primary/40",
+              project.caseStudySlug &&
+                "border-primary/30 bg-primary/[0.045]",
               project.featured && "sm:col-span-2"
             )}
           >
-            {project.featured && (
+            {project.caseStudySlug ? (
+              <span className="flex w-fit items-center gap-1.5 rounded-full border border-primary/35 bg-primary/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.14em] text-primary">
+                <span
+                  aria-hidden="true"
+                  className="size-1.5 rounded-full bg-primary"
+                />
+                {t("caseStudyBadge")}
+              </span>
+            ) : project.featured ? (
               <span className="w-fit rounded-full border border-primary/30 bg-primary/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.14em] text-primary">
                 {t("featuredBadge")}
               </span>
-            )}
+            ) : null}
 
             <div className="flex flex-col gap-1">
               <span
@@ -146,9 +164,15 @@ export function Projects() {
             {project.caseStudySlug ? (
               <Link
                 href={`/projets/${project.caseStudySlug}`}
-                className="w-fit rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] text-primary transition-colors hover:bg-primary/20"
+                className="group/case-study inline-flex min-h-10 w-full items-center justify-between gap-4 rounded-lg bg-primary px-3.5 py-2 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
-                {t("caseStudyCta")}
+                <span>{t("caseStudyCta")}</span>
+                <span
+                  aria-hidden="true"
+                  className="transition-transform group-hover/case-study:translate-x-0.5"
+                >
+                  →
+                </span>
               </Link>
             ) : (
               <button

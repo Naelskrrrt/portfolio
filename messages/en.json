@@ -111,10 +111,11 @@
   },
   "Projects": {
     "title": "Recent work",
-    "intro": "Systems shipped to production. Every card shows the measured gain, not a promise.",
+    "intro": "Start with the documented projects: the initial problem, the system delivered and outcomes kept in context. The rest of the work remains available just below.",
     "filterLabel": "Filter work by type of engagement",
     "countLabel": "{count} projects shown",
     "featuredBadge": "Featured case",
+    "caseStudyBadge": "Published case study",
     "more": "See the offer and pricing",
     "allCases": "View all case studies",
     "caseStudyCta": "Read the case study",
