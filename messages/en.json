@@ -116,6 +116,8 @@
     "countLabel": "{count} projects shown",
     "featuredBadge": "Featured case",
     "more": "See the offer and pricing",
+    "allCases": "View all case studies",
+    "caseStudyCta": "Read the case study",
     "showAll": "Show {count} more projects",
     "showLess": "Show less",
     "detail": "See the detail",
@@ -831,15 +833,15 @@
   },
   "Offre": {
     "meta": {
-      "title": "Engagements & pricing — Annaël Lalason · Flow AI Studio",
-    "description": "Flow Pilot at a €4,500 excl. VAT catalogue price. One Founding Partner place at €1,500, delivered in 2–3 weeks in exchange for documented proof."
+      "title": "AI automation for SMEs | Flow Pilot in 2–3 weeks",
+      "description": "Automate one priority process in 2–3 weeks: connected tools, documented workflows, alerts and human approval. Explore the Flow Pilot."
     },
   "hero": {
     "eyebrow": "AI automation for SMEs · Flow AI Studio",
-    "title": "Your team does not lack tools. It loses time stitching them together.",
-    "body": "I turn one priority process into an operational workflow in 2–3 weeks. Catalogue price: €4,500 excl. VAT. One Founding Partner place is open at €1,500 in exchange for a documented customer case.",
-    "cta": "Assess my process",
-    "secondaryCta": "Estimate the return",
+      "title": "AI automation for SMEs: one process in production in 2–3 weeks.",
+      "body": "I connect your tools and turn one priority manual process into an operational, documented and monitored workflow. Catalogue price: €4,500 excl. VAT. One Founding Partner place is open at €1,500 in exchange for a documented customer case.",
+      "cta": "Assess my process potential",
+      "secondaryCta": "Calculate the break-even point",
     "note": "Free qualification call · 30 minutes · a direct answer on feasibility",
     "byline": "Designed and delivered by Annaël Lalason",
     "bylineRole": "Systems & AI architect · one point of contact from scoping to production"
@@ -1172,6 +1174,9 @@
       "eyebrow": "A real production case",
       "title": "The context is prepared before each decision.",
       "body": "For an executive running several companies, the system brings Gmail, CRM records, meetings and documents into a sourced, versioned memory. Every fact remains tied to its origin, and every sensitive external write waits for human approval.",
+      "navigationLabel": "Explore the offer and results",
+      "servicesCta": "View all services",
+      "casesCta": "Read the case studies",
       "metrics": [
         {
           "value": "21",
@@ -1257,10 +1262,150 @@
       "note": "Free qualification call. No hidden audit and no commitment to continue."
     }
   },
+  "Services": {
+    "meta": {
+      "title": "AI automation services for SMEs | Annaël Lalason",
+      "description": "Process automation, human-approved AI agents and custom systems architecture for SMEs and growing teams."
+    },
+    "hero": {
+      "eyebrow": "Services · AI automation for SMEs",
+      "title": "Turn one manual process into an operational system.",
+      "body": "I map the real work, connect the tools already in place and deliver a measurable workflow your team can operate. Not an isolated demo: a documented, monitored and transferable production system.",
+      "primaryCta": "Identify the process to automate",
+      "secondaryCta": "View the case studies",
+      "note": "One point of contact · one metric before building · human approval for sensitive actions"
+    },
+    "proof": {
+      "eyebrow": "Field evidence",
+      "title": "Technology matters. A usable outcome matters more.",
+      "body": "Every engagement starts with observable friction and ends with a system the team can monitor, correct and hand over.",
+      "metrics": [
+        { "value": "2,000+", "label": "n8n and Make workflows deployed" },
+        { "value": "21", "label": "live automations in the Minia case" },
+        { "value": "35–50 h", "label": "saved per month, the executive's estimate for Minia" }
+      ]
+    },
+    "catalog": {
+      "eyebrow": "Three levels of intervention",
+      "title": "Choose the level that fits the problem, not the fashionable tool.",
+      "intro": "A precise process may need targeted automation. Scattered context may justify an AI agent. Several interdependent workflows need architecture first.",
+      "forLabel": "Best suited when",
+      "outcomeLabel": "Target outcome",
+      "includedLabel": "Typical deliverables",
+      "items": [
+        {
+          "id": "automation",
+          "title": "Process automation",
+          "for": "Your team re-enters, consolidates, follows up or checks the same information every week.",
+          "outcome": "Remove repetitive steps without replacing tools that already work.",
+          "body": "I connect your applications through APIs, n8n or Make, then add the controls and alerts required for the workflow to hold up in production.",
+          "included": ["Target workflow map", "Automation, testing and production launch", "Execution logs, alerts and documentation"]
+        },
+        {
+          "id": "agents",
+          "title": "Human-approved AI agents",
+          "for": "Decisions take too long because context is scattered across messages, documents and business tools.",
+          "outcome": "Prepare the right information and next action without blindly delegating the decision.",
+          "body": "The agent gathers sources, prepares an answer or action, and asks for approval whenever the company is committed. Every important claim remains tied to its evidence.",
+          "included": ["Sources, memory and access rules", "Conversational interface or business integration", "Human approval and exception handling"]
+        },
+        {
+          "id": "architecture",
+          "title": "Systems and product architecture",
+          "for": "Several processes, datasets and roles need to work together in one coherent interface.",
+          "outcome": "Move from a pile of tools to a maintainable, secure and scalable system.",
+          "body": "I design the architecture, data flows, permissions and interface before orchestrating delivery of an application or complete system.",
+          "included": ["Functional and technical architecture", "Data model, APIs and permissions", "Delivery plan and production launch"]
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "A short, verifiable method",
+      "title": "Measure before you automate.",
+      "body": "The goal is not to build the most impressive system. It is to solve the right problem with a scope the team can adopt.",
+      "steps": [
+        { "number": "01", "title": "Observe", "body": "Volume, time spent, errors, delays and people involved become the decision baseline." },
+        { "number": "02", "title": "Scope", "body": "We choose one outcome, one main path, the essential exceptions and explicit boundaries." },
+        { "number": "03", "title": "Ship", "body": "The workflow is connected, tested and launched with logs and alerts." },
+        { "number": "04", "title": "Stabilise", "body": "The team uses the system, gaps are corrected and the documentation is handed over." }
+      ]
+    },
+    "qualification": {
+      "title": "Is this the right time to automate?",
+      "body": "Good automation starts with a process frequent enough to measure and stable enough to scope.",
+      "fitsTitle": "The project is probably ready if",
+      "fits": ["A business owner can explain the current process", "Volume, time or errors can be estimated", "The relevant tools provide the required access"],
+      "limitsTitle": "I recommend waiting if",
+      "limits": ["The process still changes every week", "Nobody can approve rules and exceptions", "The goal is simply to add AI without a specific business outcome"]
+    },
+    "final": {
+      "title": "Start with one process, not a company-wide transformation.",
+      "body": "In 30 minutes, we check volume, friction and potential value. If the case is not strong enough, I will say so before any paid scoping.",
+      "primaryCta": "Assess my process",
+      "secondaryCta": "Explore the Flow Pilot"
+    }
+  },
+  "CaseStudies": {
+    "meta": {
+      "title": "AI, automation and product case studies | Annaël Lalason",
+      "description": "Explore production AI systems, automations and products: context, architecture, observed outcomes and limitations."
+    },
+    "hero": {
+      "eyebrow": "Case studies",
+      "title": "Systems shipped. Outcomes kept in context.",
+      "body": "Each case explains the starting problem, the system delivered and the outcomes available. Figures include their scope so evidence remains distinct from a promise.",
+      "cta": "Discuss my process"
+    },
+    "cardCta": "Read the case study",
+    "labels": {
+      "problem": "The starting problem",
+      "system": "The system delivered",
+      "results": "Outcomes and evidence",
+      "architecture": "Architecture and tools",
+      "lesson": "What this case demonstrates",
+      "readingNote": "How to read these figures",
+      "external": "View the product",
+      "back": "All case studies",
+      "updated": "Updated 28 August 2026"
+    },
+    "items": {
+      "minia": {
+        "metaTitle": "Minia: multi-agent AI Chief of Staff | Case study",
+        "metaDescription": "How a multi-company executive centralised context with an AI Chief of Staff, 21 automations and more than 6 specialised agents.",
+        "lesson": "A useful agent does more than answer questions. It retrieves the source, separates knowledge from assumptions and waits for approval before sensitive external writes.",
+        "readingNote": "The 35–50 monthly hours are the executive's estimate for a broader system. They are an observed reference, not a guarantee for another context."
+      },
+      "reporting": {
+        "metaTitle": "Automated reporting: from 2 days to 15 minutes | Case study",
+        "metaDescription": "Case study of e-commerce reporting across eight platforms, published every Monday through n8n, Notion and GPT-4.",
+        "lesson": "The value comes from more than automatic collection. It requires shared metric definitions, a stable publishing time and an alert when a source is missing.",
+        "readingNote": "The outcomes apply to the scope described and depend on API availability, data quality and stable business definitions."
+      },
+      "telavie": {
+        "metaTitle": "Télavie: unified telemedicine platform | Case study",
+        "metaDescription": "Architecture of a telemedicine platform unifying patients, practitioners and administrators with Next.js, PostgreSQL and HDS hosting.",
+        "lesson": "In a healthcare product, user experience and role architecture must be designed together: every screen depends on permissions, data and the care journey.",
+        "readingNote": "The evidence describes the platform's functional and technical scope. It is not a measure of medical outcomes."
+      },
+      "talentfindr": {
+        "metaTitle": "TalentFindr: AI sourcing platform | Case study",
+        "metaDescription": "Case study of an AI sourcing platform covering more than 800 million profiles, with scoring and multi-channel sequences.",
+        "lesson": "A sourcing agent's autonomy depends less on message generation than on targeting quality, sequence rules and the visibility retained by the recruiter.",
+        "readingNote": "Profile, user and country figures describe the platform's stated reach. They do not by themselves represent a recruiting outcome."
+      }
+    },
+    "final": {
+      "title": "Your case does not need to look like these.",
+      "body": "It simply needs observable friction, an accountable owner and an outcome the team will recognise.",
+      "primaryCta": "Assess my process",
+      "secondaryCta": "View the services"
+    }
+  },
   "Footer": {
     "navigationLabel": "Footer navigation",
     "home": "View portfolio",
     "offer": "View my offer",
+    "services": "Services",
     "cv": "View my resume",
     "projects": "Work",
     "findMe": "Find me",

@@ -7,7 +7,7 @@
 - [x] Person schema : `image`, `@id`, sameAs canoniques *(fait 2026-07)*
 - [x] `twitter:card` → summary_large_image *(fait 2026-07)*
 - [x] Photo pro détourée cohérente avec le branding *(fait 2026-07)*
-- [ ] **Google Search Console** : vérifier www.lalason.pro, soumettre sitemap, demander indexation /fr et /en
+- [x] **Google Search Console** : propriété vérifiée, sitemap soumis et premières URL demandées à l’indexation *(fait 2026-08)*
 - [ ] Compléter le schema : `worksFor` (Mon Ambassadeur), `alumniOf`, `knowsLanguage: ["fr","en"]`
 - [ ] Cohérence du nom exact « LALASON Annaël » sur LinkedIn, GitHub, X
 - [ ] Lien vers www.lalason.pro depuis : bio LinkedIn (champ site), README profil GitHub, bio X
@@ -18,11 +18,13 @@
 
 ## Phase 2 — Pages commerciales (semaines 5-12)
 
-- [ ] Créer /services + 3 pages services (800+ mots chacune, fr puis en)
-- [ ] Schema ProfessionalService/Service sur chaque page
-- [ ] 2 premières études de cas dans /projets (métriques réelles : ROI, heures gagnées)
+- [x] Créer le hub `/services` en français et en anglais *(fait 2026-08)*
+- [ ] Créer 3 pages services dédiées (contenu utile et spécifique, fr puis en)
+- [x] Schema `Service` sur le hub services *(fait 2026-08)*
+- [ ] Schema `Service` sur chaque future page service
+- [x] 4 premières études de cas dans `/projets` avec contexte des métriques *(fait 2026-08)*
 - [ ] /a-propos (bio longue, ProfilePage)
-- [ ] Mettre à jour sitemap.ts + maillage interne depuis la one-page
+- [x] Mettre à jour `sitemap.ts` + maillage interne depuis la one-page et `/offre` *(fait 2026-08)*
 - [ ] Demander 2-3 témoignages clients nominatifs
 
 **Sortie :** 8+ pages indexées, premières impressions GSC sur requêtes commerciales.
@@ -33,7 +35,8 @@
 - [ ] 3e-5e études de cas
 - [ ] 1 guest post ou interview sur un site du secteur (backlink d'autorité)
 - [ ] Optimiser les pages selon les données GSC réelles (requêtes → contenus)
-- [ ] Version EN des pages services
+- [x] Version EN du hub services et des 4 études de cas *(fait 2026-08)*
+- [ ] Version EN des futures pages services dédiées
 
 **Sortie :** 15+ pages indexées, 8 mots-clés top 10, 3 leads organiques/mois.
 

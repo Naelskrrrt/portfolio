@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-import type { Project } from "./Projects";
+import type { Project } from "@/lib/projects";
 
 type ProjectModalProps = {
   project: Project;

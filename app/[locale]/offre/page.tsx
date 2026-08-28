@@ -14,6 +14,7 @@ import {
   RoiCalculator,
   type RoiCalculatorCopy,
 } from "@/components/offre/RoiCalculator";
+import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { FOUNDING_OFFER, OFFER_PRICES, formatPrice } from "@/lib/offer";
 
@@ -316,6 +317,20 @@ export default async function OfferPage({ params }: PageProps) {
               <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
                 {t("proof.body")}
               </p>
+              <nav aria-label={t("proof.navigationLabel")} className="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold">
+                <Link
+                  href="/services"
+                  className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-primary"
+                >
+                  {t("proof.servicesCta")}
+                </Link>
+                <Link
+                  href="/projets"
+                  className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-primary"
+                >
+                  {t("proof.casesCta")}
+                </Link>
+              </nav>
             </div>
 
             <div>

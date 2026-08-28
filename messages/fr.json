@@ -116,6 +116,8 @@
     "countLabel": "{count} r\u00e9alisations affich\u00e9es",
     "featuredBadge": "Cas mis en avant",
     "more": "Voir l'offre et les tarifs",
+    "allCases": "Voir toutes les études de cas",
+    "caseStudyCta": "Lire l'étude de cas",
     "showAll": "Voir les {count} autres r\u00e9alisations",
     "showLess": "Afficher moins",
     "detail": "Voir le d\u00e9tail",
@@ -831,15 +833,15 @@
   },
   "Offre": {
     "meta": {
-      "title": "Offre & tarifs — Annaël Lalason · Flow AI Studio",
-    "description": "Pilote Flow à 4 500 € HT au catalogue. Une place Partenaire Fondateur à 1 500 € HT, livrée en 2 à 3 semaines contre une preuve documentée."
+      "title": "Automatisation IA pour PME | Pilote Flow en 2 à 3 semaines",
+      "description": "Automatisez un processus prioritaire en 2 à 3 semaines : outils reliés, flux documenté, alertes et validation humaine. Découvrez le Pilote Flow."
     },
   "hero": {
     "eyebrow": "Automatisation IA pour PME · Flow AI Studio",
-    "title": "Votre équipe ne manque pas d'outils. Elle perd du temps à les recoller.",
-    "body": "Je transforme un processus prioritaire en un flux opérationnel en 2 à 3 semaines. Tarif catalogue : 4 500 € HT. Une place Partenaire Fondateur est ouverte à 1 500 € HT en échange d'un cas documenté.",
-    "cta": "Évaluer mon processus",
-    "secondaryCta": "Simuler le retour",
+      "title": "Automatisation IA pour PME : un processus en production en 2 à 3 semaines.",
+      "body": "Je relie vos outils et transforme un processus manuel prioritaire en flux opérationnel, documenté et surveillé. Tarif catalogue : 4 500 € HT. Une place Partenaire Fondateur est ouverte à 1 500 € HT en échange d'un cas documenté.",
+      "cta": "Évaluer le potentiel de mon processus",
+      "secondaryCta": "Calculer le seuil de rentabilité",
     "note": "Appel de qualification gratuit · 30 minutes · réponse franche sur la faisabilité",
     "byline": "Conçu et livré par Annaël Lalason",
     "bylineRole": "Architecte systèmes & IA · un interlocuteur unique du cadrage à la mise en production"
@@ -1172,6 +1174,9 @@
       "eyebrow": "Cas réel en production",
       "title": "Le contexte est préparé avant chaque décision.",
       "body": "Pour un dirigeant de plusieurs sociétés, le système rassemble Gmail, CRM, réunions et documents dans une mémoire sourcée et versionnée. Chaque fait reste rattaché à son origine et toute écriture externe sensible attend une validation humaine.",
+      "navigationLabel": "Explorer l’offre et les réalisations",
+      "servicesCta": "Voir tous les services",
+      "casesCta": "Lire les études de cas",
       "metrics": [
         {
           "value": "21",
@@ -1257,10 +1262,150 @@
       "note": "Appel de qualification gratuit. Aucun audit caché, aucun engagement sur la suite."
     }
   },
+  "Services": {
+    "meta": {
+      "title": "Services d'automatisation IA pour PME | Annaël Lalason",
+      "description": "Automatisation de processus, agents IA avec validation humaine et architecture de systèmes sur mesure pour PME et équipes en croissance."
+    },
+    "hero": {
+      "eyebrow": "Services · Automatisation IA pour PME",
+      "title": "Transformez un processus manuel en système opérationnel.",
+      "body": "Je cartographie le travail réel, relie les outils déjà en place et livre un flux mesurable que votre équipe peut exploiter. Pas de démonstration isolée : une mise en production documentée, surveillée et transmissible.",
+      "primaryCta": "Identifier le processus à automatiser",
+      "secondaryCta": "Voir les études de cas",
+      "note": "Un interlocuteur unique · une métrique avant de construire · une validation humaine pour les actions sensibles"
+    },
+    "proof": {
+      "eyebrow": "Repères de terrain",
+      "title": "La technologie compte. Le résultat exploitable compte davantage.",
+      "body": "Chaque mission commence par une friction observable et se termine par un système que l'équipe peut suivre, corriger et transmettre.",
+      "metrics": [
+        { "value": "2 000+", "label": "workflows n8n et Make déployés" },
+        { "value": "21", "label": "automatisations actives sur le cas Minia" },
+        { "value": "35–50 h", "label": "économisées par mois, estimation du dirigeant sur Minia" }
+      ]
+    },
+    "catalog": {
+      "eyebrow": "Trois niveaux d'intervention",
+      "title": "Choisissez le niveau adapté au problème, pas l'outil à la mode.",
+      "intro": "Un processus précis peut demander une automatisation ciblée. Un contexte dispersé peut justifier un agent IA. Plusieurs flux interdépendants exigent d'abord une architecture.",
+      "forLabel": "Adapté quand",
+      "outcomeLabel": "Résultat recherché",
+      "includedLabel": "Livrables typiques",
+      "items": [
+        {
+          "id": "automation",
+          "title": "Automatisation de processus",
+          "for": "Votre équipe ressaisit, consolide, relance ou contrôle les mêmes informations chaque semaine.",
+          "outcome": "Supprimer les étapes répétitives sans remplacer les outils qui fonctionnent déjà.",
+          "body": "Je relie vos applications par API, n8n ou Make, puis j'ajoute les contrôles et alertes nécessaires pour que le flux tienne en production.",
+          "included": ["Cartographie du flux cible", "Automatisation, tests et mise en production", "Journal d'exécution, alertes et documentation"]
+        },
+        {
+          "id": "agents",
+          "title": "Agents IA avec validation humaine",
+          "for": "Les décisions prennent du temps parce que le contexte est dispersé entre messages, documents et outils métier.",
+          "outcome": "Préparer la bonne information et la prochaine action sans déléguer aveuglément la décision.",
+          "body": "L'agent rassemble les sources, prépare une réponse ou une action et fait valider ce qui engage l'entreprise. Chaque information importante reste rattachée à sa preuve.",
+          "included": ["Sources, mémoire et règles d'accès", "Interface conversationnelle ou intégration métier", "Validation humaine et traitement des exceptions"]
+        },
+        {
+          "id": "architecture",
+          "title": "Architecture de systèmes et produits",
+          "for": "Plusieurs processus, données et rôles doivent fonctionner ensemble dans une interface cohérente.",
+          "outcome": "Passer d'un empilement d'outils à un système maintenable, sécurisé et évolutif.",
+          "body": "Je conçois l'architecture, les flux de données, les permissions et l'interface avant d'orchestrer la livraison d'une application ou d'un système complet.",
+          "included": ["Architecture fonctionnelle et technique", "Modèle de données, API et permissions", "Plan de livraison puis mise en production"]
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Une méthode courte et vérifiable",
+      "title": "Mesurer avant d'automatiser.",
+      "body": "Le but n'est pas de construire le système le plus impressionnant. C'est de résoudre le bon problème avec un périmètre que l'équipe peut adopter.",
+      "steps": [
+        { "number": "01", "title": "Observer", "body": "Volume, temps passé, erreurs, délais et personnes impliquées deviennent la base de décision." },
+        { "number": "02", "title": "Cadrer", "body": "Nous choisissons un résultat, un parcours principal, les exceptions indispensables et les limites." },
+        { "number": "03", "title": "Livrer", "body": "Le flux est connecté, testé puis mis en production avec des journaux et des alertes." },
+        { "number": "04", "title": "Stabiliser", "body": "L'équipe utilise le système, les écarts sont corrigés et la documentation est transmise." }
+      ]
+    },
+    "qualification": {
+      "title": "Est-ce le bon moment pour automatiser ?",
+      "body": "Une bonne automatisation part d'un processus assez fréquent pour être mesuré et assez stable pour être cadré.",
+      "fitsTitle": "Le projet est probablement prêt si",
+      "fits": ["Un responsable métier peut expliquer le processus actuel", "Le volume, le temps ou les erreurs peuvent être estimés", "Les outils concernés offrent les accès nécessaires"],
+      "limitsTitle": "Je recommande d'attendre si",
+      "limits": ["Le processus change encore chaque semaine", "Personne ne peut valider les règles et exceptions", "L'objectif est simplement d'ajouter de l'IA sans résultat métier précis"]
+    },
+    "final": {
+      "title": "Commencez par un processus, pas par une transformation générale.",
+      "body": "En 30 minutes, nous vérifions le volume, la friction et le gain possible. Si le cas n'est pas assez solide, je vous le dis avant tout cadrage payant.",
+      "primaryCta": "Évaluer mon processus",
+      "secondaryCta": "Découvrir le Pilote Flow"
+    }
+  },
+  "CaseStudies": {
+    "meta": {
+      "title": "Études de cas IA, automatisation et produits | Annaël Lalason",
+      "description": "Découvrez des systèmes IA, automatisations et produits livrés en production : contexte, architecture, résultats observés et limites."
+    },
+    "hero": {
+      "eyebrow": "Études de cas",
+      "title": "Des systèmes livrés. Des résultats replacés dans leur contexte.",
+      "body": "Chaque étude décrit le problème de départ, le système mis en place et les résultats disponibles. Les chiffres sont présentés avec leur périmètre pour distinguer la preuve de la promesse.",
+      "cta": "Parler de mon processus"
+    },
+    "cardCta": "Lire l'étude de cas",
+    "labels": {
+      "problem": "Le problème de départ",
+      "system": "Le système livré",
+      "results": "Résultats et repères",
+      "architecture": "Architecture et outils",
+      "lesson": "Ce que ce cas montre",
+      "readingNote": "Cadre de lecture",
+      "external": "Voir le produit",
+      "back": "Toutes les études de cas",
+      "updated": "Mis à jour le 28 août 2026"
+    },
+    "items": {
+      "minia": {
+        "metaTitle": "Minia : Chief of Staff IA multi-agent | Étude de cas",
+        "metaDescription": "Comment un dirigeant multi-sociétés centralise son contexte avec un Chief of Staff IA, 21 automatisations et plus de 6 agents spécialisés.",
+        "lesson": "Un agent utile ne répond pas seulement à des questions. Il retrouve la source, distingue ce qu'il sait de ce qu'il suppose et attend une validation avant toute écriture sensible.",
+        "readingNote": "Les 35 à 50 heures mensuelles sont une estimation communiquée par le dirigeant sur un système plus large. Elles constituent un repère observé, pas une garantie pour un autre contexte."
+      },
+      "reporting": {
+        "metaTitle": "Reporting automatisé : de 2 jours à 15 minutes | Étude de cas",
+        "metaDescription": "Étude de cas d'un reporting e-commerce automatisé reliant huit plateformes et publié chaque lundi via n8n, Notion et GPT-4.",
+        "lesson": "Le gain ne vient pas seulement de la collecte automatique. Il vient d'une définition commune des métriques, d'un horaire de publication stable et d'une alerte quand une source manque.",
+        "readingNote": "Les résultats correspondent au périmètre décrit et dépendent de la disponibilité des API, de la qualité des données et de la stabilité des définitions métier."
+      },
+      "telavie": {
+        "metaTitle": "Télavie : plateforme de télémédecine unifiée | Étude de cas",
+        "metaDescription": "Architecture d'une plateforme de télémédecine réunissant patients, praticiens et administrateurs avec Next.js, PostgreSQL et hébergement HDS.",
+        "lesson": "Dans un produit de santé, l'expérience utilisateur et l'architecture des rôles doivent être pensées ensemble : chaque écran dépend des permissions, des données et du parcours de soin.",
+        "readingNote": "Les repères présentés décrivent le périmètre fonctionnel et technique de la plateforme. Ils ne constituent pas une mesure d'impact médical."
+      },
+      "talentfindr": {
+        "metaTitle": "TalentFindr : plateforme de sourcing IA | Étude de cas",
+        "metaDescription": "Étude de cas d'une plateforme de sourcing IA couvrant plus de 800 millions de profils, avec scoring et séquences multicanal.",
+        "lesson": "L'autonomie d'un agent de sourcing dépend moins de la génération de messages que de la qualité du ciblage, des règles de séquence et de la visibilité laissée au recruteur.",
+        "readingNote": "Les chiffres de profils, d'utilisateurs et de pays décrivent la portée annoncée de la plateforme. Ils ne représentent pas à eux seuls un résultat de recrutement."
+      }
+    },
+    "final": {
+      "title": "Votre cas n'a pas besoin de ressembler à ceux-ci.",
+      "body": "Il doit simplement partir d'une friction mesurable, d'un responsable identifié et d'un résultat que l'équipe saura reconnaître.",
+      "primaryCta": "Évaluer mon processus",
+      "secondaryCta": "Voir les services"
+    }
+  },
   "Footer": {
     "navigationLabel": "Navigation du pied de page",
     "home": "Voir le portfolio",
     "offer": "Voir mon offre",
+    "services": "Services",
     "cv": "Voir mon CV",
     "projects": "R\u00e9alisations",
     "findMe": "Me retrouver",
