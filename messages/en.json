@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "LALASON Anna\u00ebl \u2014 AI Systems Architect",
-    "description": "I design intelligent systems that structure, automate, and durably transform organizations. Software architecture, applied AI, strategic automation."
+    "title": "LALASON Anna\u00ebl \u2014 Chief Technology Officer & AI Systems Architect",
+    "description": "Chief Technology Officer who unites technology teams around a clear direction, structures execution, and connects strategy, product, architecture and AI."
   },
   "Header": {
     "availability": "Available for a new project",
@@ -11,26 +11,26 @@
     "cta": "Book 30 minutes"
   },
   "Hero": {
-    "role": "AI Systems Architect",
+    "role": "Chief Technology Officer \u00b7 AI Systems Architect",
     "available": "Available for strategic collaborations",
     "offerCta": "See the offer",
     "shuffleLabel": "Another perspective",
     "profileAlt": "Profile picture",
     "punchlines": {
-      "0": "I build systems at the intersection of software architecture and artificial intelligence.",
-      "1": "Before automating, I understand. Before building, I structure.",
-      "2": "Technology is not the goal. It's the lever for transformation.",
-      "3": "I don't sell AI. I install mastery.",
-      "4": "Where others see tasks, I see processes to rethink.",
-      "5": "I identify invisible friction and transform it into autonomous systems.",
-      "6": "Python, TypeScript, LLMs, AI agents \u2014 serving a systems vision.",
-      "7": "Understand deeply. Structure rigorously. Build precisely.",
-      "8": "Between operational chaos and mastery, there's an architecture to design.",
-      "9": "A well-built system goes unnoticed. It works, adapts, and liberates."
+      "0": "I unite technology teams around a clear direction, a solid framework and collective execution.",
+      "1": "A CTO aligns people, product and technology on the same path.",
+      "2": "My first architecture is human: clear roles, trust and accountable decisions.",
+      "3": "I turn technical uncertainty into priorities people understand and can execute.",
+      "4": "Sustainable performance starts with an engaged, structured and autonomous team.",
+      "5": "I create the conditions for developers to move forward together and grow.",
+      "6": "I connect the CEO's vision with the technology team's daily work.",
+      "7": "Listen. Unite. Structure. Move forward.",
+      "8": "I steady transitions by restoring purpose, rhythm and visibility.",
+      "9": "A strong team does not depend on a hero: it shares direction and ownership."
     }
   },
   "ThingsIveDone": {
-    "title": "Measurable impact",
+    "title": "What I bring",
     "metrics": {
       "0": {
         "value": "+15",
@@ -47,27 +47,27 @@
     },
     "items": {
       "0": {
-        "text": "Advanced process structuring:",
-        "linkText": "up to \u20ac10,000 gained",
-        "suffix": "on the systems I ship"
+        "text": "Team leadership:",
+        "linkText": "cohesion, direction and trust",
+        "suffix": "so developers move forward together"
       },
       "1": {
-        "text": "On average",
-        "linkText": "40 hours reclaimed per month",
-        "suffix": "through workflow restructuring"
+        "text": "Engineering organization:",
+        "linkText": "clear priorities and structured work",
+        "suffix": "without sacrificing autonomy"
       },
       "2": {
-        "text": "Web applications designed and delivered end-to-end \u2014 Next.js, React, structured APIs",
+        "text": "Business vision translated into a clear, executable technology roadmap",
         "linkText": "",
         "suffix": ""
       },
       "3": {
-        "text": "Internal tools and dashboards architected to fit each business context",
+        "text": "Architecture and engineering standards serving a reliable, scalable platform",
         "linkText": "",
         "suffix": ""
       },
       "4": {
-        "text": "Entrepreneurs guided from strategic vision to production-ready product",
+        "text": "Teams supported through decisions, skills development and delivery",
         "linkText": "",
         "suffix": ""
       }
@@ -77,34 +77,34 @@
     "title": "Background",
     "experiences": {
       "0": {
-        "role": "Founder & AI Architect \u2014 Freelance",
-        "company": "Flow AI Studio",
-        "period": "2024 \u2014 Present",
-        "description": "Custom AI agents and automation systems for teams that want to scale without hiring \u2014 n8n workflows, data centralization, AI-augmented monitoring."
-      },
-      "1": {
-        "role": "Tech Lead & Automation Architect",
+        "role": "Chief Technology Officer",
         "company": "Mon Ambassadeur",
         "period": "Aug 2024 \u2014 Present",
-        "description": "Technical governance, software architecture design, and orchestration of intelligent workflows with n8n, Make, and AI agents."
+        "description": "Technology team management and cohesion: shared direction, clear priorities, developer support and structured work. Technology strategy, roadmap and architecture leadership in partnership with business and product."
+      },
+      "1": {
+        "role": "Co-founder & CTO · AI Systems & Execution",
+        "company": "Flow AI Studio",
+        "period": "Since 2024",
+        "description": "Hands-on execution of AI products and systems from framing to production: agentic architecture, automation, integrations, testing, deployment and monitoring."
       },
       "2": {
-        "role": "Frontend Developer & UX/UI Designer",
+        "role": "Product Designer & Builder",
         "company": "Acc\u00e8sBanque Madagascar",
         "period": "Jan 2024 \u2014 Feb 2025",
-        "description": "Structuring intuitive interfaces in ReactJS, optimizing user experience, and converting design systems into functional components."
+        "description": "Designed and delivered internal web and mobile products, from business needs to UX/UI prototypes and React interfaces. Structured user journeys, design systems and reusable components."
       },
       "3": {
-        "role": "Web Developer \u2014 Independent engagement",
+        "role": "Product Engineer & Solution Architect",
         "company": "SPAT Toamasina",
         "period": "Jun 2022 \u2014 Dec 2023",
-        "description": "Design and architecture of a leave management system \u2014 ReactJS, Node.js, MySQL."
+        "description": "Designed an internal leave-management product end to end: business-flow framing, application architecture, data modeling and full-stack development with React, Node.js and MySQL."
       },
       "4": {
-        "role": "Systems Support & Maintenance",
+        "role": "IT Operations & Systems Specialist",
         "company": "PANDA COMPANY",
-        "period": "2022",
-        "description": "Incident diagnosis and resolution, user support, technical infrastructure maintenance."
+        "period": "2019 \u2014 2022",
+        "description": "Supported IT operational continuity through incident diagnosis and resolution, user enablement, preventive maintenance and reliable operation of workstations and infrastructure."
       }
     },
     "maintenance": "Under maintenance"
@@ -355,8 +355,8 @@
   },
   "CV": {
     "meta": {
-      "title": "Resume of LALASON Anna\u00ebl \u00b7 AI Systems Architect",
-      "description": "Resume of LALASON Anna\u00ebl, AI systems architect: AI agents and multi-agent systems, RAG, n8n & Make automation, software architecture and Next.js applications. Experience, skills, certifications."
+      "title": "Resume of LALASON Anna\u00ebl \u00b7 Chief Technology Officer & AI Systems Architect",
+      "description": "Resume of LALASON Annaël, Chief Technology Officer: team leadership, cohesion, developer management, technology strategy and software architecture."
     },
     "toolbar": {
       "back": "Portfolio",
@@ -364,7 +364,7 @@
       "printAria": "Download the resume as a PDF"
     },
     "header": {
-      "role": "AI Systems Architect \u00b7 Architecte Syst\u00e8mes & IA",
+      "role": "Chief Technology Officer \u00b7 AI Systems Architect",
       "available": "Available for engagements and strategic collaborations",
       "location": "Antananarivo, Madagascar (GMT+3) \u00b7 remote work on hours spanning Canada to Asia (GMT-8 to GMT+9)",
       "photoAlt": "Photo of LALASON Anna\u00ebl",
@@ -379,11 +379,11 @@
     },
     "summary": {
       "title": "Profile",
-      "body": "AI systems architect. I design and ship intelligent systems end to end: AI agents and multi-agent architectures, business process automation, structured web applications. 15+ clients supported, 25+ projects delivered and 2,000+ automations running in e-commerce, healthcare, real estate and SaaS. Up to \u20ac10,000 gained through advanced process structuring, and 40 hours reclaimed on average every month. Currently a Tech Lead, equally at home in technical governance, architecture design and code.",
-      "quote": "Before automating, I understand. Before building, I structure."
+      "body": "Chief Technology Officer and AI systems architect. I unite technology teams around a clear direction, structure their work and create the conditions for engagement, autonomy and skills development. Working directly with leadership, I turn business and product goals into a roadmap, architecture decisions and reliable execution. My approach combines developer management, governance, quality, security and hands-on practice.",
+      "quote": "Set the direction, build cohesion and enable the team to move forward together."
     },
     "impact": {
-      "title": "Key numbers",
+      "title": "Key markers",
       "metrics": [
         {
           "value": "+15",
@@ -398,12 +398,12 @@
           "label": "automations in production"
         },
         {
-          "value": "40 h",
-          "label": "reclaimed on average every month"
+          "value": "Tech team",
+          "label": "management, cohesion and skills development"
         },
         {
-          "value": "up to \u20ac10,000",
-          "label": "gained through process structuring"
+          "value": "Roadmap",
+          "label": "priorities aligned with business and product"
         }
       ]
     },
@@ -411,20 +411,20 @@
       "title": "Areas of expertise",
       "areas": [
         {
-          "title": "AI systems architecture",
-          "body": "Agents and multi-agent systems, RAG and sourced memory where every fact stays tied to its evidence, human guardrails on sensitive writes, production supervision."
+          "title": "Team leadership & cohesion",
+          "body": "Shared direction, clear roles and priorities, listening and feedback, developer support, skills development and collective autonomy."
         },
         {
-          "title": "Automation & orchestration",
-          "body": "Process mapping before any code, n8n and Make workflows, connecting the existing business tools rather than replacing them."
+          "title": "Technology strategy & governance",
+          "body": "Technology vision and roadmap, alignment with business and product goals, and arbitration of technology choices, investments and technical debt."
         },
         {
-          "title": "Web product engineering",
-          "body": "Next.js and React applications delivered end to end: structured APIs, PostgreSQL, real-time exchanges, GDPR and health-data hosting constraints."
+          "title": "Architecture, platform & reliability",
+          "body": "Software architecture, APIs, data, cloud and CI/CD; engineering standards, performance, scalability, monitoring, security and resilience."
         },
         {
-          "title": "Technical governance",
-          "body": "Requirement framing, architecture and code reviews, team coaching and mentoring, documentation and applied technology watch."
+          "title": "Applied AI & industrialization",
+          "body": "Use-case identification, rapid prototyping, AI agents and multi-agent systems, RAG, human guardrails, cost control and reliable production rollout."
         }
       ]
     },
@@ -481,8 +481,11 @@
           ]
         },
         {
-          "label": "Product build",
+          "label": "Product Designer & Builder",
           "items": [
+            "Product discovery",
+            "User journeys",
+            "Wireframing & prototyping",
             "Next.js",
             "React",
             "TypeScript",
@@ -526,10 +529,16 @@
           ]
         },
         {
-          "label": "Tech Lead",
+          "label": "Technology leadership",
           "items": [
-            "Tech Lead",
+            "Chief Technology Officer",
+            "Technology strategy",
+            "Technology roadmap",
+            "Business-product alignment",
+            "Arbitration & prioritization",
             "Technical governance",
+            "Team management",
+            "Cohesion & motivation",
             "Agile Scrum",
             "Project management",
             "Coaching & mentoring",
@@ -538,6 +547,10 @@
             "Technology watch",
             "Software architecture",
             "Systems design",
+            "Scalability & performance",
+            "Security & reliability",
+            "Monitoring & alerting",
+            "Technical debt",
             "Clean Code",
             "UML",
             "MERISE",
@@ -605,8 +618,11 @@
           ]
         },
         {
-          "label": "Frontend & product",
+          "label": "Product design & frontend",
           "items": [
+            "Product discovery",
+            "User journeys",
+            "Wireframing & prototyping",
             "Next.js",
             "React",
             "TypeScript",
@@ -640,15 +656,20 @@
           ]
         },
         {
-          "label": "Leadership & methods",
+          "label": "Technology strategy & leadership",
           "items": [
-            "Tech Lead",
+            "Chief Technology Officer",
+            "Technology strategy",
+            "Technology roadmap",
+            "Business-product alignment",
+            "Arbitration & prioritization",
             "Technical governance",
-            "Agile Scrum",
-            "Project management",
+            "Team management",
+            "Cohesion & motivation",
             "Coaching & mentoring",
             "Code review",
             "Framing & documentation",
+            "Technical debt",
             "Technology watch"
           ]
         }
@@ -659,77 +680,82 @@
       "stackLabel": "Stack",
       "items": [
         {
-          "role": "Founder & AI Architect",
-          "company": "Flow AI Studio",
-          "type": "Freelance",
-          "period": "Since 2024",
-          "location": "Remote",
-          "summary": "Designing custom AI agents and automation systems for teams that want to scale without hiring.",
-          "bullets": [
-            "Multi-agent system architecture: a central orchestrator, business-specialised agents, and a sourced, versioned memory where every fact stays tied to its evidence.",
-            "\"Read first\" design principle: every sensitive external write goes through explicit human validation.",
-            "2,000+ n8n and Make workflows shipped to production across e-commerce, healthcare, real estate and SaaS.",
-            "Up to \u20ac10,000 gained through advanced process structuring, and 40 hours reclaimed on average every month by client teams.",
-            "15+ clients supported, from process mapping through to production rollout and monitoring."
-          ],
-          "stack": "Python \u00b7 TypeScript \u00b7 n8n \u00b7 Make \u00b7 LangChain \u00b7 CrewAI \u00b7 OpenAI GPT-4 \u00b7 RAG \u00b7 PostgreSQL \u00b7 Next.js"
-        },
-        {
-          "role": "Tech Lead & Automation Architect",
+          "role": "Chief Technology Officer",
           "company": "Mon Ambassadeur",
           "type": "Full-time",
           "period": "Since August 2024",
-          "location": "Madagascar \u00b7 hybrid",
-          "summary": "Technical governance, software architecture design and orchestration of intelligent workflows.",
+          "location": "Paris, France · fully remote",
+          "summary": "Managing and uniting the technology team, structuring execution, and leading technology strategy in direct partnership with leadership, product and users.",
           "bullets": [
-            "Technical supervision of the team: architecture and code reviews, developer coaching and mentoring.",
-            "Design and orchestration of automation workflows with n8n, Make and autonomous AI agents.",
-            "Integration of recruiting and prospecting platforms (LinkedIn, Upwork, Apify, Talend) into automated pipelines.",
-            "Project steering, requirement framing and technology watch applied to AI products."
+            "Managed developers by creating a clear working framework, clarifying roles and priorities, providing regular feedback and supporting skills development.",
+            "United the team around a shared direction, connecting each initiative to business, product and user goals to strengthen cohesion, engagement and autonomy.",
+            "Defined the technology vision and roadmap, arbitrating engineering priorities with leadership and product owners.",
+            "Structured engineering practices through architecture and code reviews, development standards, documentation and technical-debt control.",
+            "Led architecture and infrastructure with a focus on robustness, performance, scalability, quality, monitoring and security.",
+            "Industrialized AI products from use-case identification to the orchestration of relevant workflows and agents."
           ],
           "stack": "TypeScript \u00b7 Next.js \u00b7 Python \u00b7 n8n \u00b7 Make \u00b7 APIs & webhooks \u00b7 PostgreSQL"
         },
         {
-          "role": "Frontend Developer & UX/UI Designer",
+          "role": "Co-founder & CTO · AI Systems & Execution",
+          "company": "Flow AI Studio",
+          "type": "Venture",
+          "period": "Since 2024",
+          "location": "Remote",
+          "summary": "Hands-on execution of AI products and systems, from use-case framing through production rollout, adoption and monitoring.",
+          "bullets": [
+            "Turned operational needs into deliverable AI systems through scope definition, prioritization and pragmatic technical trade-offs.",
+            "Architected multi-agent systems with a central orchestrator, business-specialized agents and sourced memory that keeps every fact tied to evidence.",
+            "Owned execution end to end: prototyping, development, API integrations, testing, deployment, monitoring and documentation.",
+            "Shipped 2,000+ n8n and Make workflows to production across e-commerce, healthcare, real estate and SaaS.",
+            "Secured sensitive actions through human approval, then supported teams with adoption and skills transfer."
+          ],
+          "stack": "Python · TypeScript · n8n · Make · LangChain · CrewAI · OpenAI GPT-4 · RAG · PostgreSQL · Next.js"
+        },
+        {
+          "role": "Product Designer & Builder",
           "company": "Acc\u00e8sBanque Madagascar",
           "type": "Development Hub",
           "period": "January 2024 to February 2025",
           "location": "Fianarantsoa, Madagascar",
-          "summary": "Structuring internet and intranet interfaces, from wireframe to shipped component.",
+          "summary": "Designed and delivered internal web and mobile products, from clarifying business needs through to interfaces released to users.",
           "bullets": [
-            "Converting mockups and design systems into reusable React components.",
-            "Wireframing and prototyping web and mobile interfaces in Figma, Adobe XD and Sketch.",
-            "Improving user experience and visual consistency across internal applications."
+            "Translated business needs and user journeys into wireframes, interactive prototypes and interface specifications.",
+            "Designed web and mobile interfaces in Figma, Adobe XD and Sketch, focusing on simple journeys and visual consistency.",
+            "Turned mockups and design systems into reusable, responsive React components ready for production.",
+            "Iterated on stakeholder feedback to align business value, user experience and technical constraints."
           ],
           "stack": "ReactJS \u00b7 JavaScript \u00b7 HTML / CSS / Sass \u00b7 Figma \u00b7 Adobe XD \u00b7 Sketch"
         },
         {
-          "role": "Web Developer (independent engagement)",
+          "role": "Product Engineer & Solution Architect",
           "company": "SPAT, Toamasina Autonomous Port Authority",
           "type": "Freelance",
           "period": "June 2022 to December 2023",
           "location": "Toamasina, Madagascar \u00b7 hybrid",
-          "summary": "Design and architecture of a company-wide leave management system.",
+          "summary": "Designed an internal leave-management product end to end for the entire workforce, from the business process through to a deployable application.",
           "bullets": [
-            "Data and application architecture modelling (MERISE, UML) ahead of any development.",
-            "Full-stack development: ReactJS on the client, Node.js and Express on the server, MySQL for storage.",
-            "Analytics dashboard to track requests and remaining leave balances."
+            "Framed request, approval and tracking flows to translate business rules into clear application journeys.",
+            "Designed the functional and technical architecture, then modeled the data with MERISE and UML.",
+            "Built the full-stack application with ReactJS on the client, Node.js and Express on the server, and MySQL for persistence.",
+            "Created an analytics dashboard providing a consolidated view of requests and leave balances."
           ],
           "stack": "ReactJS \u00b7 Node.js \u00b7 Express.js \u00b7 MySQL \u00b7 MERISE \u00b7 UML \u00b7 Git"
         },
         {
-          "role": "Systems Support & Maintenance",
+          "role": "IT Operations & Systems Specialist",
           "company": "PANDA COMPANY",
           "type": "Freelance",
-          "period": "2022",
+          "period": "2019 to 2022",
           "location": "Madagascar",
-          "summary": "IT support and user enablement.",
+          "summary": "Maintained IT operational continuity through user support, incident resolution and upkeep of the technical environment.",
           "bullets": [
-            "Diagnosing and resolving hardware and software incidents.",
-            "Training and supporting users on their IT tools.",
-            "Maintaining the technical infrastructure and workstations."
+            "Qualified, diagnosed and resolved hardware and software incidents to restore essential services quickly.",
+            "Supported and trained users to improve autonomy and adoption of IT tools.",
+            "Performed preventive and corrective maintenance on workstations and technical infrastructure.",
+            "Identified recurring issues and documented solutions to make day-to-day support more reliable."
           ],
-          "stack": ""
+          "stack": "IT support · Hardware & software diagnostics · Systems maintenance · User enablement"
         }
       ]
     },
@@ -845,7 +871,7 @@
       "secondaryCta": "Calculate the break-even point",
     "note": "Free qualification call · 30 minutes · a direct answer on feasibility",
     "byline": "Designed and delivered by Annaël Lalason",
-    "bylineRole": "Systems & AI architect · one point of contact from scoping to production"
+    "bylineRole": "Chief Technology Officer & AI systems architect · from strategy to production"
   },
   "decision": {
     "eyebrow": "The decision in three numbers",
@@ -1410,7 +1436,7 @@
     "cv": "View my resume",
     "projects": "Work",
     "findMe": "Find me",
-    "role": "Systems & AI Architect",
+    "role": "Chief Technology Officer · AI Systems Architect",
     "lightMode": "Light mode",
     "darkMode": "Dark mode"
   }

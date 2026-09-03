@@ -70,6 +70,9 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
+      "Chief Technology Officer",
+      "stratégie technologique",
+      "leadership Tech",
       "architecte IA",
       "systèmes intelligents",
       "automation",
@@ -105,7 +108,7 @@ export async function generateMetadata({
           url: "/favicon/android-chrome-512x512.png",
           width: 512,
           height: 512,
-          alt: "LALASON Annaël — Architecte Systèmes & IA",
+          alt: "LALASON Annaël — Chief Technology Officer & Architecte Systèmes et IA",
         },
       ],
     },
@@ -157,17 +160,35 @@ export default async function LocaleLayout({ children, params }: Props) {
           "https://www.linkedin.com/in/lalasonnael",
           "https://x.com/lalasonnael29",
         ],
-        jobTitle: "Architecte Systèmes & IA",
+        jobTitle:
+          locale === "fr"
+            ? "Chief Technology Officer & Architecte Systèmes et IA"
+            : "Chief Technology Officer & AI Systems Architect",
         description:
-          "Architecte des systèmes intelligents — automatisation, IA, stratégie digitale.",
+          locale === "fr"
+            ? "Chief Technology Officer qui fédère les équipes Tech, structure l'exécution et relie vision business, produit, architecture et IA."
+            : "Chief Technology Officer who unites technology teams, structures execution and connects business vision, product, architecture and AI.",
         knowsAbout: [
+          "Stratégie technologique",
+          "Roadmap Tech",
+          "Leadership Tech",
+          "Architecture logicielle",
+          "Scalabilité et performance",
+          "Sécurité et fiabilité",
           "Intelligence Artificielle",
           "Automatisation",
           "Next.js",
           "Architecture Systèmes",
         ],
         nationality: "MG",
-        worksFor: { "@id": `${BASE_URL}/#studio` },
+        worksFor: [
+          {
+            "@type": "Organization",
+            name: "Mon Ambassadeur",
+            url: "https://www.monambassadeur.com",
+          },
+          { "@id": `${BASE_URL}/#studio` },
+        ],
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": pageUrl,

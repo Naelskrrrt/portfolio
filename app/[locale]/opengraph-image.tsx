@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "LALASON Annaël — Architecte Systèmes & IA";
+export const alt = "LALASON Annaël — Chief Technology Officer & Architecte Systèmes et IA";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -26,6 +26,7 @@ export default async function Image() {
       {/* Profile photo */}
       <img
         src={photoBase64}
+        alt="Portrait de LALASON Annaël"
         width={160}
         height={160}
         style={{
@@ -56,7 +57,7 @@ export default async function Image() {
           color: "#e8853a",
         }}
       >
-        Architecte Systèmes & IA
+        Chief Technology Officer · Architecte Systèmes & IA
       </div>
 
       {/* Available badge */}
