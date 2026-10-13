@@ -70,7 +70,11 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
+      "Chief Product & Technology Officer",
+      "CPTO",
       "Chief Technology Officer",
+      "stratégie produit",
+      "healthtech",
       "stratégie technologique",
       "leadership Tech",
       "architecte IA",
@@ -108,7 +112,7 @@ export async function generateMetadata({
           url: "/favicon/android-chrome-512x512.png",
           width: 512,
           height: 512,
-          alt: "LALASON Annaël — Chief Technology Officer & Architecte Systèmes et IA",
+          alt: "LALASON Annaël — Chief Product & Technology Officer (CPTO) & Architecte Systèmes et IA",
         },
       ],
     },
@@ -162,13 +166,14 @@ export default async function LocaleLayout({ children, params }: Props) {
         ],
         jobTitle:
           locale === "fr"
-            ? "Chief Technology Officer & Architecte Systèmes et IA"
-            : "Chief Technology Officer & AI Systems Architect",
+            ? "Chief Product & Technology Officer (CPTO) & Architecte Systèmes et IA"
+            : "Chief Product & Technology Officer (CPTO) & AI Systems Architect",
         description:
           locale === "fr"
-            ? "Chief Technology Officer qui fédère les équipes Tech, structure l'exécution et relie vision business, produit, architecture et IA."
-            : "Chief Technology Officer who unites technology teams, structures execution and connects business vision, product, architecture and AI.",
+            ? "Chief Product & Technology Officer (CPTO) qui fédère les équipes Produit & Tech, structure l'exécution et relie vision business, produit, architecture et IA."
+            : "Chief Product & Technology Officer (CPTO) who unites product and technology teams, structures execution and connects business vision, product, architecture and AI.",
         knowsAbout: [
+          "Stratégie produit",
           "Stratégie technologique",
           "Roadmap Tech",
           "Leadership Tech",
@@ -179,9 +184,15 @@ export default async function LocaleLayout({ children, params }: Props) {
           "Automatisation",
           "Next.js",
           "Architecture Systèmes",
+          "Santé connectée",
         ],
         nationality: "MG",
         worksFor: [
+          {
+            "@type": "Organization",
+            name: "Tessan",
+            url: "https://www.tessan.io",
+          },
           {
             "@type": "Organization",
             name: "Mon Ambassadeur",

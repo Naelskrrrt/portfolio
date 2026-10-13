@@ -1,14 +1,15 @@
 import { useTranslations } from "next-intl";
 import { Section } from "./Section";
 
-const EXPERIENCE_COUNT = 5;
+const EXPERIENCE_COUNT = 6;
 
 const experienceLinks: Record<number, string | null> = {
-  0: "https://flow-ai.studio",
+  0: "https://www.tessan.io",
   1: "https://www.monambassadeur.com",
-  2: "https://accesbanque.mg",
-  3: "https://www.toamasina-port.com/",
-  4: null,
+  2: "https://flow-ai.studio",
+  3: "https://accesbanque.mg",
+  4: "https://www.toamasina-port.com/",
+  5: null,
 };
 
 // Indexes whose site exists but is temporarily down — shows a badge instead of a link

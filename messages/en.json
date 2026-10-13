@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "LALASON Anna\u00ebl \u2014 Chief Technology Officer & AI Systems Architect",
-    "description": "Chief Technology Officer who unites technology teams around a clear direction, structures execution, and connects strategy, product, architecture and AI."
+    "title": "LALASON Anna\u00ebl \u2014 Chief Product & Technology Officer (CPTO) & AI Systems Architect",
+    "description": "Chief Product & Technology Officer (CPTO) who connects product vision and technical execution: I unite Product & Tech teams around a clear direction and lead strategy, roadmap, architecture and AI, including in regulated fields like healthcare."
   },
   "Header": {
     "availability": "Available for a new project",
@@ -11,14 +11,14 @@
     "cta": "Book 30 minutes"
   },
   "Hero": {
-    "role": "Chief Technology Officer \u00b7 AI Systems Architect",
+    "role": "Chief Product & Technology Officer \u00b7 AI Systems Architect",
     "available": "Available for strategic collaborations",
     "offerCta": "See the offer",
     "shuffleLabel": "Another perspective",
     "profileAlt": "Profile picture",
     "punchlines": {
       "0": "I unite technology teams around a clear direction, a solid framework and collective execution.",
-      "1": "A CTO aligns people, product and technology on the same path.",
+      "1": "A CPTO aligns people, product and technology on the same path.",
       "2": "My first architecture is human: clear roles, trust and accountable decisions.",
       "3": "I turn technical uncertainty into priorities people understand and can execute.",
       "4": "Sustainable performance starts with an engaged, structured and autonomous team.",
@@ -77,30 +77,36 @@
     "title": "Background",
     "experiences": {
       "0": {
+        "role": "Chief Product & Technology Officer (CPTO)",
+        "company": "Tessan",
+        "period": "2026 \u2014 Present",
+        "description": "Joint product and technology leadership at a French healthtech providing assisted telemedicine in pharmacies: product vision and roadmap, architecture of the platform and connected medical booths, reliability, security and healthcare compliance."
+      },
+      "1": {
         "role": "Chief Technology Officer",
         "company": "Mon Ambassadeur",
         "period": "Aug 2024 \u2014 Present",
         "description": "Technology team management and cohesion: shared direction, clear priorities, developer support and structured work. Technology strategy, roadmap and architecture leadership in partnership with business and product."
       },
-      "1": {
+      "2": {
         "role": "Co-founder & CTO · AI Systems & Execution",
         "company": "Flow AI Studio",
         "period": "Since 2024",
         "description": "Hands-on execution of AI products and systems from framing to production: agentic architecture, automation, integrations, testing, deployment and monitoring."
       },
-      "2": {
+      "3": {
         "role": "Product Designer & Builder",
         "company": "Acc\u00e8sBanque Madagascar",
         "period": "Jan 2024 \u2014 Feb 2025",
         "description": "Designed and delivered internal web and mobile products, from business needs to UX/UI prototypes and React interfaces. Structured user journeys, design systems and reusable components."
       },
-      "3": {
+      "4": {
         "role": "Product Engineer & Solution Architect",
         "company": "SPAT Toamasina",
         "period": "Jun 2022 \u2014 Dec 2023",
         "description": "Designed an internal leave-management product end to end: business-flow framing, application architecture, data modeling and full-stack development with React, Node.js and MySQL."
       },
-      "4": {
+      "5": {
         "role": "IT Operations & Systems Specialist",
         "company": "PANDA COMPANY",
         "period": "2019 \u2014 2022",
@@ -355,8 +361,8 @@
   },
   "CV": {
     "meta": {
-      "title": "Resume of LALASON Anna\u00ebl \u00b7 Chief Technology Officer & AI Systems Architect",
-      "description": "Resume of LALASON Annaël, Chief Technology Officer: team leadership, cohesion, developer management, technology strategy and software architecture."
+      "title": "Resume of LALASON Anna\u00ebl \u00b7 Chief Product & Technology Officer (CPTO) & AI Systems Architect",
+      "description": "Resume of LALASON Annaël, Chief Product & Technology Officer (CPTO): product vision, technology strategy, team leadership, software architecture and AI, from healthtech to SaaS."
     },
     "toolbar": {
       "back": "Portfolio",
@@ -364,7 +370,7 @@
       "printAria": "Download the resume as a PDF"
     },
     "header": {
-      "role": "Chief Technology Officer \u00b7 AI Systems Architect",
+      "role": "Chief Product & Technology Officer \u00b7 AI Systems Architect",
       "available": "Available for engagements and strategic collaborations",
       "location": "Antananarivo, Madagascar (GMT+3) \u00b7 remote work on hours spanning Canada to Asia (GMT-8 to GMT+9)",
       "photoAlt": "Photo of LALASON Anna\u00ebl",
@@ -379,7 +385,7 @@
     },
     "summary": {
       "title": "Profile",
-      "body": "Chief Technology Officer and AI systems architect. I unite technology teams around a clear direction, structure their work and create the conditions for engagement, autonomy and skills development. Working directly with leadership, I turn business and product goals into a roadmap, architecture decisions and reliable execution. My approach combines developer management, governance, quality, security and hands-on practice.",
+      "body": "Chief Product & Technology Officer (CPTO) and AI systems architect, I connect product vision and technical execution. I unite Product & Tech teams around a clear direction, structure their work and create the conditions for engagement, autonomy and skills development. Working directly with leadership, I turn business and product goals into a roadmap, architecture decisions and reliable execution, including in demanding environments such as connected healthcare. My approach combines developer management, governance, quality, security and hands-on practice.",
       "quote": "Set the direction, build cohesion and enable the team to move forward together."
     },
     "impact": {
@@ -415,8 +421,8 @@
           "body": "Shared direction, clear roles and priorities, listening and feedback, developer support, skills development and collective autonomy."
         },
         {
-          "title": "Technology strategy & governance",
-          "body": "Technology vision and roadmap, alignment with business and product goals, and arbitration of technology choices, investments and technical debt."
+          "title": "Product & technology strategy, governance",
+          "body": "Product vision and Product & Tech roadmap, discovery, alignment with business and product goals, and arbitration of technology choices, investments and technical debt."
         },
         {
           "title": "Architecture, platform & reliability",
@@ -531,7 +537,9 @@
         {
           "label": "Technology leadership",
           "items": [
+            "Chief Product & Technology Officer",
             "Chief Technology Officer",
+            "Product strategy",
             "Technology strategy",
             "Technology roadmap",
             "Business-product alignment",
@@ -658,7 +666,9 @@
         {
           "label": "Technology strategy & leadership",
           "items": [
+            "Chief Product & Technology Officer",
             "Chief Technology Officer",
+            "Product strategy",
             "Technology strategy",
             "Technology roadmap",
             "Business-product alignment",
@@ -679,6 +689,22 @@
       "title": "Professional experience",
       "stackLabel": "Stack",
       "items": [
+        {
+          "role": "Chief Product & Technology Officer (CPTO)",
+          "company": "Tessan",
+          "type": "Freelance",
+          "period": "Since 2026",
+          "location": "France · remote",
+          "summary": "Leading product and technology together at a French healthtech providing assisted telemedicine, deployed in pharmacies through booths fitted with connected medical devices. A role where every decision connects the patient experience, the work of doctors and pharmacists, and the robustness of the platform.",
+          "bullets": [
+            "Defined the product vision and the Product & Tech roadmap, balancing the needs of patients, doctors and pharmacists with business goals.",
+            "Led the architecture of the telemedicine platform: patient journey, doctor workspace, booths and connected medical devices, partner integrations.",
+            "Carried healthcare-specific requirements at leadership level: service reliability at the point of care, data security, HDS-certified hosting and GDPR compliance.",
+            "Structured collaboration between product, design and engineering: discovery, prioritization, delivery rituals and shared quality indicators.",
+            "Identified and framed AI use cases that add value to the care journey and operational efficiency, with guardrails suited to a medical context."
+          ],
+          "stack": "Product strategy \u00b7 Product & Tech roadmap \u00b7 Discovery \u00b7 Platform architecture \u00b7 Connected medical devices \u00b7 HDS \u00b7 GDPR \u00b7 Applied AI"
+        },
         {
           "role": "Chief Technology Officer",
           "company": "Mon Ambassadeur",

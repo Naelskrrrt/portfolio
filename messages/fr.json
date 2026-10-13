@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "LALASON Anna\u00ebl \u2014 Chief Technology Officer & Architecte Syst\u00e8mes et IA",
-    "description": "Chief Technology Officer, je fédère les équipes Tech autour d'un cap clair, structure l'exécution et relie stratégie, produit, architecture et IA."
+    "title": "LALASON Anna\u00ebl \u2014 Chief Product & Technology Officer (CPTO) & Architecte Syst\u00e8mes et IA",
+    "description": "Chief Product & Technology Officer (CPTO), je relie vision produit et exécution technique : je fédère les équipes Produit & Tech autour d'un cap clair et je pilote stratégie, roadmap, architecture et IA, y compris en environnement régulé comme la santé."
   },
   "Header": {
     "availability": "Disponible pour un nouveau projet",
@@ -11,14 +11,14 @@
     "cta": "R\u00e9server 30 min"
   },
   "Hero": {
-    "role": "Chief Technology Officer \u00b7 Architecte Syst\u00e8mes & IA",
+    "role": "Chief Product & Technology Officer \u00b7 Architecte Syst\u00e8mes & IA",
     "available": "Disponible pour collaborations strat\u00e9giques",
     "offerCta": "Voir l'offre",
     "shuffleLabel": "Autre perspective",
     "profileAlt": "Photo de profil",
     "punchlines": {
       "0": "Je fédère les équipes Tech autour d'un cap clair, d'un cadre solide et d'une exécution collective.",
-      "1": "Un CTO aligne les personnes, le produit et la technologie sur une même trajectoire.",
+      "1": "Un CPTO aligne les personnes, le produit et la technologie sur une même trajectoire.",
       "2": "Ma première architecture est humaine : des rôles clairs, de la confiance et des décisions assumées.",
       "3": "Je transforme l'incertitude technique en priorités comprises et exécutables.",
       "4": "La performance durable naît d'une équipe engagée, structurée et autonome.",
@@ -77,30 +77,36 @@
     "title": "Parcours",
     "experiences": {
       "0": {
+        "role": "Chief Product & Technology Officer (CPTO)",
+        "company": "Tessan",
+        "period": "2026 \u2014 Pr\u00e9sent",
+        "description": "Pilotage conjoint du produit et de la technologie d'une healthtech française de téléconsultation assistée en pharmacie : vision et roadmap produit, architecture de la plateforme et des cabines médicales connectées, fiabilité, sécurité et conformité santé."
+      },
+      "1": {
         "role": "Chief Technology Officer",
         "company": "Mon Ambassadeur",
         "period": "Ao\u00fbt 2024 \u2014 Pr\u00e9sent",
         "description": "Management et cohésion de l'équipe Tech : cap partagé, priorités claires, accompagnement des développeurs et structuration du travail. Pilotage de la stratégie, de la roadmap et de l'architecture en lien avec le business et le produit."
       },
-      "1": {
+      "2": {
         "role": "Co-fondateur & CTO · AI Systems & Execution",
         "company": "Flow AI Studio",
         "period": "Depuis 2024",
         "description": "Pilotage hands-on de l'exécution de produits et systèmes IA, du cadrage à la mise en production : architecture agentique, automatisations, intégrations, tests, déploiement et monitoring."
       },
-      "2": {
+      "3": {
         "role": "Product Designer & Builder",
         "company": "Acc\u00e8sBanque Madagascar",
         "period": "Jan 2024 \u2014 F\u00e9v 2025",
         "description": "Conception et livraison de produits internes web et mobile, du besoin métier au prototype UX/UI puis à l'interface React. Structuration des parcours utilisateurs, des design systems et des composants réutilisables."
       },
-      "3": {
+      "4": {
         "role": "Product Engineer & Solution Architect",
         "company": "SPAT Toamasina",
         "period": "Juin 2022 \u2014 D\u00e9c 2023",
         "description": "Conception de bout en bout d'un produit interne de gestion des congés : cadrage des flux métier, architecture applicative, modélisation des données et développement full-stack avec React, Node.js et MySQL."
       },
-      "4": {
+      "5": {
         "role": "IT Operations & Systems Specialist",
         "company": "PANDA COMPANY",
         "period": "2019 \u2014 2022",
@@ -355,8 +361,8 @@
   },
   "CV": {
     "meta": {
-      "title": "CV de LALASON Anna\u00ebl \u00b7 Chief Technology Officer & Architecte Syst\u00e8mes et IA",
-      "description": "Curriculum vitae de LALASON Annaël, Chief Technology Officer : leadership d'équipe, cohésion, management des développeurs, stratégie technologique et architecture logicielle."
+      "title": "CV de LALASON Anna\u00ebl \u00b7 Chief Product & Technology Officer (CPTO) & Architecte Syst\u00e8mes et IA",
+      "description": "Curriculum vitae de LALASON Annaël, Chief Product & Technology Officer (CPTO) : vision produit, stratégie technologique, leadership d'équipe, architecture logicielle et IA, de la healthtech au SaaS."
     },
     "toolbar": {
       "back": "Portfolio",
@@ -364,7 +370,7 @@
       "printAria": "T\u00e9l\u00e9charge le CV au format PDF"
     },
     "header": {
-      "role": "Chief Technology Officer \u00b7 Architecte Syst\u00e8mes & IA",
+      "role": "Chief Product & Technology Officer \u00b7 Architecte Syst\u00e8mes & IA",
       "available": "Disponible pour des missions et des collaborations strat\u00e9giques",
       "location": "Antananarivo, Madagascar (GMT+3) \u00b7 missions \u00e0 distance, horaires align\u00e9s du Canada \u00e0 l'Asie (GMT-8 \u00e0 GMT+9)",
       "photoAlt": "Photo de LALASON Anna\u00ebl",
@@ -379,7 +385,7 @@
     },
     "summary": {
       "title": "Profil",
-      "body": "Chief Technology Officer et architecte systèmes & IA, je fédère les équipes Tech autour d'un cap clair, structure leur travail et crée les conditions de l'engagement, de l'autonomie et de la montée en compétences. En lien direct avec la direction, je transforme les enjeux business et produit en roadmap, décisions d'architecture et exécution fiable. Mon approche combine management des développeurs, gouvernance, qualité, sécurité et pratique hands-on.",
+      "body": "Chief Product & Technology Officer (CPTO) et architecte systèmes & IA, je relie vision produit et exécution technique. Je fédère les équipes Produit & Tech autour d'un cap clair, structure leur travail et crée les conditions de l'engagement, de l'autonomie et de la montée en compétences. En lien direct avec la direction, je transforme les enjeux business et produit en roadmap, décisions d'architecture et exécution fiable, y compris dans des environnements exigeants comme la santé connectée. Mon approche combine management des développeurs, gouvernance, qualité, sécurité et pratique hands-on.",
       "quote": "Donner un cap, créer la cohésion et rendre l'équipe capable d'avancer ensemble."
     },
     "impact": {
@@ -415,8 +421,8 @@
           "body": "Cap partagé, rôles et priorités clairs, écoute et feedback, accompagnement des développeurs, montée en compétences et autonomie collective."
         },
         {
-          "title": "Stratégie technologique & gouvernance",
-          "body": "Vision et roadmap Tech, alignement des priorités avec les objectifs business et produit, arbitrage des choix technologiques, des investissements et de la dette technique."
+          "title": "Stratégie produit, technologique & gouvernance",
+          "body": "Vision produit et roadmap Product & Tech, discovery, alignement des priorités avec les objectifs business et produit, arbitrage des choix technologiques, des investissements et de la dette technique."
         },
         {
           "title": "Architecture, plateforme & fiabilité",
@@ -531,7 +537,9 @@
         {
           "label": "Direction & Leadership Tech",
           "items": [
+            "Chief Product & Technology Officer",
             "Chief Technology Officer",
+            "Strat\u00e9gie produit",
             "Strat\u00e9gie technologique",
             "Roadmap Tech",
             "Alignement business & produit",
@@ -658,7 +666,9 @@
         {
           "label": "Strat\u00e9gie & leadership Tech",
           "items": [
+            "Chief Product & Technology Officer",
             "Chief Technology Officer",
+            "Strat\u00e9gie produit",
             "Strat\u00e9gie technologique",
             "Roadmap Tech",
             "Alignement business & produit",
@@ -679,6 +689,22 @@
       "title": "Exp\u00e9rience professionnelle",
       "stackLabel": "Stack",
       "items": [
+        {
+          "role": "Chief Product & Technology Officer (CPTO)",
+          "company": "Tessan",
+          "type": "Freelance",
+          "period": "Depuis 2026",
+          "location": "France · à distance",
+          "summary": "Direction conjointe du produit et de la technologie d'une healthtech française de téléconsultation assistée, déployée en pharmacie avec des cabines équipées d'instruments médicaux connectés. Un rôle où chaque décision relie l'expérience patient, le travail des médecins et des pharmaciens, et la robustesse de la plateforme.",
+          "bullets": [
+            "Définition de la vision produit et de la roadmap Product & Tech, en arbitrant entre les besoins des patients, des médecins, des pharmaciens et les objectifs business.",
+            "Pilotage de l'architecture de la plateforme de téléconsultation : parcours patient, espace médecin, cabines et instruments médicaux connectés, intégrations partenaires.",
+            "Exigences propres à la santé portées au niveau de la direction : fiabilité du service en point de soin, sécurité des données, hébergement HDS et conformité RGPD.",
+            "Structuration de la collaboration entre produit, design et ingénierie : discovery, priorisation, rituels de livraison et indicateurs de qualité partagés.",
+            "Identification et cadrage des cas d'usage IA à valeur pour le parcours de soin et l'efficacité opérationnelle, avec des garde-fous adaptés au contexte médical."
+          ],
+          "stack": "Stratégie produit \u00b7 Roadmap Product & Tech \u00b7 Discovery \u00b7 Architecture plateforme \u00b7 Dispositifs médicaux connectés \u00b7 HDS \u00b7 RGPD \u00b7 IA appliquée"
+        },
         {
           "role": "Chief Technology Officer",
           "company": "Mon Ambassadeur",

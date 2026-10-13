@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "LALASON Annaël — Chief Technology Officer & Architecte Systèmes et IA";
+export const alt = "LALASON Annaël — Chief Product & Technology Officer (CPTO) & Architecte Systèmes et IA";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -57,7 +57,7 @@ export default async function Image() {
           color: "#e8853a",
         }}
       >
-        Chief Technology Officer · Architecte Systèmes & IA
+        Chief Product & Technology Officer · Architecte Systèmes & IA
       </div>
 
       {/* Available badge */}

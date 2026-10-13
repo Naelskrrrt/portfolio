@@ -136,11 +136,18 @@ export default async function CvPage({
         "https://www.linkedin.com/in/lalasonnael",
         "https://x.com/lalasonnael29",
       ],
-      worksFor: {
-        "@type": "Organization",
-        name: "Mon Ambassadeur",
-        url: "https://www.monambassadeur.com",
-      },
+      worksFor: [
+        {
+          "@type": "Organization",
+          name: "Tessan",
+          url: "https://www.tessan.io",
+        },
+        {
+          "@type": "Organization",
+          name: "Mon Ambassadeur",
+          url: "https://www.monambassadeur.com",
+        },
+      ],
       alumniOf: [...new Set(education.map((item) => item.school))].map(
         (school) => ({
           "@type": "CollegeOrUniversity",
