@@ -13,11 +13,14 @@ import "../globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "optional",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "optional",
+  preload: false,
 });
 
 const instrumentSerif = Instrument_Serif({
@@ -25,6 +28,7 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: "400",
   style: "italic",
+  display: "optional",
 });
 
 const BASE_URL = (

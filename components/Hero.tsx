@@ -85,7 +85,7 @@ export function Hero() {
         </div>
 
         {/* Description */}
-        <div className="flex items-start gap-2 max-w-xl">
+        <div className="flex min-h-24 items-start gap-2 max-w-xl sm:min-h-12">
           <p className="text-muted-foreground font-light italic">
             {t(`punchlines.${punchlineIndex}`)}
           </p>
