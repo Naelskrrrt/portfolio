@@ -8,7 +8,8 @@ export function PixelSceneBackground({ children }: { children: React.ReactNode }
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const isDark = !mounted || resolvedTheme === "dark";
@@ -208,62 +209,6 @@ function Star({ x, y, size, className = "" }: { x: number; y: number; size: numb
         boxShadow: `0 0 ${size}px ${size / 2}px rgba(255, 255, 255, 0.5)`,
       }}
     />
-  );
-}
-
-function PixelMoon() {
-  return (
-    <div className="relative">
-      {/* Moon glow */}
-      <div className="absolute -inset-4 bg-yellow-100/20 rounded-full blur-lg" />
-
-      {/* Pixel moon - 8x8 grid style */}
-      <svg width="32" height="32" viewBox="0 0 8 8" className="relative">
-        <rect x="2" y="0" width="4" height="1" fill="#fef9c3" />
-        <rect x="1" y="1" width="1" height="1" fill="#fef9c3" />
-        <rect x="2" y="1" width="4" height="1" fill="#fef3c7" />
-        <rect x="6" y="1" width="1" height="1" fill="#fef9c3" />
-        <rect x="0" y="2" width="1" height="4" fill="#fef9c3" />
-        <rect x="1" y="2" width="6" height="4" fill="#fef3c7" />
-        <rect x="7" y="2" width="1" height="4" fill="#fef9c3" />
-        {/* Craters */}
-        <rect x="2" y="3" width="1" height="1" fill="#fde68a" />
-        <rect x="5" y="4" width="1" height="1" fill="#fde68a" />
-        <rect x="3" y="5" width="1" height="1" fill="#fde68a" />
-        <rect x="1" y="6" width="1" height="1" fill="#fef9c3" />
-        <rect x="2" y="6" width="4" height="1" fill="#fef3c7" />
-        <rect x="6" y="6" width="1" height="1" fill="#fef9c3" />
-        <rect x="2" y="7" width="4" height="1" fill="#fef9c3" />
-      </svg>
-    </div>
-  );
-}
-
-function PixelSun() {
-  return (
-    <div className="relative animate-sun-rays">
-      {/* Sun glow */}
-      <div className="absolute -inset-6 bg-yellow-300/30 rounded-full blur-xl" />
-
-      {/* Sun rays */}
-      <div className="absolute -inset-8">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-3 bg-yellow-300/60" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-3 bg-yellow-300/60" />
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-1 bg-yellow-300/60" />
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-1 bg-yellow-300/60" />
-      </div>
-
-      {/* Pixel sun - 8x8 grid */}
-      <svg width="40" height="40" viewBox="0 0 8 8" className="relative">
-        <rect x="2" y="0" width="4" height="1" fill="#fcd34d" />
-        <rect x="1" y="1" width="6" height="1" fill="#fbbf24" />
-        <rect x="0" y="2" width="8" height="4" fill="#f59e0b" />
-        <rect x="1" y="2" width="6" height="4" fill="#fbbf24" />
-        <rect x="2" y="3" width="4" height="2" fill="#fcd34d" />
-        <rect x="1" y="6" width="6" height="1" fill="#fbbf24" />
-        <rect x="2" y="7" width="4" height="1" fill="#fcd34d" />
-      </svg>
-    </div>
   );
 }
 

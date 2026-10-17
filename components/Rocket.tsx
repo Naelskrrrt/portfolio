@@ -27,8 +27,6 @@ export function Rocket({ isLaunching, onLaunchComplete }: RocketProps) {
     if (!isLaunching || hasStartedRef.current) return;
 
     hasStartedRef.current = true;
-    setRocketProgress(0);
-    setCountdownNumber(3);
 
     // First, scroll to bottom of page before countdown
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
@@ -36,6 +34,8 @@ export function Rocket({ isLaunching, onLaunchComplete }: RocketProps) {
 
     // Start countdown after scroll completes
     const timerStart = setTimeout(() => {
+      setRocketProgress(0);
+      setCountdownNumber(3);
       setPhase("countdown");
     }, 400);
 
@@ -269,10 +269,10 @@ function SmokeCloud() {
           key={i}
           className="absolute rounded-full bg-gray-300 animate-smoke-expand"
           style={{
-            width: `${60 + Math.random() * 80}px`,
-            height: `${60 + Math.random() * 80}px`,
+            width: `${60 + ((i * 47) % 80)}px`,
+            height: `${60 + ((i * 31) % 80)}px`,
             left: `${20 + (i % 5) * 15}%`,
-            bottom: `${Math.random() * 40}%`,
+            bottom: `${(i * 17) % 40}%`,
             animationDelay: `${i * 0.05}s`,
             opacity: 0.7,
           }}
@@ -329,11 +329,11 @@ function StarStreaks() {
           key={i}
           className="absolute w-1 rounded-full bg-gradient-to-b from-white via-white/70 to-transparent animate-star-streak"
           style={{
-            left: `${Math.random() * 100}%`,
+            left: `${(i * 37) % 100}%`,
             top: "-5%",
-            height: `${50 + Math.random() * 100}px`,
-            animationDelay: `${Math.random() * 2}s`,
-            animationDuration: `${0.3 + Math.random() * 0.4}s`,
+            height: `${50 + ((i * 53) % 100)}px`,
+            animationDelay: `${((i * 7) % 20) / 10}s`,
+            animationDuration: `${0.3 + ((i * 3) % 4) / 10}s`,
           }}
         />
       ))}

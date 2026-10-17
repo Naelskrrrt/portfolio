@@ -8,7 +8,8 @@ export const GradientMeshBackground = memo(function GradientMeshBackground() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const isDark = useMemo(() => !mounted || resolvedTheme === "dark", [mounted, resolvedTheme]);

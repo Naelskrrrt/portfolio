@@ -327,7 +327,7 @@ export default async function CvPage({
                   <span className="text-muted-foreground text-sm">
                     {experience.period}
                   </span>
-                  <span className="text-muted-foreground/70 text-xs mt-0.5">
+                  <span className="text-muted-foreground text-xs mt-0.5">
                     {experience.location}
                   </span>
                 </div>

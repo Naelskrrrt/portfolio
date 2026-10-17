@@ -9,7 +9,8 @@ export function CelestialBody() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const isDark = useMemo(() => !mounted || resolvedTheme === "dark", [mounted, resolvedTheme]);
@@ -29,7 +30,8 @@ export function Satellite() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const isDark = useMemo(() => !mounted || resolvedTheme === "dark", [mounted, resolvedTheme]);
@@ -175,7 +177,8 @@ export function ShootingStar() {
       x: 20 + Math.random() * 60, // Position X entre 20% et 80%
       delay: i * 8 + Math.random() * 5, // Délai échelonné
     }));
-    setStars(newStars);
+    const frame = window.requestAnimationFrame(() => setStars(newStars));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   return (

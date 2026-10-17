@@ -60,7 +60,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: alternates("", "/en"),
     },
     ...localizedEntries("/cv", 0.8, "yearly"),
-    ...localizedEntries("/offre", 0.9),
     ...localizedEntries("/services", 0.9),
     ...localizedEntries("/projets", 0.8),
     ...CASE_STUDIES.flatMap((project) =>

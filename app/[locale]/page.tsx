@@ -9,8 +9,16 @@ import { FavPosts } from "@/components/FavPosts";
 import { Contact } from "@/components/Contact";
 import { PixelSceneBackground } from "@/components/PixelScene";
 import { Footer } from "@/components/Footer";
+import { setRequestLocale } from "next-intl/server";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
+  setRequestLocale(locale);
+
   return (
     <main id="main-content" className="min-h-screen bg-background">
       <Header />

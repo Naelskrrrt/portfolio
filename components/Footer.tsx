@@ -71,11 +71,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/offre" className="transition-colors hover:text-foreground">
-                  {t("offer")}
-                </Link>
-              </li>
-              <li>
                 <Link href="/cv" className="transition-colors hover:text-foreground">
                   {t("cv")}
                 </Link>
@@ -167,14 +162,6 @@ export function Footer() {
                     className="inline-flex min-h-11 items-center justify-center rounded-md border border-border/70 bg-transparent px-4 text-sm font-semibold text-foreground backdrop-blur-[2px] transition-[color,border-color,background-color] hover:border-primary/60 hover:bg-background/20 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/70 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                   >
                     {t("projects")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/offre"
-                    className="inline-flex min-h-11 items-center justify-center rounded-md border border-border/70 bg-transparent px-4 text-sm font-semibold text-foreground backdrop-blur-[2px] transition-[color,border-color,background-color] hover:border-primary/60 hover:bg-background/20 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/70 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
-                  >
-                    {t("offer")}
                   </Link>
                 </li>
                 <li>

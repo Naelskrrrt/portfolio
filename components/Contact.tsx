@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Link as LocalizedLink } from "@/i18n/navigation";
 import { BookingLink } from "./BookingLink";
 
 export function Contact() {
@@ -27,34 +26,10 @@ export function Contact() {
               <CalendarIcon className="h-4 w-4" />
               {t("cta")}
             </BookingLink>
-            <LocalizedLink
-              href="/offre"
-              className="inline-flex min-h-11 w-fit items-center gap-2 rounded-md border border-border/80 bg-background/60 px-4 py-2 text-sm font-semibold text-foreground backdrop-blur-sm transition-[color,border-color,background-color] hover:border-primary/60 hover:bg-background/80 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/70 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            >
-              {t("secondaryCta")}
-              <ArrowUpRightIcon className="size-4" />
-            </LocalizedLink>
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function ArrowUpRightIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path d="M7 17 17 7M7 7h10v10" />
-    </svg>
   );
 }
 

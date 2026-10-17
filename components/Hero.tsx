@@ -59,7 +59,7 @@ export function Hero() {
       <div className="relative z-10 max-w-2xl mx-auto flex flex-col gap-6">
         {/* Profile */}
         <div className="flex items-center gap-4">
-          <div className="relative w-24 h-24 rounded-full overflow-hidden border border-border">
+          <div className="relative w-24 h-24 shrink-0 rounded-full overflow-hidden border border-border">
             <Image
               src="/photo-profile.png"
               alt={t("profileAlt")}

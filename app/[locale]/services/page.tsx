@@ -327,12 +327,6 @@ export default async function ServicesPage({ params }: PageProps) {
               >
                 {t("final.primaryCta")}
               </BookingLink>
-              <Link
-                href="/offre"
-                className="text-sm font-semibold text-primary-foreground underline underline-offset-4"
-              >
-                {t("final.secondaryCta")}
-              </Link>
             </div>
           </div>
         </section>

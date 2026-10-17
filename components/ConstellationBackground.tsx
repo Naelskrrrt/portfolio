@@ -23,7 +23,8 @@ export function ConstellationBackground() {
   const dimensionsRef = useRef({ width: 0, height: 0 });
 
   useEffect(() => {
-    setMounted(true);
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const isDark = useMemo(

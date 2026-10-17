@@ -2,11 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Instrument_Serif } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { GalaxyJourney } from "@/components/GalaxyJourney";
-import { DawnSideRays } from "@/components/SideRays";
+import { Decorations } from "@/components/Decorations";
 import { Analytics } from "@vercel/analytics/next";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -147,6 +146,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
 
   setRequestLocale(locale);
+  const messages = await getMessages();
+  const clientMessages = {
+    Hero: messages.Hero,
+    Projects: messages.Projects,
+    Footer: messages.Footer,
+    CV: { toolbar: (messages.CV as { toolbar: typeof messages }).toolbar },
+  };
 
   const pageUrl = localizedHomeUrl(locale);
 
@@ -238,7 +244,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         >
           {locale === "fr" ? "Aller au contenu principal" : "Skip to main content"}
         </a>
-        <NextIntlClientProvider locale={locale}>
+        <NextIntlClientProvider locale={locale} messages={clientMessages}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -246,14 +252,11 @@ export default async function LocaleLayout({ children, params }: Props) {
             disableTransitionOnChange={false}
           >
             {/* Decorative WebGL/pixel layers — never printed (see CV print styles) */}
-            <div className="contents print:hidden">
-              <GalaxyJourney />
-              <DawnSideRays />
-            </div>
+            <Decorations />
             <div className="noise relative z-10">{children}</div>
           </ThemeProvider>
         </NextIntlClientProvider>
-        <Analytics />
+        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   );

@@ -84,12 +84,36 @@ npm run start     # http://localhost:3000
 
 | Métrique | Score |
 |---|---|
-| Performance | mesuré au déploiement |
-| Accessibility | 100 |
-| Best Practices | 100 |
-| SEO | 100 |
-| LCP | ~200 ms |
-| CLS | 0.00 |
+| Performance | Voir le rapport du déploiement testé |
+| Accessibility | Voir le rapport du déploiement testé |
+| Best Practices | Voir le rapport du déploiement testé |
+| SEO | Voir le rapport du déploiement testé |
+
+Les scores varient selon le réseau, le navigateur et la charge de la machine.
+Un score Lighthouse de 100 ne garantit pas l'absence de toute régression fonctionnelle.
+
+## Vérifications
+
+```bash
+npm run lint
+npm run build
+npm run start
+# Dans un autre terminal, avec Google Chrome installé :
+npm run test:e2e
+npm run test:lighthouse -- http://localhost:3000 reports/local
+# Après déploiement :
+BASE_URL=https://www.lalason.pro npm run test:e2e
+npm run test:lighthouse -- https://www.lalason.pro reports/production
+```
+
+Playwright vérifie les 16 pages FR/EN, leurs liens internes et métadonnées,
+les thèmes, les filtres, les modales, le changement de langue, les PDF et la
+suppression de `/offre`, `/fr/offre` et `/en/offre`, sur mobile et ordinateur.
+
+Lighthouse parcourt le sitemap avec ses profils mobile et desktop par défaut,
+sans désactiver d'audit. Les rapports HTML/JSON et `summary.json` sont enregistrés
+dans le dossier demandé. La commande échoue si une catégorie est inférieure à
+100. Des chemins peuvent être ajoutés à la commande pour un diagnostic ciblé.
 
 ## Déploiement
 
@@ -108,5 +132,5 @@ vercel --prod
 - **Pixel Scene** — Scène 8-bit animée sous le footer (jour/nuit selon thème)
 - **Easter egg** — Fusée à lancer en cliquant sur le soleil/lune
 - **JSON-LD** — Schema.org `Person` pour Google Rich Results
-- **Grain** — Texture noise hébergée localement pour l'ambiance visuelle
+- **Grain** — Texture SVG intégrée à la feuille de style
 - **CV** — Téléchargeable directement depuis le Hero
